@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Javascript</title>
+	<atom:link href="http://llun.in.th/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Crypto-JS &amp; Node.js Crypto</title>
+		<link>http://llun.in.th/2011/12/crypto-js-node-js-crypto/</link>
+		<comments>http://llun.in.th/2011/12/crypto-js-node-js-crypto/#comments</comments>
+		<pubDate>Wed, 14 Dec 2011 09:51:17 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[AES]]></category>
+		<category><![CDATA[Crypto-JS]]></category>
+		<category><![CDATA[Encryption]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[OpenSSL]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2484</guid>
+		<description><![CDATA[นั่งงมอยู่หลายวันเรื่อง AES encryption ใน Javascript เนื่องจากหาข้อมูลที่เขียนอธิบายตรงๆ ไม่ได้เลย ทำได้แล้วก็จดเก็บไว้หน่อยดีกว่า เริ่มจากฝั่ง Browser ที่ต้องพึ่ง Crypto-JS เป็นชุด Library สำหรับใช้ในการเข้ารหัสหรือทำ Hash ต่างๆ สิ่งที่เอามาใช้วันนี้คือ AES ที่เป็นการเข้ารหัสที่ใช้กุญแจเหมือนกันทั้งสองฝั่ง วิธีใช้ก็ง่ายๆ มีอยู่ในเว็บคนทำอยู่แล้ว แต่ถ้าทำแค่นี้แล้วใช้กับ Node.js ได้ก็คงไม่ต้องมาจดแล้ว ปัญหามันเกิดตรงที่ถ้าเราใส่ &#8220;Secret Passphase&#8221; ไปตรงๆ สิ่งที่เกิดขึ้นคือมันจะ random IV (Initialization vector) ให้อัตโนมัติแล้วเอาไปใช้คู่กับ passphase ที่ใส่เข้ามา ทำให้ passphase ไม่สามารถเอาไปใช้กับ Node.js crypto ได้ ก็เลยต้องระบุเป็น Key และ IV ไป แต่ Key ที่ว่ามันก็ไม่ได้มาง่ายๆ อีกเนื่องจากความยาวต้องเท่ากับ 16, 24, 32 [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/12/crypto-js-node-js-crypto/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>HTML5 Drag&amp;Drop</title>
+		<link>http://llun.in.th/2011/09/html5-dragdrop/</link>
+		<comments>http://llun.in.th/2011/09/html5-dragdrop/#comments</comments>
+		<pubDate>Mon, 19 Sep 2011 03:13:28 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[Javascript]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2338</guid>
+		<description><![CDATA[เมื่อคืนช่วงที่เขียนเรื่อง IAAS/PAAS จริงๆ มีเรื่องนี้อยู่ในหัวด้วย มันมาตั้งแต่ตอนทำ Scrumboard ให้ลาก Task ได้แต่ไม่มีเวลารวบรวมซักที ช่วงเช้ายังว่างๆ ไม่มีใครมาเลยจดไว้ก่อนละกัน วิธีการใช้งาน HTML5 Drag&#038;Drop แทบจะเหมือน Flex เป๊ะชื่อฟังก์ชั่นหรือ event นี่ลอกมาแทบจะไม่ต่าง (หรือจริงๆ Adobe อาจจะเป็นคนผลักมันออกมาเป็น Standard) Event พื้นฐานก็มี (@plutoniix แย้งมาตาม comment ว่ามาจาก MS ต่างหาก) dragstart: ใช้กับ DOM ที่จะลากเพื่อบอกว่า DOM นี้มีคนกดลากแล้วนะ dragend: ใช้กับ DOM ที่ลากไปมาได้เหมือน dragstart เกิดเมื่อตอนปล่อยเม้าส์จาก DOM ที่ลากไปมา dragover: ใช้กับ DOM ที่จะเป็นตัวรับ DOM ที่ลากไปมา เกิดตอน DOM อื่นถูกลากมาเหนือ DOM [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/09/html5-dragdrop/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>TestIt Suite Runner</title>
+		<link>http://llun.in.th/2011/08/testit-suite-runner/</link>
+		<comments>http://llun.in.th/2011/08/testit-suite-runner/#comments</comments>
+		<pubDate>Sat, 13 Aug 2011 03:52:24 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[TestIt]]></category>
+		<category><![CDATA[unittest]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2260</guid>
+		<description><![CDATA[TestIt มีปัญหาอย่างนึงที่ยังแก้ไม่ได้คือ เมื่อเอาหลายๆ test มารันด้วยกันพร้อมกันบางครั้งทำให้ test ที่เคยทำงานผ่านกลับไม่ผ่าน เวลาเรียกรวมเลยต้องแยก test เหล่านั้นออกแต่ด้วยความขี้เกียจยังคงอยากเรียกที่เดียวแล้วเห็นผลลัพธ์ทั้งหมด เลยเขียน script เล็กๆเพื่อมาเรียกพวกนั้นรวมทีนึง เวลาใช้ก็เพียงแค่ แต่ยังมี config อีกเล็กน้อย ต้องสร้าง suite.js (หรือจะชื่ออะไรก็แล้วแต่) เป็นไฟล์ที่บอกว่าจะเรียก test ไหนให้ทำงานร่วมกันบ้าง หน้าตาก็อย่างด้านล่าง สุดท้ายแล้ว เอา suite ไปเพิ่มในไฟล์ด้านล่าง (ไว้แยกออกมาและทำงานได้บน Browser ทีหลังละกัน) save file ด้านบนเอาไปเรียกใช้ตามสะดวก วิธีเรียกก็มี node suite.js all ที่จะเห็นผลลัพธ์แบบละเอียด (แสดงแต่ละ test ว่าอะไรผ่านไม่ผ่านบ้าง) node suite.js summary เพื่อดูแค่ว่ามี suite ไหนผ่านไม่ผ่านบ้าง node suite.js suite เพื่อเรียกเฉพาะ suite ที่ต้องการ สิ่งที่ยังไม่ได้ทำ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/08/testit-suite-runner/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>TestIt</title>
+		<link>http://llun.in.th/2011/08/testit/</link>
+		<comments>http://llun.in.th/2011/08/testit/#comments</comments>
+		<pubDate>Fri, 12 Aug 2011 15:35:06 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[Test framework]]></category>
+		<category><![CDATA[unittest]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2243</guid>
+		<description><![CDATA[หลังจากเริ่มจัดการ Dev Process จริงจังสิ่งหนึ่งที่เป็นปัญหาต้ังแต่เข้าไปในทีมคือ unit test เพราะไม่มีใครเคยทำมาก่อนในฝั่ง Javascript มีบ้างก็เป็นการทดลองรวมๆ มากกว่า เวลาจะเรียกทีต้อง start server เรียกได้แทบฝันร้าย เรียกแล้วผ่านไม่ผ่าน ไม่มี format ตายตัวรันที Terminal เต็มไปด้วย Text วันแรกๆ เลยทดลองหา Test framework ที่ถูกใจ ใช้ง่าย ใช้ได้ทั้ง client server ก่อนเลย รอบแลกคิดว่าจะใช้ nodeunit เพราะว่าสามารถใช้ node.js มีผลลัพธ์ให้เห็นสวยงาม แต่พอเอาไปใช้กับ test เก่าที่บางส่วนต้องเรียกบน browser เริ่มเห็นลางร้ายเพราะต้องแยก code test ดีๆ ให้ทำงานบน browser หาอยู่หนึ่งวันยอมแพ้ หาตัวเลือกอื่นก็เปิด wiki หาว่า Javascript มี Test framework อะไรใช้ได้บ้างก่อนเลย [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/08/testit/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>JS Function &amp; Flash #Adobe Flex</title>
+		<link>http://llun.in.th/2010/04/js-function-flash-adobe-flex/</link>
+		<comments>http://llun.in.th/2010/04/js-function-flash-adobe-flex/#comments</comments>
+		<pubDate>Wed, 07 Apr 2010 17:27:09 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flash]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[Javascript]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1551</guid>
+		<description><![CDATA[วันอาทิตย์ที่ผ่านมาทำงานกับเพื่อนแล้วต้องเขียนสองอย่างนี้คู่กัน มีทั้งเรียกจาก JS ไปยัง Flash และจาก Flash กลับไปยัง JS ได้ประสบการณ์มาพอสมควรเลย ดูด้านล่างเป็นข้อ ๆ เลยละกัน จากหน้าเว็บ HTML สามารถส่งข้อมูลไปยัง Flash ผ่าน embed และ object ได้เลย ผ่าน embed flashvar และ attribute flashvar ใน object ต้องกำหนดทั้งสองที่เพื่อให้ใช้ได้ทุก Browser เช่น จากด้านบนบรรทัดที่ 3 กับ 6 จะมี flashVar ซ้ำกัน ใส่เหมือนกับที่อยู่หลัง URL เวลา request แล้วส่งค่าข้ามไปมา นอกจากวิธีกำหนด flashVar แบบนี้แล้ว จะกำนหดใน src เลยก็ได้เช่น wmode มีด้วยกันสามค่าคือ window, opaque, [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/04/js-function-flash-adobe-flex/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Call JS function from Flash</title>
+		<link>http://llun.in.th/2010/03/call-js-function-from-flash/</link>
+		<comments>http://llun.in.th/2010/03/call-js-function-from-flash/#comments</comments>
+		<pubDate>Thu, 11 Mar 2010 16:46:44 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[Javascript]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1422</guid>
+		<description><![CDATA[งานอย่างนึงที่ต้องทำผ่านมาคือเรียกโปรแกรมที่เขียนด้วย Adobe AIR จากเว็บ แต่เรียกอย่างเดียวมันธรรมดาไป ต้องมีการรับค่าจากฟอร์มในเว็บด้วย! ตอนแรกก็คิดว่าไม่ยาก ที่ไหนได้เจออิทธิฤทธ์ของ IE6 เข้าไปถึงกับงงเลยทีเดียว แต่จะเขียนแล้วก็เขียนถึงวิธีเรียกทั้งหมดเลยละกัน ใน Flex framework มีคลาสสำหรับติดต่อกับ Javascript จะใช้เรียกฟังก์ชั่น หรือจะให้ฟังก์ชั่น Javascript มาเรียกใน Flash คือ flash.external.ExternalInterface เวลาเรียกฟังก์ชั่น Javascript จาก Flash ก็ง่ายๆ ด้วยคำสั่ง ExternalInterface.call("javascriptFunctionName", "argument1", "argument2", ... , "argumentN") แต่ความยากไม่ได้อยู่ที่ตรงนี้ สิ่งที่ทำพลาดจนทำให้ต้องจดคือสิ่งที่อยู่ใน HTML เพราะบราวเซอร์แต่ละตัวเห็น tag object embed ต่างกัน สุดท้ายแล้วทางที่ดีคือคัดลอกเอาจากใน Flex API Document มานั่นแหละ ปลอดภัยที่สุด ลองมาดูของจริงเลยละกัน Javascript ในหน้านี้หน้าตาเป็นอย่างด้านล่าง เมื่อกดปุ่มด้านล่าง จะเรียก function [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/03/call-js-function-from-flash/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Adobe Flex หรือ JS+HTML</title>
+		<link>http://llun.in.th/2009/12/adobe-flex-%e0%b8%ab%e0%b8%a3%e0%b8%b7%e0%b8%ad-jshtml/</link>
+		<comments>http://llun.in.th/2009/12/adobe-flex-%e0%b8%ab%e0%b8%a3%e0%b8%b7%e0%b8%ad-jshtml/#comments</comments>
+		<pubDate>Sat, 05 Dec 2009 16:03:35 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[HTML]]></category>
+		<category><![CDATA[Javascript]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1303</guid>
+		<description><![CDATA[เพื่อนเคยถามว่าจะใช้ Adobe Flex ดีหรือเปล่ามันยากง่ายอย่างไร ก็ตอบแบบคร่าวๆไป ตอนนั้นไม่เคยรวบรวมความคิดแล้วสรุปอย่างจริงจังว่ามันควรใช้หรือไม่ แต่เมื่อปลายเดือนที่แล้ว(หรือกลางๆ เดือนหว่า) ได้คุยกับพี่ที่ทำงาน แล้วมันก็เหมือนรวบยอดขึ้นมาว่า Adobe Flex มันดียังไง แล้วมันไม่ดียังไง มันควรใช้เมื่อไหร่ Adobe Flex จริงๆ มันก็ง่ายสำหรับคนที่เคยเขียน Java หรือ C# นะ เพราะลักษณะภาษามันแทบไม่ได้มีอะไรแตกต่าง เพราะงั้น สำหรับโปรแกรมเมอร์ที่นั่งพิมพ์ดีด อย่างเดียวแล้ว ถือว่ามันง่ายกว่า Javascript พอสมควรเลยหละ แต่ว่า สิ่งหนึ่งที่น่าปวดหัวที่สุดคือ มันไม่ได้สวยจนเอาไปใช้งานได้ตั้งแต่เริ่มต้น และการปรับเปลี่ยนหน้าตามันไม่ได้ง่ายเหมือน HTML หลายคนอาจจะบอกว่า Adobe Flex ก็มีภาษา MXML ที่มีหน้าตาคล้าย HTML แถมใช้ CSS ได้เกือบจะเหมือนกันอีก ซึ่งก็จริง หลายๆ อย่างนั้นเหมือน HTML มากแต่มันต้อง compile ก่อนถึงจะเห็นผล ซึ่งนั่นไม่เหมาะกับบริษัทที่มีแต่โปรแกรมเมอร์มาก มันเป็นอะไรที่เหมาะกับบริษัทที่มีคนออกแบบหน้าตาด้วยโปรแกรมของ Adobe [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/12/adobe-flex-%e0%b8%ab%e0%b8%a3%e0%b8%b7%e0%b8%ad-jshtml/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>ECMAScript3 ตอนที่ 3</title>
+		<link>http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/</link>
+		<comments>http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/#comments</comments>
+		<pubDate>Sat, 07 Jun 2008 17:01:32 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[Ecmascript 3]]></category>
+		<category><![CDATA[Javascript]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=378</guid>
+		<description><![CDATA[ไม่ได้เขียนนานเนื่องจากความขี้เกียจ &#8211; -&#8221; เลยทิ้งมันไว้ซะนานขนาดนี้ วันนี้ก็เป็นโอกาสดีที่ว่าง ก็เลยทำต่อซะหน่อยก่อนจะขี้เกียจอีก ฮะๆๆ (วันนี้อาจเขียนอะไรเมินๆ แต่ถ้ามีเวลามากกว่านี้จะมานั่งเกลาภาษาอีกที >]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>ECMAScript3 ตอนที่ 2</title>
+		<link>http://llun.in.th/2008/05/ecmascript2-part2/</link>
+		<comments>http://llun.in.th/2008/05/ecmascript2-part2/#comments</comments>
+		<pubDate>Sun, 18 May 2008 15:29:49 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Actionscript]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[Ecmascript 3]]></category>
+		<category><![CDATA[Javascript]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=343</guid>
+		<description><![CDATA[ทิ้งไปนาน เขียนต่อซะหน่อยเดี๊ยวลืม สำหรับตอนนี้ก็บอกกันตรงๆ เลยละกันว่าแปลมาจากหนังสือเล่มเดิมที่เคยบอกไปเมื่อตอนที่แล้ว สามบท เริ่มเลยละกัน Syntax พื้นฐานของ ECMAScript มีด้วยกันไม่กี่อย่างตามด้านล่างนี้คือ ทุกอย่าง case-sensitive เหมือนกับภาษา Java, C จริงๆ ข้อนี้ก็เหมือนกันเกือบทุกภาษาหละนะ ยกเว้น VB6 ไว้ภาษาที่ตรงข้าม(อาจมีภาษาอื่นอีกแต่ที่ผมเคยเจอมีอยู่ภาษาเดียว) ประเภทตัวแปรเปลี่ยนประเภทไปตามค่าที่ใส่เข้ามา (loosely type) โดยดูได้จากวิธีประกาศตัวแปรใน javascript ที่ไม่ต้องมีการบอกประเภทว่า ตัวแปรนี้เป็นชนิดไหน แต่ดูจากค่าที่ใส่เข้ามาได้เลย ถ้าค่าที่ใส่เป็นตัวเลข ตัวแปรนั้นก็จะเป็นประเภทตัวเลข สำหรับ Actionscript3 จะต่างจาก ECMAScript3 หน่อยคือ ตัวแปรสามารถกำหนดประเภทได้ โดยเมื่อประกาศประเภทไปแล้วก็จะไม่สามารถเปลี่ยนได้อีก แต่จะไม่ประกาศก็ได้ ดังนั้น Actionscript3 จึงมีทั้งสองแบบ โดยตัวอย่างวิธีประกาศตัวแปรใน ECMAScript3 คือ var color = "red"; var num = 25; var visible = [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/05/ecmascript2-part2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; switch</title>
+	<atom:link href="http://llun.in.th/tag/switch/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Subversion relocate</title>
+		<link>http://llun.in.th/2008/02/subversion-relocate/</link>
+		<comments>http://llun.in.th/2008/02/subversion-relocate/#comments</comments>
+		<pubDate>Tue, 26 Feb 2008 14:48:07 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[relocate]]></category>
+		<category><![CDATA[SVN]]></category>
+		<category><![CDATA[switch]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/02/26/subversion-relocate/</guid>
+		<description><![CDATA[เมื่อวานย้ายที่ทำงานขึ้นมาอีก 20 ชั้น วันนี้ย้ายเซิร์ฟเวอร์เก็บไฟล์ที่ทำงานอยู่ (จริงๆ แค่เปลี่ยนไอพี) แต่แฟ้มที่อยู่ในเครื่องแปะไว้อยู่ที่ไอพีเดิม วันนี้ก็เลยเกือบต้องลำบาก เอาออกมาใหม่ทั้งหมด แต่ค้นอากู๋ไปมา ดันเจอคำสั่งที่ไว้ช่วยเปลี่ยนซะก่อน เลยรอดไป ปกติคำสั่งที่ผมใช้จะมีแค่ co (checkout), ci (commit), up(update) เอาไว้เอาไฟล์เข้าออกจากเซิร์ฟเวอร์ พอเปลี่ยนไอพีที ถามพี่พี่ก็บอกว่า co มาใหม่เลย คิดแล้วก็ซีดนิดๆ เพราะมันหลายไฟล์ + งานเก่าที่ทำไว้มีอะไรที่ค้างคาอยู่เยอะเหมือนกัน (แก้ไปแล้วอ่ะ  :sad: ) สำหรับคพสั่งใหม่ที่เจอวันนี้คือ sw (switch) วิธีย้ายสำหรับเปลี่ยนที่ไฟล์ก็คือ svn sw --relocate [old] [new] [dir] เช่นไฟล์เดิมเซิร์ฟเวอร์อยู่ที่ 192.168.0.1 แต่เซิร์ฟเวอร์ใหม่ย้ายไปที่ 10.10.4.1 แล้วตำแหน่งของไฟล์อยู่ที่ /home/[user]/workspace เวลาย้ายก็ใช้คำสั่งตามนี้ svn sw --relocate http://192.168.0.1/workspace http://10.10.4.1/workspace /home/[user]/workspace หลังจากนั้นก็รอซักพักให้ svn แก้ไขข้อมูล entries [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/02/subversion-relocate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

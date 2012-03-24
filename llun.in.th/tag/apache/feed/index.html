@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Apache</title>
+	<atom:link href="http://llun.in.th/tag/apache/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Hello, GIT again.</title>
+		<link>http://llun.in.th/2011/01/hello-git-again/</link>
+		<comments>http://llun.in.th/2011/01/hello-git-again/#comments</comments>
+		<pubDate>Fri, 07 Jan 2011 16:42:32 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[GIT]]></category>
+		<category><![CDATA[migration]]></category>
+		<category><![CDATA[SVN]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2066</guid>
+		<description><![CDATA[อาทิตย์นี้เตรียมงานใหญ่ย้าย VCS Project หลักจาก SVN ไป GIT ซึ่งคาดเดาไว้แล้วว่าต้องเจอปัญหาแน่นอน ก็คิดไม่ผิดเสียจริงๆ แต่ทำคราวนี้พบว่าเดี๊ยวนี้ GIT มีตัวช่วยสำหรับ HTTP แล้วเรียกว่า Smart HTTP ขั้นตอนก็ต่างจากคราวที่แล้วนิดหน่อย แต่คราวนี้จะตัดส่วน Trac ทิ้งทั้งหมด เพราะสิ่งที่ทำให้ลำบากชีวิตมากสุดก็คือ Trac นั่นเอง (นั่งทำให้มันแสดง source ได้กับ repository ที่มีขนาดใหญ่นี่ไม่สนุกเลย) เริ่มจากแก้ไข Apache ให้รู้ว่า URL ไหนจะเป็น repository สำหรับ path ของ git-http-backend ก็ขึ้นอยู่กับตำแหน่งที่ลงหรือ OS เพราะถ้าเป็น FreeBSD git-http-backend จะอยู่ที่ /usr/local/libexec/git-core/git-http-backend แทน จากนั้นกำหนดให้ Apache ตรวจสอบคนที่จะ push/pull หรือถ้าอยากให้ใคร clone ก็ได้แต่ถ้าต้องการ push ต้อง [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/01/hello-git-again/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SSH Tunneling via Apache</title>
+		<link>http://llun.in.th/2009/09/ssh-tunneling-via-apache/</link>
+		<comments>http://llun.in.th/2009/09/ssh-tunneling-via-apache/#comments</comments>
+		<pubDate>Fri, 25 Sep 2009 08:04:20 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[SSH]]></category>
+		<category><![CDATA[tunneling]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1282</guid>
+		<description><![CDATA[อุปกรณ์ที่มี Apache web server ที่ติด mod_proxy และ mod_proxy_connect หรือ Web proxy server อะไรก็ได้ที่รองรับคำสั่ง CONNECT Proxytunnel SSH client เริ่มจากตั้งค่าให้ Apache ก่อน โดยกำหนดให้ Apache เป็น Forward Proxy ServerName blah.com ProxyRequests On ProxyVia On AllowCONNECT 22 80 443 563 Order allow,deny Allow from all ProxyRequests เพื่อให้ Apache ทำตัวเป็น ForwardProxy เอา request เรียกไปที่เครื่องอื่นต่อได้ ProxyVia เพื่อให้ Apache แปะไปที่ request ที่เรียกต่อไปด้วยว่า [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/09/ssh-tunneling-via-apache/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>ApacheBench</title>
+		<link>http://llun.in.th/2009/01/apachebench/</link>
+		<comments>http://llun.in.th/2009/01/apachebench/#comments</comments>
+		<pubDate>Sun, 11 Jan 2009 06:38:36 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[benchmark]]></category>
+		<category><![CDATA[load test]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=928</guid>
+		<description><![CDATA[กลางๆ สัปดาห์ที่แล้วพี่ที่ทำงานย้ายเครื่องที่เก็บ Trac และทำใหม่ ตอนแรกก็รู้สึกว่าช้าเมื่อเทียบกับที่เคยทำ ลองเปลี่ยนวิธีดูให้เหมือนกันกลับช้ากว่าเก่า เข้ามาใน IRC ถามว่าเป็นเพราะอะไรกลับได้ของเล่นมาใหม่ชิ้นนึงคือ ab ตอนแรกก็งงว่ามันคืออะไร ลองเล่นดูถึงได้เข้าใจ ก็เลยเริ่มจาก Trac ที่คิดว่าเร็วก่อน ผลปรากฏว่า This is ApacheBench, Version 2.3 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/ Licensed to The Apache Software Foundation, http://www.apache.org/ Benchmarking project.nytes.net (be patient) Completed 100 requests Completed 200 requests Completed 300 requests Completed 400 requests Completed 500 requests [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/01/apachebench/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SVN Apache Trac</title>
+		<link>http://llun.in.th/2008/12/svn-apache-trac/</link>
+		<comments>http://llun.in.th/2008/12/svn-apache-trac/#comments</comments>
+		<pubDate>Sat, 06 Dec 2008 16:58:42 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[SVN]]></category>
+		<category><![CDATA[Trac]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=802</guid>
+		<description><![CDATA[ด้วยความลำบากของชีวิตวันนี้เพื่อนมาถาม ลองค้นๆ ในบล๊อก อ้าวไม่มีเลยจดไว้หน่อย เพราะสำหรับ FreeBSD แล้วมันไม่มีอะไรง่ายเลย ^^! ถือว่าเป็นซีรี่ย์ต่อจาก GIT ละกัน แต่คราวนี้จะละเอียดกว่านิดหน่อยเพราะเริ่มจากติด SVN/Trac จาก port เลยเพราะเพื่อนเจอปัญหาน่าปวดหัวตั้งแต่ขั้นนี้ซะนี่ เริ่มเลยละกัน เริ่มจากติด Apache เนื่องจาก SVN มันใช้บางอย่างที่พิเศษกว่าชาวบ้านด้วย นั่นคือ bdb + อยู่บน FreeBSD ชีวิตเลยไม่สวยงามนักตอนติด Apache ต้องเลือกให้มันใช้ apr จาก port ซึ่งมันก็จะมีคำเตือนว่าอันตราย แต่ช่างมันเหอะ เพื่อความเรียบง่ายในชีวิต เลือกมันออกซะ แล้วก็ไปติด apr-svn ใน /usr/ports/devels แล้วก็ปล่อยมันไปดึงเพื่อนๆ มันมาลงด้วย หลังจากจัดการกับ Apache เสร็จก็มาลง svn ต่ออยู่ใน /usr/ports/devels/subversion (ตอนแรกๆ พิมพ์ svn อยู่ตั้งนาน หามันไม่เจอซักที มารู้ทีหลังว่ามันดันใช้ชื่อเต็ม [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/12/svn-apache-trac/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GIT Apache Trac</title>
+		<link>http://llun.in.th/2008/11/git-apache-trac/</link>
+		<comments>http://llun.in.th/2008/11/git-apache-trac/#comments</comments>
+		<pubDate>Thu, 20 Nov 2008 04:17:40 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[GIT]]></category>
+		<category><![CDATA[Trac]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=747</guid>
+		<description><![CDATA[เมื่อคืนกะว่าจะเอาโค้ดขึ้นเซอร์ฟเวอร์อีกรอบหลังจากมันหายไปเพราะลงเครื่องใหม่ นั่งลงไปลงมา เลยอยากลองของซะหน่อย svn มันไม่สะใจใช้ git ละกันปรากฏว่าทำมันทั้งคืนเจอปัญหานู่นนี่จนกว่าจะเสร็จเช้านี้ -_-&#8221; ทำเสร็จขอเขียนวิธีเก็บไว้เป็นที่ระทึกหน่อยว่ามันสาหัสต่างจาก svn ขนาดไหน เริ่มจากเตรียม Apache ก่อนแต่จริงๆ ที่ลงไปก็ลงไปพร้อมอยู่แล้วอ่ะนะจาก svn แต่ถ้าใครยังไม่ได้เตรียมก็ลงตามด้านล่างก่อนละกัน เริ่มจากลง mod_dav และ mod_dav_fs ก่อน(เอ๊ะ หรือมันมาพร้อมกันไม่แน่ใจ) ถ้าจำไม่ผิดมันจะมีให้เลือกตอนติดจาก port เลยแต่ถ้าเป็น Ubuntu คิดว่าง่ายกว่านั้น apt-get install mod_dav หรือป่าวหว่าแป๊บเดียวก็เสร็จ ส่วนแมคอื่มช่างมันละกัน(จริงๆ คือไปจิ๊ก FreeBSD เอามาใส่เลยก็ได้ ^^!) จากนั้นกำหนดล๊อกไฟล์ของ DAV ว่าจะให้เป็นไฟล์ในใน httpd.conf ด้านล่างนี่ใช้ของดั้งเดิมที่แถมมาให้หลังจากติดจาก port ขี้เกียจแก้ DavLockDB "/usr/local/var/DavLock" เตรียมไฟล์ที่เก็บรายชื่อคนที่เข้ามาใช้ได้ และก็รหัสผ่าน เอาแบบง่ายๆ นะ พอถามรหัสก็ใส่รหัสของ user นั้นไป htpasswd -c [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/11/git-apache-trac/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>ปวดหัวกับ dynamic vhost</title>
+		<link>http://llun.in.th/2008/10/%e0%b8%9b%e0%b8%a7%e0%b8%94%e0%b8%ab%e0%b8%b1%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%9a-dynamic-vhost/</link>
+		<comments>http://llun.in.th/2008/10/%e0%b8%9b%e0%b8%a7%e0%b8%94%e0%b8%ab%e0%b8%b1%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%9a-dynamic-vhost/#comments</comments>
+		<pubDate>Fri, 17 Oct 2008 14:05:35 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Lighttpd]]></category>
+		<category><![CDATA[vhost]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=666</guid>
+		<description><![CDATA[อาทิตย์นี้ทั้งอาทิตย์วุ่นๆ ทั้งอาทิตย์เพราะจัดการแฟ้มๆ ต่างๆ ในเซิร์ฟเวอร์ใหม่หมดจากเดิมที่ข้อมูลโดเมนและเว็บแต่ละคนจะอยู่ในแฟ้มบ้านแต่ละคนตอนนี้ย้ายมาอยู่ที่เดียวกัน แล้วคนที่เข้ามาแก้ไขข้อมูลก็อยู่ในแฟ้มโดเมนนั้นไปเลย ไม่ให้ออกมาเพ่นพ่านแฟ้มคนอื่น ตอนแรกก็คิดว่ามันคงไม่ยากอะไร เพราะตั้งใจจะย้ายไปใช้ Lighttpd แต่ปรากฏว่ามันดันใช้ .htaccess เพื่อแก้ url แบบ Apache ไม่ได้พวกค่่าต่างๆ ที่ใช้ใน WordPress และโปรแกรมอื่นๆ พังหมด -_-&#8221; พยายามหาทางแก้ข้ามวันข้ามคืนว่า Lighttpd มีทางออกที่ดีกว่าไปเขียน url ใหม่ที่เป็นแบบ Lighttpd โดยเฉพาะหรือป่าว ก็ไม่มีสุดท้ายเลยยอมแพ้ กลับมาใช้ Apache เหมือนเดิม ที่อยากใช้ Lighttpd มากเพราะนอกจากมันเบาแล้วมันยังมีอุปกรณ์เสริมอีกตัวนึงที่อยากได้ใน Apache แต่ดันไม่มี(จริงๆ เหมือนจะมีแต่กำหนดได้งี่เง่ามาก) นั่นคือ mod_evhost เนื่องจากเซิร์ฟเวอร์ที่ดูแลอยู่มันยังไม่มีโปรแกรมที่ใช้ควบคุมเหมือนคนอื่น(พวก Direct Admin, Plesk, cPanel ไรพวกนั้นหนะ) ด้วยเหตุผลว่าจะทำเอง(จนพวกนั้นมันแพง -_-&#8221;) ก็เลยต้องหาทางให้แก้ไขไฟล์ต่างๆของเซิร์ฟเวอร์ให้น้อยที่สุด จะได้ไม่ต้องไปรีโหลด หรือเปิดปิดเว็บเซิร์ฟเวอร์บ่อยๆ แล้วโมดูลตัวนี้มันสามารถกำหนดโดยใช้พวก %1 &#8230; ต่างๆได้เพื่อกำหนดไปว่าถ้ามีคนเปิดเว็บโดเมนนี้ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/10/%e0%b8%9b%e0%b8%a7%e0%b8%94%e0%b8%ab%e0%b8%b1%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%9a-dynamic-vhost/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>mod_proxy</title>
+		<link>http://llun.in.th/2008/08/mod_proxy/</link>
+		<comments>http://llun.in.th/2008/08/mod_proxy/#comments</comments>
+		<pubDate>Thu, 28 Aug 2008 03:05:18 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[proxy]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=577</guid>
+		<description><![CDATA[ทำไว้เมื่อสองหรือสามอาทิตย์ก่อนไม่แน่ใจแต่ไม่ได้จดไว้ เดี๊ยวลืมวันนี้ว่างๆ เลยจดไว้ซะหน่อย(ว่างจริงหรอฟะ) สำหรับปัญหาที่ทำให้ต้องติดก็คือ เวลามีคนมาโหลดไฟล์ใหญ่ๆ จากเซิร์ฟเวอร์มากๆ เนี๊ยะเว็บเซิร์ฟเวอร์ที่แสนดีอย่าง Apache มันก็จะอืดลงไปทันตาเห็น คือเข้าเว็บที่เป็น php ธรรมดากว่าจะประมวลผลแล้วส่งกลับมาต้องรอเป็นนาที ไม่รู้มันทำอะไรของมัน แต่จะทิ้งไว้ก็ใช่ที่ ฉะนั้นอย่ารอช้าเลย เอาพวกไฟล์ใหญ่ๆ เหล่านี้ย้ายไปให้ lighttpd ทำแทนดีกว่า มันตายไปตัวหลักก็ยังรอดด้วย(แต่เท่าที่เห็น มันไม่เคยตายเลยแฮะ ทนกว่า Apache อีก -_-&#8221;) อ้อสำหรับใครที่ยังไม่รู้ว่าผมทำอะไร ทำไมมันถึงมีไฟล์ขนาดใหญ่ จริงๆ แล้วเซิร์ฟเวอร์นี้มีโดเมนย่อยอยู่อันนึงไว้เป็นที่ดาวโหลดลินุกซ์(และอื่นๆ อีกมากมายสำหรับเขียนโปรแกรม) เก็บไว้อยู่ด้วย ใครอยากดูหรืออยากโหลดก็เข้าไปที่ http://mirror.nytes.net ได้หรืออยากให้เพิ่มอะไรที่ไม่เถื่อนก็บอกมาละกัน ถ้าพื้นที่ยังเพียงพอก็จะพยายามยัดเข้าไปให้ อ่าวบ่นเยอะและเขียนวิธีทำบ้างดีกว่า เริ่มจากติด lighttpd ก่อนโดยไปที่ /usr/port/www/lighttpd แล้วก็​ make install ธรรมดาอันนี้ไม่มีอะไรพิเศษ ไปที่ /usr/port/www/apache22 แล้ว make config จากนั้นเลือก mod_proxy, mod_proxy_connect และ mod_proxy_http เพิ่มแล้วก็เลือก [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/08/mod_proxy/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Upgrade mod_passenger</title>
+		<link>http://llun.in.th/2008/07/517/</link>
+		<comments>http://llun.in.th/2008/07/517/#comments</comments>
+		<pubDate>Tue, 29 Jul 2008 04:04:22 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Rails]]></category>
+		<category><![CDATA[Redmine]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=517</guid>
+		<description><![CDATA[เมื่อวานพี่ที่ทำงานจะเอา redmine ลงก็เลยมาถามแล้วก็เอาที่เคยเขียนไปให้ดูปรากฏว่าไม่สำเร็จ พี่อีกคนทำมั่งก็บอกว่าหา module ของ apache ไม่เจอก็เลยไปดูบ้างปรากฏว่ามันเปลี่ยนรุ่นไปไกลแล้ว จากที่เคยลงมันเป็นรุ่น 1.0.5 ตอนนี้มันกลายเป็น 2.0.2 หละพร้อมกับการตั้งค่าที่เปลี่ยนไป เลยทำให้ปวดหัวเล็กน้อย วันนี้ตอนเช้าเลยลองทำและก็ถือโอกาสอัพเกรดซะด้วยเลย ขั้นตอนๆ เริ่มจากอัพเกรด mod_passenger เป็นรุ่นใหม่ก่อน ขั้นนี้ง่ายๆ เพราะมี gem อยู่ก็สั่งอัพเกรดบรรทัดเดียวด้วยคำสั่ง #gem upgrade ที่เหลือก็ปล่อยมันดาวโหลดไป จากนั้นต้องให้มันคอมไพล์ออกมาเป็น .so สำหรับยัดเข้า apache แต่มันมี binary ให้พร้อมอยู่แล้วแค่สั่ง #passenger-install-apache2-module จากนั้นแก้ไข apache config โดยการเพิ่มสามบรรทัดนี้เข้าไป LoadModule passenger_module /usr/local/lib/ruby/gems/1.8/gems/passenger-2.0.2/ext/apache2/mod_passenger.so PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-2.0.2 PassengerRuby /usr/local/bin/ruby18 จากนั้นกำหนด vhost ตามเดิมก็ใช้ได้หละ แล้วสั่ง apache ให้เริ่มใหม่ก็เรียบร้อย ของเก่าดูได้จากที่นี่: Redmine กับ Phusion [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/517/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Java Content Repository</title>
+		<link>http://llun.in.th/2007/09/java-content-repository/</link>
+		<comments>http://llun.in.th/2007/09/java-content-repository/#comments</comments>
+		<pubDate>Sat, 08 Sep 2007 15:16:14 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Jack Rabbit]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[repository]]></category>
+		<category><![CDATA[slide]]></category>
+		<category><![CDATA[WebDAV]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=217</guid>
+		<description><![CDATA[ทิ้งเรื่องนี้ไว้นาน เนื่องจากติดงานอื่น + นึกไม่ออกว่าจะเขียนยังไงต่อดี เลยทิ้งไว้ยาวเลย Java Content Repository (JSR170 และ JSR283) เป็นชุด api มาตรฐานเกี่ยวกับการจัดเก็บข้อมูล โดยที่คนใช้งานไม่ต้องสนใจว่ามันจะจัดเก็บยังไง เหมือนเอาไฟล์มาบันทึกในเครื่อง เราก็ไม่ต้องสนใจว่าระบบไฟล์มันจะเอาข้อมูลไปแบ่งเก็บยังไง ถ้ายังนึกไม่ออกก็ลองนึกถึง Google Base ละกันคิดว่าน่าจะคล้ายๆ กันนะ ตอนนี้คนทีทำให้มันใช้งานได้ที่ผมรู้จักแบบใช้งานได้ฟรีๆ ก็มีอยู่ตัวเดียวคือ Apache Jack Rabbit ในเว็บก็มีอธิบายไว้ว่า Content Repository(CR) มีทั้งหมดสามระดับ โดบที่ทุก CR ต้องมีคือระดับแรก เพื่อให้สามารถอ่านข้อมูลจาก CR ได้ ส่วนระดับที่สองคือความสามารถในการเขียนข้อมูลลง CR และระดับสุดท้ายก็พวกการจัดการรุ่น การใช้ Query Language ในการดึงข้อมูลออกมา การล๊อกข้อมูล ลองไปดูภาพในเว็บ Apache Jack Rabbit ดีกว่า ทำออกมาสวยงามเข้าใจง่ายดี แถมยังบอกด้วยว่า Jack Rabbit ทำได้หมดทั้งสามระดับเลย [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/09/java-content-repository/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

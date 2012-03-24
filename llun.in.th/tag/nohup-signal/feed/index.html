@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; nohup signal</title>
+	<atom:link href="http://llun.in.th/tag/nohup-signal/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>nohup</title>
+		<link>http://llun.in.th/2008/02/nohup/</link>
+		<comments>http://llun.in.th/2008/02/nohup/#comments</comments>
+		<pubDate>Tue, 12 Feb 2008 05:31:04 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[nohup signal]]></category>
+		<category><![CDATA[process]]></category>
+		<category><![CDATA[terminal]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/02/12/nohup/</guid>
+		<description><![CDATA[สัปดาห์ที่แล้วพี่บอกว่าโปรแกรมที่เขียนไปมีบั๊ก ให้หาให้หน่อยว่าเกิดจากอะไร การทำงานของมันก็ง่ายคือ โปรแกรมแรกรับคำสั่งจากผู้ใช้มาดูว่าจะเรียก โปรแกรมอื่นอย่างไร จากนั้นก็เลือกโปรแกรมมาทำงาน ถ้าใช้งานตามปกติสั่งคำสั่งเสร็จแล้วกดออก มันก็ไม่มีอะไรผิดปกติ แต่อาการผิดปกติจะเกิดขึ้น เมื่อสั่งเสร็จแล้วกดปิด terminal ทิ้งทันที ดูตอนแรกก็คิดไปถึงเรื่อง process ของลินุกซ์ว่าต้องเป็นเรื่อง process แม่เรียก process ลูกแน่ๆ แต่ขุดไปขุดมาดันไม่เกี่ยวซะงั้นแต่เกิดจากตัวที่ คาดไม่ถึงคือ signal แถมเป็น signal ที่ไม่คิดว่าจะเจอด้วยคือ hang up (คือไม่เคยเจอมาก่อนหนะ ) เป็น signal ที่เกิดเมื่อมีการปิด terminal ไป(เหมือนกับวางหูโทรศัพท์อะไรประมาณนั้นมั้ง ไม่งั้นจะชื่อ hang up หรอ) หรือ connection หลุดจาก server ที่เราต่ออยู่ วิธีแก้ก็ง่ายแสนง่าย แทนที่โปรแกรม แรกจะเรียกโปรแกรมสองตามปกติ ก็เติมคำสั่ง nohup ไปข้างหน้าซะ signal นี้ก็จะไม่มากวนอีกต่อไป หรือ จะเขียนโปรแกรมที่สอง ให้ดัก signal [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/02/nohup/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

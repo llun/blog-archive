@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; ภาษา</title>
+	<atom:link href="http://llun.in.th/tag/programming/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Two approaches &#8211; Mock/Stub</title>
+		<link>http://llun.in.th/2012/02/two-approaches-mockstub/</link>
+		<comments>http://llun.in.th/2012/02/two-approaches-mockstub/#comments</comments>
+		<pubDate>Wed, 01 Feb 2012 14:55:24 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Mock]]></category>
+		<category><![CDATA[Stub]]></category>
+		<category><![CDATA[Test]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2554</guid>
+		<description><![CDATA[เรื่องนี้พึ่งย่อยเสร็จแต่เป็นสิ่งที่คุยกับ @visibletrap ตั้งแต่วันแรกที่มาถึงสิงคโปร์ (คุยทีเดียวหลายเรื่อง ล่อไปสามชั่วโมงได้ ฮ่าๆ) เรื่องก็มีอยู่ว่าเวลาทำ TDD หลายค่ายมักบอกว่าให้ทำ Mock ซึ่งก็เคยพยายามทำหลายครั้งแต่ก็ไม่ประสบความสำเร็จเสียทีเพราะรู้สึกมันทำให้เขียนอะไรซ้ำหลายอย่าง วันนั้น @visibletrap ก็เลยอธิบายและคุยจนเคลียร์ว่าเค้าใช้ Mock เมื่อไหร่กัน วิธีการทำระบบอะไรซักอย่างปกติก็มีอยู่สองทางในการสร้างขึ้นมา คือ Top-Down / Bottom-Up วิธีที่คุ้นเคยสุดเพราะอะไรไม่รู้อาจจะเพราะที่เรียนมาในมหาวิทยาลัยต่างๆ ในวิชา SE ที่บอกว่าให้หาคำนาม บลาๆๆ ก่อนคือ Bottom-Up เริ่มจากหาว่าในระบบจะมี Model อะไรบ้าง แล้วหา Behavior เพื่อสร้างคลาสขึ้นมาทั้งหมดให้ครบทั้ง Flow โดยเริ่มจากฐานที่เป็นคำนาม จนถึงชั้นบนสุดที่เป็นส่วนติดต่อกับ User วิธีที่จะสร้าง Test กับระบบแบบนี้ง่ายสุดก็คือสร้าง Stub ขึ้นมาให้ทำหน้าที่แทน Third-party คอยให้ข้อมูลต่างๆ เพื่อให้ระบบทำงานได้ถูกต้องตลอด ปัจจุบันก็ยังคงชินกับการสร้างระบบด้วยวิธีนี้อยู่ เวลาทำอะไรก็เลยมักสร้าง Stub ขึ้นมาก่อน แล้วค่อยๆ ไล่จาก Model ขึ้นไปจนถึง User [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2012/02/two-approaches-mockstub/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Less behavior, more case</title>
+		<link>http://llun.in.th/2011/10/less-behavior-more-case/</link>
+		<comments>http://llun.in.th/2011/10/less-behavior-more-case/#comments</comments>
+		<pubDate>Mon, 31 Oct 2011 13:36:54 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[งี่เง่า]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[behavior]]></category>
+		<category><![CDATA[design]]></category>
+		<category><![CDATA[Software Development]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2421</guid>
+		<description><![CDATA[คำเตือน blog นี้เขียนเพื่อบ่นการทำงานโดยเฉพาะ! ช่วงนี้ประชุมเยอะ เลยคิดอะไรได้นิดหน่อยเนื่องจากพยายามจะจำกัดให้ Project ไม่โตเกินไปแต่รู้สึกจะห้ามไม่ได้เท่าไหร่ เคย Tweet ลอยๆว่าจริงๆ ควรทำระบบในรูปแบบกลับด้านจากเผื่อเหลือ ให้เป็นระบบที่ยังขาดบางอย่างอยู่ซะ แต่ก็ไม่ได้คิดต่อว่าเพราะอะไรจนช่วงนี้แหละที่ประชุมรวบรวมว่าระบบต้องทำอะไรบ้างถึงเขียนยาวๆ ได้ เนื่องจากระบบที่ทำอยู่ เป็นระบบที่ใหญ่มากประกอบด้วยการทำงานจากชั้นย่อยๆ หลายๆส่วน มีพฤติกรรมล้านแปดจาก Marketing เมื่อจะเริ่มทำเจ้าของระบบก็เอา Requirement ทั้งหมดมาแปลงเป็น Design ขนาดใหญ่เพื่อให้ระบบทำตาม Requirement/Bahavior ได้ทั้งหมดตั้งแต่เริ่มต้น!!! ซึ่ง Requirement ก็เปลี่ยนแปลงไปมาเพิ่มนู่นนี่จนปัจจุบันก็ยังไม่ได้ Finale design ที่สมบูรณ์พร้อมที่จะให้ Programmer ตาดำๆ ไปเขียนหรือแบ่งส่วนให้ชัดเจนเสียที เพราะรายละเอียดจุกจิกทั้งหลายมักจะโผล่มาจากคนนู้นทีคนนี้ทีจนมันไม่เสร็จ ก็เลยคิดได้ว่า จริงๆแล้วถึงแม้ระบบมันจะใหญ่ขนาดไหนก็ตาม มันควรจะตัด Behavior พื้นฐานแล้วค่อยๆทำก่อน ไม่จำเป็นต้องออกแบบหรือคิดถึง Behavior ทั้งหมด เมื่อได้ชั้นต่างๆ ที่มีหน้าที่ชัดเจน มี test(case) ครอบคลุมแล้วเราถึงค่อยทำ Behavior เพิ่ม การออกแบบก็ไม่ใช่ออกแบบทั้งหมดตั้งแต่ต้น แต่ต้องทำเพื่อให้มันค่อยๆ เพิ่มได้เพราะงั้นสิ่งที่ควรทำจริงๆ คือ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/10/less-behavior-more-case/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Text Editor</title>
+		<link>http://llun.in.th/2011/08/text-editor/</link>
+		<comments>http://llun.in.th/2011/08/text-editor/#comments</comments>
+		<pubDate>Sun, 14 Aug 2011 05:44:11 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[coding]]></category>
+		<category><![CDATA[text editor]]></category>
+		<category><![CDATA[ภาษา]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2273</guid>
+		<description><![CDATA[ช่วงหลังเขียน Actionscript/Javascript บ่อยขึ้นปัญหาอย่างหนึ่งของภาษาพวกนี้คือ IDE มักกากส์เพราะด้วยคุณสมบัติของภาษาเองนั่นแหละ ตอนนี้เลยใช้ Textmate ซะส่วนใหญ่ ไม่ต้องใช้ autocomplete อยู่แล้วด้วย แต่ปัญหาอย่างนึงของ Textmate คือมันถูกทอดทิ้งมานาน จะบอกว่า Stable แล้วก็ได้แต่เป็นปัญหาที่ OS เองที่พออัพเกรดมาเป็น Snow leopard/Lion ทำให้แถบ file มักหายไป(กระเด็นหลุดจากขอบของ Text editor) สองสามวันนี้เลยลองสำรวจหา Text editor ตัวอื่นซักหน่อย Espresso: เป็นตัวแรกที่คิดถึงเพราะมี license จาก Bundle อยู่ด้วยเป็นทางเลือกที่เป็นไปได้มากสุดตอนนี้ เพราะเป็น TextEditor จริงๆ คุณสมบัติก็คล้ายๆ กับ Textmate แม้หลายอย่างจะทำเทียบเท่าไม่ได้(พวก shotcut ทั้งหลาย ติด Textmate แล้วอ่ะ) Coda: เป็นตัวเลือกที่มองถัดมาจาก Expresso แต่มี feature มากมายทั้ง integrated [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/08/text-editor/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Regular expression กับภาษาไทย</title>
+		<link>http://llun.in.th/2008/02/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/</link>
+		<comments>http://llun.in.th/2008/02/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/#comments</comments>
+		<pubDate>Sat, 16 Feb 2008 14:54:27 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[regular expression]]></category>
+		<category><![CDATA[serialize]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/02/16/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/</guid>
+		<description><![CDATA[วันศุกร์กำลังนั่งทำงานอยู่ แล้วก็คิดไปคิดมาว่าสิ่งที่ต้องทำคือการตรวจสอบว่า ข้อความที่ส่งเข้ามานี่มีตัวอักษรประหลาดพวก *^#$&#8230; อะไรพวกนี้อยู่หรือป่าว ปกติก็ลองกับภาษาอังกฤษธรรมดา เวลาใช้ regular expression ตรวจก็จะมีรูปแบบประมาณว่า \w ซึ่งเหมือนกันทุกภาษา แต่พอใช้ภาษาไทยปรากฏว่ามันตรวจสอบโดยใช้รูปแบบด้านบนไม่ได้นี่สิ เลยต้องขุดเพิ่มเติมนิดหน่อยแล้วก็เจอตัวนี้เข้า \p{...} รูปแบบนี้เป็นตัวบอกว่าจะใช้กลุ่มรูปแบบที่เกี่ยวกับ unicode นะ คราวนี้ถ้าต้องการตรวจสอบภาษาไทยก็ใส่เป็น \p{L} แต่ปัญหามันไม่จบแค่นั้น ถ้าใส่แค่ L มันจะเอาเฉพาะที่เป็นพยัญชนะ พวก สระ และ วรรณยุกต์ ถ้าเจอมันจะบอกว่าผิดรูปแบบทันที แต่คำภาษาไทยมันรวมพวกนั้นเข้าไปด้วยหนะสิ ก็เลยต้องแก้รูปแบบอีกทีเป็น [\p{L}\p{M}] โดย M ที่ใส่มาก็เพื่อบอกว่าเอา สระ และ วรรณยุกต์ด้วยนั่นเอง สำหรับรายละเอียดเพิ่มเติมอ่านได้จากเว็บนี้ http://unicode.org/unicode/reports/tr18/ จะมีพวกตัวอักษรตัวเล็ก ตัวใหญ่ &#8230; อีกมากมายในภาษาอื่นๆ ด้วยลองไปดูเอาละกันครับ นอกเรื่อง: ส่วนนี้พูดถึง serialize ของจาวาหน่อย เพราะวันศุกร์ไปปล่อยความงี่เง่าส่วนตัวใส่เพื่อนแหะๆ ปกติเวลา serialize วัตถุอะไรในจาวาก็จะให้คลาสของ วัตถุนั้น implements [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/02/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>bc</title>
+		<link>http://llun.in.th/2007/09/bc/</link>
+		<comments>http://llun.in.th/2007/09/bc/#comments</comments>
+		<pubDate>Sat, 15 Sep 2007 01:03:25 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Unix]]></category>
+		<category><![CDATA[ภาษา]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2007/09/15/bc/</guid>
+		<description><![CDATA[ในห้อง #ubuntu-th มีบอทอยู่ตัวนึงของ willwill คราวนี้มันมีความสามารถพิเศษอยู่อย่างคือคำสั่ง math โดยจะเรียกไปที่โปรแกรม bc ตอนแรกผมก็นึกว่ามันเป็นคำสั่งที่ให้คำนวนเลขธรรมดา แต่ด้วยความสงสัยด้วยว่าอะไรคือ bc เลยลองเปิดใน Terminal เครื่อง mac(ปลอมๆ) ที่ทำงานซะหน่อย แล้วก็ได้ด้วย เปิดมาตอนแรกก็เล่นไม่เป็นเลยต้องไปหาผู้ชาย(man) มาช่วยซะหน่อยเลยรู้ด้วยเลยว่า bc มันคืออะไร bc &#8211; An arbitrary precision calculator language แล้ว bc มันมาจากตัวไหนของชื่อเต็มหละฟะ ช่างมันเพราะที่น่าสนใจมันไม่ได้อยู่ตรงนี้ แต่มันสามารถเขียนโปรแกรมในนี้ได้เลยโดยรูปแบบภาษาก็คล้ายๆ ภาษาซี แต่ไม่ได้ใช้ compiler เท่านั้นเองเพราะอันนี้พิมพ์ประโยคเสร็จกด enter ผลลัพธ์กลับมาเลยเช่น llun@pluto:~$ bc bc 1.06 Copyright 1991-1994, 1997, 1998, 2000 Free Software Foundation, Inc. This is free [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/09/bc/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

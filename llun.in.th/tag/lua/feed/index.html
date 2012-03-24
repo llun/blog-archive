@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Lua</title>
+	<atom:link href="http://llun.in.th/tag/lua/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>LuaDBI in Debian6</title>
+		<link>http://llun.in.th/2011/04/luadbi-in-debian6/</link>
+		<comments>http://llun.in.th/2011/04/luadbi-in-debian6/#comments</comments>
+		<pubDate>Tue, 12 Apr 2011 02:41:58 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[database]]></category>
+		<category><![CDATA[DBI]]></category>
+		<category><![CDATA[Lua]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2158</guid>
+		<description><![CDATA[อาทิตย์ที่ผ่านมาตอนเข้าไปถามเรื่อง roster ใน Prosody mailing list ได้คำแนะนำเรื่อง mod_auth_wordpress กลับมาด้วยเมื่อคืนเลยแก้ไขซักหน่อย เริ่มจากเปลี่ยน Database library ที่ของเดิมเรียกไปที่ MySQL library ตรงๆ มาเป็นเรียกผ่าน LuaDBI แล้วก็เจอ error ก่อนเลยเนื่องจาก package ใน Debian repository ของ prosody.im เก่าไปแล้ว ใช้ได้ถึงแค่ lenny ต้องหาทาง compile เองแทน ซึ่งก็ไม่ยากเท่าไหร่ แค่ตอน compile เสร็จไม่รู้ว่าต้องย้ายไปไว้ที่ไหนเลยต้องเข้าไปถามใน mailing list อีกที เริ่มจากเตรียม header ต่างๆ ให้พร้อมก่อน ขึ้นกับ Database ที่ใช้ถ้าเป็น MySQL ก็ติด libmysqlclient-dev เพิ่มด้วย สร้าง directory ไว้เก็บ LuaDBI [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/04/luadbi-in-debian6/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Lua</title>
+		<link>http://llun.in.th/2011/01/lua/</link>
+		<comments>http://llun.in.th/2011/01/lua/#comments</comments>
+		<pubDate>Wed, 19 Jan 2011 16:48:45 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Lua]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2075</guid>
+		<description><![CDATA[หลังจากเล่น Prosody มาได้ซักพักก็พบความมหัศจรรย์หลายอย่าง โดยเฉพาะ Lua ที่ Prosody ใช้เขียน ที่รู้สึกมหัศจรรย์เพราะว่ามันทำให้รู้สึกว่า Java มันอ้วนไปเลย เพราะจะเขียนยังไงให้เล็กเท่าไหร่ มันก็ใช้แรมน้อยกว่า Lua ไม่ได้เลย (แต่เร็วกว่าหรือป่าวอีกเรื่องนึง) โดยเฉพาะโปรแกรมเล็กๆ อย่าง XMPP Bot ซึ่งก็พอรู้อยู่แล้วอ่ะนะ นอกจากเรื่อง Memory ที่ Lua ทำให้ประทับใจแล้วก็มีเรื่องหน้าตาภาษาที่เรียนรู้ง่าย อาจเป็นเพราะคุันเคยกับ Javascript อยู่แล้วด้วย เพราะหน้าตาแทบจะเหมือนกัน ต่างกันพวกประกาศตัวแปรเล็กน้อย กับ Thread ที่เรียกต่างจากชาวบ้าน ส่วนการสร้าง Class, Object ต่างๆ เรียกว่าเหมือน Javascript เลยดีกว่า ตอนนี้ก็คิดเล่นๆ ว่าจะลองเขียนโปรแกรมเล็กๆ ซักตัวมาลองเชื่อม Prosody กับ Caldavd เข้าด้วยกันโดยไม่ต้องผ่าน WordPress เหมือนจะเป็น Project ทดลองมากกว่า เพราะอยากลอง 0mq เป็นการเฉพาะ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/01/lua/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

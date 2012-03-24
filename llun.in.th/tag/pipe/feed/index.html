@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; PIPE</title>
+	<atom:link href="http://llun.in.th/tag/pipe/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>[Java] Runtime.exec() stream</title>
+		<link>http://llun.in.th/2010/12/java-runtime-exec-stream/</link>
+		<comments>http://llun.in.th/2010/12/java-runtime-exec-stream/#comments</comments>
+		<pubDate>Tue, 21 Dec 2010 05:20:34 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[PIPE]]></category>
+		<category><![CDATA[Runtime]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2029</guid>
+		<description><![CDATA[ได้งานประหลาดมาอย่างพี่บอกว่า process Java เปิด PIPE เต็มไปหมดหามาให้หน่อยเกิดจากอะไร ช่วยกันขุดไปมาสามคนสุดท้ายพบว่ามาจาก Runtime.exec() ที่เปิด Stream ให้ทีเดียว 3 Stream แล้วโค้ดเก่าที่เอามาใช้ดันปิดแค่อันเดียวที่ดึงผลลัพธ์ออกมา สิ่งที่เกิดขึ้นคือถ้า Process ทำงานไปเรื่อยๆ แล้วเรียก Runtime.exec() ซ้ำไปมา PIPE ก็จะโผล่ขึ้นมาเรื่อยๆ ประมาณนี้ วิธีแก้ก็ง่ายๆ ได้ Process ออกมาเสร็จใช้แล้วก็ปิด Stream ที่ให้มาด้วยซะ เช่นๆ คำถามคือถ้าไม่ปิดจะเกิดอะไรขึ้นมั้ย จากเท่าที่สังเกตคือ ถ้าไม่ยอมปิดมันก็จะหายไปอย่างเงียบๆ เมื่อถึงเวลาหนึ่งแต่เพื่อความปลอดภัย ใช้แล้วก็ปิดเถอะ]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/12/java-runtime-exec-stream/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

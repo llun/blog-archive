@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; garbage collector</title>
+	<atom:link href="http://llun.in.th/tag/garbage-collector/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Flex reference กับ Garbage collector</title>
+		<link>http://llun.in.th/2008/06/flex-reference-%e0%b8%81%e0%b8%b1%e0%b8%9a-garbage-collector/</link>
+		<comments>http://llun.in.th/2008/06/flex-reference-%e0%b8%81%e0%b8%b1%e0%b8%9a-garbage-collector/#comments</comments>
+		<pubDate>Wed, 11 Jun 2008 14:50:07 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[garbage collector]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=383</guid>
+		<description><![CDATA[เคยเขียนไปบ้างแล้วเกี่ยวกับ Reference ต่างๆ ใ น Flex ว่าควรจะใช้ Weak reference ให้หมดเมื่อมีการเพิ่ม EventListener ต่างๆ เข้าไปแต่เมื่อสองวันก่อนก็เจอเหตุไม่คาดฝันเข้าเพราะกำลังสร้าง Mock แล้วทดสอบปรากฏว่าฟังก์ชั่น ที่มันควรจะทำมันดันถูกลบไปก่อน เหตุผลก็เนื่องจากว่า ก่อนที่ Flex จะวาดอะไรก็ตามมันจะไปเรียก Garbage collector มาเก็บกวาดทีนึง ดังนั้น หากมีการใช้ Weak reference ก่อนขั้นตอนนี้ซึ่งก็คือ ก่อน Commit properties วัตถุต่างๆ จะถูกกวาดไปจนหมดก่อนที่จะได้วาดออกมาเป็นภาพ วันนั้นก็นั่งแก้ นั่งงง แล้วก็ลองส่งข้อความไปใน twetter ดูแล้วก็เหมือนเกิดเป็นหัวข้อใหม่ คุยกับ @iporsut เกี่ยวกับเรื่องนี้ยาวพอสมควร(ยาวสำหรับผมนะ ;p คนอื่นอาจเห็นว่าไม่ยาว) แล้ว @iporsut ก็ได้ข้อสรุปมาว่า Weak reference นั้นไว้แก้ปัญหาเรื่อง Circular reference (การอ้างอิงวัตถุวนไปวนมา) จริงๆ @iporsut ยังไม่ได้เขียนสรุปอะไรมากหรอก [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/06/flex-reference-%e0%b8%81%e0%b8%b1%e0%b8%9a-garbage-collector/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

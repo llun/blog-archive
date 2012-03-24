@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Feisty</title>
+	<atom:link href="http://llun.in.th/tag/feisty/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Feisty boot ช้า</title>
+		<link>http://llun.in.th/2007/08/feisty-boot-%e0%b8%8a%e0%b9%89%e0%b8%b2/</link>
+		<comments>http://llun.in.th/2007/08/feisty-boot-%e0%b8%8a%e0%b9%89%e0%b8%b2/#comments</comments>
+		<pubDate>Fri, 10 Aug 2007 15:21:42 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[boot]]></category>
+		<category><![CDATA[Feisty]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=202</guid>
+		<description><![CDATA[หลังจากลองไปลองมาหลาย OS สุดท้ายก็กลับมาที่ Ubuntu อีกครั้ง แต่หลังจากที่ใช้ OSX แล้วปรากฏว่าชิน หลายอย่างใน Ubuntu ที่ขัดใจไม่เหมือน OSX ก็อยากเปลี่ยนให้เหมือนซะ และที่อยากให้เหมือนแรกสุดเลยก็คือเวลาในการ boot ตอนใช้ OSX เนี๊ยะเปิดเครื่องมา ไม่นานก็เข้าไปหน้าจอ desktop สวยงามใช้งานได้แล้ว แต่ Ubuntu ไม่รู้เป็นไร พอ boot ไปได้ครึ่งนึงเหมือนมันหยุดไปซะเฉยๆ พอรอซักพักถึงทำงานต่อซึ่งก็นานกว่า OSX แน่นอนหละ แต่เท่าที่สังเกตุมา มันจะนานกว่า Windows ด้วยเนี๊ยะสิ เลยยอมไม่ได้ ไปขุดหาวิธีแก้เล็กน้อยแล้วก็ไปเจอที่นี่ วิธีแก้ก็ไม่ได้ยากเย็นอะไรเลยแค่แก้ไขไฟล์ /etc/network/interfaces ให้เป็นไปตามนี้ auto lo iface lo inet loopback auto eth0 iface eth0 inet dhcp #auto eth1 #iface eth1 [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/08/feisty-boot-%e0%b8%8a%e0%b9%89%e0%b8%b2/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Feisty สองจอกับ Geforce Go 7300</title>
+		<link>http://llun.in.th/2007/06/feisty-%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%88%e0%b8%ad%e0%b8%81%e0%b8%b1%e0%b8%9a-geforce-go-7300/</link>
+		<comments>http://llun.in.th/2007/06/feisty-%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%88%e0%b8%ad%e0%b8%81%e0%b8%b1%e0%b8%9a-geforce-go-7300/#comments</comments>
+		<pubDate>Mon, 18 Jun 2007 13:29:23 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[dual monitor]]></category>
+		<category><![CDATA[Feisty]]></category>
+		<category><![CDATA[Nvidia]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=174</guid>
+		<description><![CDATA[วันนี้ลองแบก notebook ไปที่ทำงานดู แบบว่าอยากลองเล่นสองจอเหมือนพี่ที่ทำงานที่ต่อจอออกอีก monitor นึง ลองมั่วตั้งนาน สุดท้ายเข้าไปปรึกษาใน irc คุยกับ pF กว่าจะออกมาได้ตามต้องการ มาดูวิธีกันดีกว่า จะให้ Feisty ออกสองจอได้จริงๆ ก็มีสองวิธี ง่ายกับยาก อย่างง่าย ไปที่ Terminal แล้วพิมพ์คำสั่ง nvidia-settings เลือก X Server Display Configuration จะเห็นด้านขวามีจอให้เลือกอยู่ ถ้าต่อแล้วไม่ขึ้นว่าสองจอ ก็ลองเลือก Detect display ดู ในช่อง Display ด้านขวา เลือก Configure&#8230; จากนั้นเลือก TwinView ออกมากด Apply แล้วยืนยันอีกทีก็เสร็จ ปิด NVIDIA X Server Settings ไปได้เลย แต่หลังจากที่ลองอย่างง่ายแล้วผลที่ได้ตามมาคือ เวลาขยายหน้าต่างมันขยายข้ามจอเลย ถาม pF บอกว่าเป็นเพราะเลือก [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/06/feisty-%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%88%e0%b8%ad%e0%b8%81%e0%b8%b1%e0%b8%9a-geforce-go-7300/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Acer aspire 5584NWXMi กับ Ubuntu feisty</title>
+		<link>http://llun.in.th/2007/05/acer-aspire-5584nwxmi-%e0%b8%81%e0%b8%b1%e0%b8%9a-ubuntu-feisty/</link>
+		<comments>http://llun.in.th/2007/05/acer-aspire-5584nwxmi-%e0%b8%81%e0%b8%b1%e0%b8%9a-ubuntu-feisty/#comments</comments>
+		<pubDate>Sun, 27 May 2007 16:11:43 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Feisty]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=159</guid>
+		<description><![CDATA[วันนี้ได้ Notebook ใหม่มาตัว รุ่นก็ตามชื่อหัวข้อเลย สำหรับเหตุผลที่เลือกรุ่นนี้ก็ดูตามสเป็คด้านล่างละกัน Intel ® Core ™ 2 Duo Processor T5600 512MB DDR2-533 (Max 4GB) 120GB(5400rpm) , Weight 2.4kg. DVD-Super Multi double layer, 5-in-1 card reader 14.1&#8243; WXGA Acer CrystalBrite TFT LCD (1280&#215;800 pixel) / S-Video Out NVIDIA ® GeForce ® Go 7300 with up to 256MB TurboCache™ Acer OrbiCam integrated 1.3 megapixel [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/05/acer-aspire-5584nwxmi-%e0%b8%81%e0%b8%b1%e0%b8%9a-ubuntu-feisty/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

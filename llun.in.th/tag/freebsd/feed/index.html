@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; FreeBSD</title>
+	<atom:link href="http://llun.in.th/tag/freebsd/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Node.JS on FreeBSD 64 bit</title>
+		<link>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/</link>
+		<comments>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/#comments</comments>
+		<pubDate>Fri, 13 May 2011 19:11:16 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[64bit]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[node.js]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2171</guid>
+		<description><![CDATA[เมื่อวานลงเครื่องให้น้องสำหรับลอง Node.js app ก็ดาวโหลดมาคอมไพล์ปกติดี ลองรัน node ปรากฏว่ามันค้างนิ่งๆ ก็คิดว่าปกติไม่ได้ทำอะไรต่อ จนมาวันนี้น้องทักว่ามันอาการไม่ปกติ เลยต้องมาหาวิธีลงใหม่ ขุดไปมาพบว่าเป็นเพราะ v8 ที่ทำให้ Node.js มีปัญหา วันนี้ก็เลยเอามาลองใหม่เริ่มจาก clone v8 มาก่อน ที่เลือก clone จาก git เพราะจะได้ switch branch สะดวกหลังจากได้ v8 มาก็ compile ออกมาเป็น library ก่อนที่จะ compile ได้ต้องติด scons ด้วยสำหรับ FreeBSD อยู่ใน /usr/ports/devel/scons compile เสร็จก็ copy library ไปที่ /usr/local/lib และดาวโหลด node.js และติดตั้ง compile node เสร็จก็ติดตั้ง จากนั้นก็ใช้ Node.js ได้ตามปกติ]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Munin</title>
+		<link>http://llun.in.th/2008/10/munin/</link>
+		<comments>http://llun.in.th/2008/10/munin/#comments</comments>
+		<pubDate>Fri, 24 Oct 2008 14:19:19 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[monitor]]></category>
+		<category><![CDATA[munin]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=673</guid>
+		<description><![CDATA[บันทึกเตือนความจำอีกแล้ว จริงๆเคยเขียนไปแล้วแต่คราวที่แล้วใช้ Trac ซึ่งอายุมันไม่ค่อยยืนหายไปบ่อยๆ เลยเอามาเขียนลงบล๊อกนี่แหละ ปลอดภัยดี(หรือป่าว &#8211; -&#8221;) ยังมีหลายๆ เรื่องที่เคยเขียนไปแล้วหายไป เช่น วิธีทำให้ SVN/Trac Authenticate กับ Unix password อะไรทำนองนี้อีกหลายเรื่อง ไว้นึกได้แล้วจะค่อยๆ เขียนเก็บไว้ละกัน [Munin](http://munin.projects.linpro.no/) เป็นโปรแกรมที่ใช้สร้างกราฟรายงานสถานะของเซิร์ฟเวอร์ว่าใช้อะไรไปเท่าไหร่แล้วบ้าง และก็สามารถแสดงสถานะของบริการต่างๆ ที่เซิร์ฟเวอร์เปิดไว้อยู่ด้วย เช่น Apache และ MySQL ถ้ายังนึกไม่ออกไปดูที่ [monitor.nytes.net](http://monitor.nytes.net) ละกันมีอยู่สามเซิร์ฟเวอร์สามารถดูเป็นรายวันพร้อมกันได้ด้วย สำหรับเหตุผลว่าทำไมเลือกใช้ Munin ทั้งๆ ที่มีอย่างอื่นที่น่าจะดีกว่าเยอะแยะ เช่น [zabbix](http://www.zabbix.com/) หรืออื่นๆ อีกมากมายดูได้ที่ [wiki](http://en.wikipedia.org/wiki/Comparison_of_network_monitoring_systems) เพราะว่ามันติดตั้งง่ายและก็ไม่ต้องตั้งค่าไรมาก(ของเพื่อนไม่ต้องตั้งไรเลย ลงจาก port อย่างเดียว) แล้วกราฟก็หน้าตาใช้ได้ไม่ได้หน้าเกลียดอะไร เรียกว่าสวยงามใช้ได้ทีเดียวด้วยซ้ำ ตัว Munin จริงๆ แล้วประกอบด้วยสองส่วนคือ munin-node และ munin-main ปัจจุบันที่อยู่ใน port [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/10/munin/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>mod_proxy</title>
+		<link>http://llun.in.th/2008/08/mod_proxy/</link>
+		<comments>http://llun.in.th/2008/08/mod_proxy/#comments</comments>
+		<pubDate>Thu, 28 Aug 2008 03:05:18 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[proxy]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=577</guid>
+		<description><![CDATA[ทำไว้เมื่อสองหรือสามอาทิตย์ก่อนไม่แน่ใจแต่ไม่ได้จดไว้ เดี๊ยวลืมวันนี้ว่างๆ เลยจดไว้ซะหน่อย(ว่างจริงหรอฟะ) สำหรับปัญหาที่ทำให้ต้องติดก็คือ เวลามีคนมาโหลดไฟล์ใหญ่ๆ จากเซิร์ฟเวอร์มากๆ เนี๊ยะเว็บเซิร์ฟเวอร์ที่แสนดีอย่าง Apache มันก็จะอืดลงไปทันตาเห็น คือเข้าเว็บที่เป็น php ธรรมดากว่าจะประมวลผลแล้วส่งกลับมาต้องรอเป็นนาที ไม่รู้มันทำอะไรของมัน แต่จะทิ้งไว้ก็ใช่ที่ ฉะนั้นอย่ารอช้าเลย เอาพวกไฟล์ใหญ่ๆ เหล่านี้ย้ายไปให้ lighttpd ทำแทนดีกว่า มันตายไปตัวหลักก็ยังรอดด้วย(แต่เท่าที่เห็น มันไม่เคยตายเลยแฮะ ทนกว่า Apache อีก -_-&#8221;) อ้อสำหรับใครที่ยังไม่รู้ว่าผมทำอะไร ทำไมมันถึงมีไฟล์ขนาดใหญ่ จริงๆ แล้วเซิร์ฟเวอร์นี้มีโดเมนย่อยอยู่อันนึงไว้เป็นที่ดาวโหลดลินุกซ์(และอื่นๆ อีกมากมายสำหรับเขียนโปรแกรม) เก็บไว้อยู่ด้วย ใครอยากดูหรืออยากโหลดก็เข้าไปที่ http://mirror.nytes.net ได้หรืออยากให้เพิ่มอะไรที่ไม่เถื่อนก็บอกมาละกัน ถ้าพื้นที่ยังเพียงพอก็จะพยายามยัดเข้าไปให้ อ่าวบ่นเยอะและเขียนวิธีทำบ้างดีกว่า เริ่มจากติด lighttpd ก่อนโดยไปที่ /usr/port/www/lighttpd แล้วก็​ make install ธรรมดาอันนี้ไม่มีอะไรพิเศษ ไปที่ /usr/port/www/apache22 แล้ว make config จากนั้นเลือก mod_proxy, mod_proxy_connect และ mod_proxy_http เพิ่มแล้วก็เลือก [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/08/mod_proxy/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Redmine กับ Phusion Passenger™</title>
+		<link>http://llun.in.th/2008/07/redmine-%e0%b8%81%e0%b8%b1%e0%b8%9a-phusion-passenger%e2%84%a2/</link>
+		<comments>http://llun.in.th/2008/07/redmine-%e0%b8%81%e0%b8%b1%e0%b8%9a-phusion-passenger%e2%84%a2/#comments</comments>
+		<pubDate>Tue, 01 Jul 2008 11:51:03 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Passenger]]></category>
+		<category><![CDATA[Rails]]></category>
+		<category><![CDATA[Redmine]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=454</guid>
+		<description><![CDATA[เนื่องจากกำลังทำโฮสท์เพื่อให้คนอื่นเข้ามาใช้ ruby on rails อยู่ก็เลยต้องลองเล่น mod ต่างๆ กับหาทางให้ apache นิ่งสำหรับ mod ตัวแรกที่เจอคือ mod_ruby แต่อันนั้นเวลาจะใช้มันใช้กับไฟล์ .rb คือเอาไฟล์มาวางเสร็จแล้วทำให้เหมือนกับ .php เลยเป็น script แล้วแสดงผลพวก print ขึ้นหน้าจอทันที มันก็เหมือนจะดีนะ แต่โปรแกรมที่เขียนด้วย ruby ส่วนใหญ่จะใช้กับ rail นี่สิ ก็เลยต้องหาใหม่ แล้วก็มีคนแนะนำผ่าน twitter มาว่าใช้ mod_rails สิ ก็ลองๆ แต่ไม่ได้หาโปรแกรมมาใส่ซักทีแล้วก็ทิ้งไปเสียนาน สำหรับ Redmine นี่คือตัวเลือกก่อนที่คิดจะทำ Control panel เพราะนอกจากจะทำโฮสท์ให้ลองเล่น ruby แล้วยังคิดที่จะทำให้เพื่อใช้เป็นที่ฝากไฟล์ หรือทำงานร่วมกันอีกด้วย โดยหลักๆ แล้วก็คือให้บริการพวก svn นั่นแหละ แต่จะมี svn อย่างเดียวก็ยังไงอยู่ เพราะจะให้เข้ามาแก้ไขไฟล์เลย ท่าทางคนทำโครงการต่างๆ คงจะส่ายหน้าหนี(อย่างน้อยก็คงเป็นเพื่อนผมหละ) [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/redmine-%e0%b8%81%e0%b8%b1%e0%b8%9a-phusion-passenger%e2%84%a2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>ติดตั้ง DHCP</title>
+		<link>http://llun.in.th/2008/03/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87-dhcp/</link>
+		<comments>http://llun.in.th/2008/03/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87-dhcp/#comments</comments>
+		<pubDate>Sun, 16 Mar 2008 17:12:02 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/03/17/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87-dhcp/</guid>
+		<description><![CDATA[เกลิ่นคร่าวๆ DHCP เป็นการแจก IP แก่เครื่องลูกข่ายโดยอัตโนมัติ โดยที่เครื่องลูกข่ายต้องทำการเปิดการร้องขอ DHCP ด้วย ซึ่ง DHCP Server จะทำการแจก IP ให้เครื่องลูกข่ายโดย IP ที่แจกจะไม่ซ้ำกัน การทำงานจะประมาณนี้ เครื่องลูกข่ายร้องขอหาตำแหน่ง DHCP Server เพื่อขอ IP Address DHCP Server จะค้นหา IP Address ในฐานข้อมูลเพื่อจะส่ง IP ไปให้เครื่องลูกข่าย เครื่องลูกข่ายได้รับ IP Address จะส่ง ack กลับไป DHCP Server ได้รับ ack จะส่งสัญญาณอนุญาติให้ เครื่องลูกข่ายใช้ IP นั้น พร้อมบันทึก IP ขั้นตอน 1. Download dhcp ดาวโหลดที่ http://www.isc.org/sw/dhcp/ 2. แตกไฟล์ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/03/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b8%b1%e0%b9%89%e0%b8%87-dhcp/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/ by HTTrack Website Copier/3.x [XR&CO'2007], Fri, 23 Mar 2012 17:37:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>ECMAScript3 ตอนที่ 3  |  แนท (/næt/)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="actionscript,adobe flex,ecmascript 3,javascript,ภาษา" />
+<link rel="stylesheet" type="text/css" href="../../../wp-content/themes/canvas/style.css" media="all" />
+<link rel="pingback" href="../../../xmlrpc.php" />
+<meta property="og:description" content="ECMAScript3 ตอนที่ 3" /><link rel="alternate" type="application/rss+xml" title="แนท (/næt/) &raquo; Feed" href="../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="แนท (/næt/) &raquo; Comments Feed" href="../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="แนท (/næt/) &raquo; ECMAScript3 ตอนที่ 3 Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='sharedaddy-css'  href='../../../wp-content/plugins/jetpack/modules/sharedaddy/sharing3d36.css?ver=3.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://llun.in.th/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://llun.in.th/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/canvas/includes/js/slides.min.jquery3d36.js?ver=3.3.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/canvas/includes/js/feedback3d36.js?ver=3.3.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/canvas/includes/js/general3d36.js?ver=3.3.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../xmlrpc0db0.xml?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://llun.in.th/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Old Snakey' href='../old-snakey/index.html' />
+<link rel='next' title='concat กับ push' href='../concat-&#xe0;&#xb8;&#x81;&#xe0;&#xb8;&#xb1;&#xe0;&#xb8;&#x9a;-push/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='http://wp.me/pWUk2-66' />
+
+<!-- ItsAbhik.com Facebook OpenGraph and Schema Microdata Generator Start -->
+<meta property="og:title" content="ECMAScript3 ตอนที่ 3" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="แนท (/næt/)" />
+<meta property="og:description" content="ไม่ได้เขียนนานเนื่องจากความขี้เกียจ - - เลยทิ้งมันไว้ซะนานขนาดนี้ วันนี้ก็เป็นโอกาสดีที่ว่าง ก็เลยทำต่อซะหน่อยก่อนจะขี้เกียจอีก ฮะๆๆ (วันนี้อาจเขียนอะไรเมินๆ แต่ถ้ามีเวลามากกว่านี้จะมานั่งเกลาภาษาอีกที..." />
+<meta property="og:locale" content="en_US" />
+<meta property="fb:admins" content="" />
+<meta itemprop="name" content="ECMAScript3 ตอนที่ 3">
+<meta itemprop="description" content="ไม่ได้เขียนนานเนื่องจากความขี้เกียจ - - เลยทิ้งมันไว้ซะนานขนาดนี้ วันนี้ก็เป็นโอกาสดีที่ว่าง ก็เลยทำต่อซะหน่อยก่อนจะขี้เกียจอีก ฮะๆๆ (วันนี้อาจเขียนอะไรเมินๆ แต่ถ้ามีเวลามากกว่านี้จะมานั่งเกลาภาษาอีกที...">
+<meta itemprop="url" content="http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/">
+<!-- ItsAbhik.com Facebook OpenGraph and Schema Microdata Generator End -->
+
+<!-- Twitter @Anywhere Plus v2.0 by GeekRMX - http://www.ngeeks.com -->
+<script src="http://platform.twitter.com/anywhere.js?id=vWyrhNHf0VacEGLOdK13w&amp;v=1" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.anywhere(function (T) {
+// configure the @anywhere environment
+T.linkifyUsers();
+T.hovercards();
+});
+</script>
+<!-- /Twitter @Anywhere Plus -->
+
+<!-- Theme version -->
+<meta name="generator" content="Canvas 4.7.4" />
+<meta name="generator" content="WooFramework 5.0.3" />
+
+<!-- Woo Custom Styling -->
+<style type="text/css">
+#logo .site-title, #logo .site-description { display:block; }
+body {background-color:#ccf3ff;background-repeat:no-repeat;background-position:top center;border-top:2px solid #000000;}
+#header {background-repeat:no-repeat;background-position:top center;margin-top:0px;margin-bottom:0px;border:0px solid ;}
+#logo .site-title a {font:normal 40px/1em Georgia, serif;color:#222222;}
+#logo .site-description {font:italic 14px/1em Georgia, serif;color:#999999;}
+#wrapper {padding-left:20px; padding-right:20px;background-color:#ffffff;border-top:2px solid #dbdbdb;border-bottom:2px solid #dbdbdb;border-left:2px solid #dbdbdb;border-right:2px solid #dbdbdb;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;box-shadow: 0px 1px 5px rgba(0,0,0,.3);-moz-box-shadow: 0px 1px 5px rgba(0,0,0,.3);-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.3);}
+body, p { font:normal 14px/1.5em Arial, sans-serif;color:#555555; }
+h1 { font:normal 28px/1.5em Georgia, serif;color:#222222; }h2 { font:normal 24px/1.5em Georgia, serif;color:#222222; }h3 { font:normal 20px/1.5em Georgia, serif;color:#222222; }h4 { font:normal 16px/1.5em Georgia, serif;color:#222222; }h5 { font:normal 14px/1.5em Georgia, serif;color:#222222; }h6 { font:normal 12px/1.5em Georgia, serif;color:#222222; }
+.post .title, .page .title, .post .title a:link, .post .title a:visited, .page .title a:link, .page .title a:visited {font:bold 24px/1.2em Arial, sans-serif;color:#222222;}
+.post-meta { font:normal 11px/1.5em 'PT Serif', arial, sans-serif;color:#868686; }
+.entry, .entry p{ font:normal 16px/1.5em 'PT Serif', arial, sans-serif;color:#555555; }
+.post-more {font:normal 12px/1.5em Arial, sans-serif;color:#868686;border-top:4px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+#post-author, #connect {border-top:1px solid #e6e6e6;border-bottom:4px solid #e6e6e6;background-color:#fafafa}
+.nav-entries, .wp-pagenavi, .woo-pagination {border-top:1px solid #e6e6e6;border-bottom:4px solid #e6e6e6; padding: 12px 0px; }
+.nav-entries a, .wp-pagenavi a:link, .wp-pagenavi a:visited, .wp-pagenavi .current, .wp-pagenavi .on, .wp-pagenavi a:hover, .wp-pagenavi span.extend, .wp-pagenavi span.pages, .woo-pagination { font:italic 12px/1em 'PT Serif', arial, sans-serif;color:#777777; }
+.wp-pagenavi a:link, .wp-pagenavi a:visited, .woo-pagination a, .woo-pagination a:hover, .wp-pagenavi span.extend, .wp-pagenavi span.pages, .wp-pagenavi span.current {color:#777777!important}
+.widget h3 {font:bold 14px/1.5em PT Serif;color:#555555;border-bottom:3px solid #e6e6e6;}
+.widget_recent_comments li, #twitter li { border-color: #e6e6e6;}
+.widget p, .widget .textwidget { font:normal 12px/1.5em Arial, sans-serif;color:#555555; }
+.widget {font:normal 12px/1.5em Arial, sans-serif;color:#555555;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
+#tabs .inside li a { font:bold 12px/1.5em 'PT Serif', arial, sans-serif;color:#555555; }
+#tabs .inside li span.meta, #tabs ul.wooTabs li a { font:normal 11px/1.5em "Trebuchet MS", Tahoma, sans-serif;color:#777777; }
+.nav a, #navigation ul.rss a { font:normal 14px/1em Arial, sans-serif;color:#555555; }
+#navigation {border-top:1px solid #dbdbdb;border-bottom:4px solid #dbdbdb;border-left:0px solid #dbdbdb;border-right:0px solid #dbdbdb;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+#top .nav a { font:normal 14px/1em Arial, sans-serif;color:#ddd; }
+#footer, #footer p { font:italic 14px/1em 'PT Serif', arial, sans-serif;color:#777777; }
+#footer {border-top:4px solid #dbdbdb;border-bottom:0px solid ;border-left:0px solid ;border-right:0px solid ;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+.magazine #loopedSlider .content h2.title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.magazine #loopedSlider .content .excerpt p { font:normal 12px/1.5em Arial, sans-serif;color:#cccccc; }
+.business #loopedSlider .content h2.title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.business #loopedSlider .content p { font:normal 12px/1.5em Arial, sans-serif;color:#cccccc; }
+.archive_header { font:normal 18px/1em Arial, sans-serif;color:#555555;border-bottom:5px solid #e6e6e6;}
+</style>
+<!-- /Woo Custom Styling -->
+
+
+<!-- Google Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:r,b,i,bi" rel="stylesheet" type="text/css" />
+
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+<!-- Woo Shortcodes CSS -->
+<link href="../../../wp-content/themes/canvas/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="../../../wp-content/themes/canvas/custom.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="single single-post postid-378 single-format-standard unknown two-col-left width-940 two-col-left-940">
+<div id="wrapper">        
+	    
+	<div id="header" class="col-full">
+ 		
+		       
+		<div id="logo">
+		<span class="site-title"><a href="../../../index.html">แนท (/næt/)</a></span>
+<span class="site-description">/īm/ /ə/ /prōgræmər/</span>
+		</div><!-- /#logo -->
+	       
+		       
+	</div><!-- /#header -->
+		<div id="navigation" class="col-full">
+				<ul id="main-nav" class="nav fl"><li id="menu-item-2593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2593"><a href="../../../index.html">/hoʊm/</a></li>
+<li id="menu-item-2592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2592"><a href="http://en.llun.in.th/">/ˈɪŋ(ɡ)lɪʃ/</a></li>
+<li id="menu-item-2144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2144"><a href="../../../gallery/index.html">/gæləri:/</a></li>
+<li id="menu-item-2145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2145"><a href="http://game.llun.in.th/">/geim/</a></li>
+<li id="menu-item-2142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2142"><a href="../../../library/index.html">/ˈlʌɪbrəri/</a></li>
+<li id="menu-item-2143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2143"><a href="../../../want/index.html">/wɔnt/</a></li>
+</ul>	
+	</div><!-- /#navigation -->
+
+       
+    <!-- #content Starts -->
+	    <div id="content" class="col-full">
+    
+    	<div id="main-sidebar-container">    
+
+            <!-- #main Starts -->
+                        <div id="main">                       
+<div class="post-378 post type-post status-publish format-standard hentry category-programming tag-actionscript tag-adobe-flex tag-ecmascript-3 tag-javascript">
+<h1 class="title">ECMAScript3 ตอนที่ 3</h1><div class="post-meta"><span class="small">By</span> <span class="author vcard"><span class="fn"><a href="../../../author/llun/index.html" title="Posts by llun" rel="author">llun</a></span></span> <span class="small">on</span> <abbr class="date time published" title="2008-06-08T00:01:32+0000">June 8, 2008</abbr>  <span class="small">in</span> <span class="categories"><a href="../../../category/programming/index.html" title="View all posts in ภาษา">ภาษา</a></span>   </div>
+	<div class="entry">
+	    <p>ไม่ได้เขียนนานเนื่องจากความขี้เกียจ &#8211; -&#8221; เลยทิ้งมันไว้ซะนานขนาดนี้ วันนี้ก็เป็นโอกาสดีที่ว่าง ก็เลยทำต่อซะหน่อยก่อนจะขี้เกียจอีก ฮะๆๆ (วันนี้อาจเขียนอะไรเมินๆ แต่ถ้ามีเวลามากกว่านี้จะมานั่งเกลาภาษาอีกที ><")</p>
+<h2>Primitive และ Reference Values</h2>
+<p>ใน ECMAScript ตัวแปรสามารถเก็บข้อมูลได้สองแบบคือแบบ Primitive กับ Reverence</p>
+<ul>
+<li>Primitive คือ ข้อมูลพื้นฐานต่างๆ ได้แก่ Undefined, Null, Boolean, String และ Numberโดยจะเก็บอยู่ใน Stack และสามารถเข้าถึงผ่านชื่อตัวแปรได้โดยตรง</li>
+<li>Reference คือ ข้อมูลที่ถูกเก็บไว้ใน Heap โดยตัวแปรจะเก็บเพียงแค่ตำแหน่งของวัตถุก้อนนั้นเท่านั้น</li>
+</ul>
+<p>เมื่อมีการกำหนดค่าให้กับตัวแปร ตัวแปลง ECMAScript ก็จะเอาค่ามาดูว่าเป็นประเภทใดระหว่าง Primitive หรือ Reference ถ้าเป็น Primitive ก็จะเอาไปเก็บไว้ใน Stack ที่ทำอย่างนี้เพราะว่าตัวแปรแบบ Primitive จะมีขนาดที่คงที่ ทำให้รู้ได้ว่าจะใช้พื้นที่เท่าไหร่ใน Stack เมื่อคำนวนแล้วนำไปเก็บใน Stack แล้วจะสามารถหาตำแหน่งได้อย่างเร็ว<br />
+สำหรับตัวแปรที่เป็น Reference ตำแหน่งจะเก็บอยู่ใน Stack แต่ข้อมูลจะเก็บอยู่ใน Heap เพื่อไม่ให้เวลาในการหาตัวแปรใน Stack นั้นลดลง<br />
+<span id="more-378"></span></p>
+<h3>Primitive type</h3>
+<p>ใน ECMA-262 กำหนดไว้ว่า Type คือ ชุดของข้อมูล และ Primitive type แต่ละอย่างก็จะมีการระบุขนาดของข้อมูลและประเภทของมันด้วยว่าตัวแปรตัวนี้คืออะไร โดยหากต้องการดูก็สามารถดูได้ผ่าน คำสั่ง typeof</p>
+<h4>Type of</h4>
+<p>Type of ต้องการ parameter เพียงตัวเดียวคือ ตัวแปร หรือ ค่าที่ต้องการตรวจสอบเช่น</p>
+<pre>
+<code>
+var sTemp = "test String"
+alert(typeof sTemp) //outputs "string"
+alert(typeof 95) //outputs "number"
+</code>
+</pre>
+<p>สำหรับผลที่ได้เมื่อลองกับตัวแปรประเภทต่างๆ คือ</p>
+<ul>
+<li>&#8220;undefined&#8221; สำหรับตัวแปรประเภทที่ยังไม่เคยกำหนดค่ามาก่อน(Undefined)</li>
+<li>&#8220;boolean&#8221; สำหรับตัวแปรประเภท ถูก หรือ ผิด(boolean)</li>
+<li>&#8220;number&#8221; สำหรับตัวแปรประเภทที่เป็นตัวเลข</li>
+<li>&#8220;string&#8221; สำหรับตัวแปรที่เป็นสายอักขระ</li>
+<li>&#8220;object&#8221; สำหรับตัวแปรประเภท null หรือ reference object</li>
+</ul>
+<blockquote><p>
+สำหรับ null ที่ให้ผลออกมาเป็น object เพราะการ implement ในจาวาสคริปส์รุ่นก่อน ซึ่งถือว่าเป็นที่ว่างเตรียมไว้สำหรับ object แต่ในทางเทคนิคแล้ว null ถือว่าเป็น primitive type อย่างหนึ่ง
+</p></blockquote>
+<h4>Undefined</h4>
+<p>ตัวแปรประเภท Undefined คือตัวแปรที่ไม่เคยกำหนดค่ามาก่อนอย่างที่เขียนไปแล้วใน Type of เช่น<br />
+<code><br />
+var oTemp<br />
+</code><br />
+ตัวแปร oTemp ถูกประกาศขึ้นมาลอยๆ โดยที่ยังไม่มีการกำหนดค่าใดๆ ลงไปให้ เมื่อลองเปรียบเทียบตัวแปรนี้กับคำว่า  undefined ผลที่ได้คือจริงเสมอ เช่น</p>
+<pre>
+<code>
+var oTemp
+alert(oTemp == undefined)
+</code>
+</pre>
+<p>นอกจากตัวแปรที่ไม่ได้กำหนดค่าแล้ว ตัวแปรที่ยังไม่เคยประกาศมาก่อนหากลองทดสอบดูก็จะได้ค่าเป็น undefined ด้วยเช่นกัน เช่น</p>
+<pre>
+<code>
+var oTemp
+
+alert(oTemp) //output: undefined
+alert(oTemp2) //output: undefined
+</code>
+</pre>
+<p>แต่จะไม่สามารถเอาตัวแปรที่ยังไม่เคยประกาศใช้กับคำสั่งอื่นได้ เช่น</p>
+<pre>
+<code>
+alert(oTemp2 == undefined) //causes error
+</code>
+</pre>
+<p>นอกจากนี้ยังสามารถใช้ตรวจสอบกับ ฟังก์ชั่น ที่ไม่ให้ผลลัพธ์กลับมาได้ด้วยเช่น</p>
+<pre>
+<code>
+function testFunc() {
+}
+
+alert(testFunct() == undefined) //outputs "true"
+</code>
+</pre>
+<h4>Null</h4>
+<p>Null และ Undefined นั้นมีลักษณะเหมือนกันเพราะ Undefined ถือว่าเป็น Null อย่างหนึ่งโดยหากเปรียบเทียบกันแล้วจะได้ค่าเป็นจริงออกมา</p>
+<pre>
+<code>
+alert(null == undefined) //outputs "true"
+</code>
+</pre>
+<p>แต่ทั้งสองค่านั้นเกิดต่างกัน undefined จะเกิดกับตัวแปรที่ยังไม่ได้กำหนดค่า แต่ null จะเกิดเมื่อตัวแปรนั้นเป็น object และไม่มีอยู่จริงแล้ว (เมื่อใช้ typeof กับ null จึงให้ค่ากลับมาเป็น object) เช่น ฟังก์ชั่นที่ต้องคืนวัตถุออกมาเป็น object ออกมาแต่ไม่คืนอะไรออกมาเลย เมื่อทดสอบแล้วจะได้ค่าออกมาเป็น null ไม่ไช่ undefined เหมือนตัวอย่างสุดท้ายของ undefined</p>
+<h4>Boolean</h4>
+<p>Boolean คือตัวแปรทางตรรกะพื้นฐานมีอยู่เพียงสองค่าเท่านั้นคือ จริง(true) กับ เท็จ(false) แต่ค่าเท็จนั้นจะไม่เท่ากับ 0 ยกเว้นถ้าเอา 0 มาใส่ให้ตัวแปรประเภทนี้จะถูกแปลงเป็นเท็จให้เพื่อความปลอดภัย</p>
+<pre>
+<code>
+var bFound = true
+var bLost = false
+</code>
+</pre>
+<h4>Number</h4>
+<p>Number ใน ECMAScript สามารถเป็นได้ทั้ง 32-bit Integer และ 64-bit Floatig point เช่น</p>
+<pre>
+<code>
+var iNum = 55
+</code>
+</pre>
+<p>และหากต้องการใส่เป็นเลขฐานแปดสามารถทำได้โดยกำหนดเลขหลักแรกเป็นศูนย์และเลขหลักถัดไปเป็นเลขในเลขฐานแปด (0-7) เช่น</p>
+<pre>
+<code>
+var iNum = 070 //56 in decimal
+</code>
+</pre>
+<p>และหากต้องการกำหนดเป็นเลขฐานสิบหกก็สามารถทำได้โดยการใส่ 0x นำหน้าตัวเลขฐานสิบหก เช่น</p>
+<pre>
+<code>
+var iNum = 0x1f //31 in decimal
+var iNum2 = 0xAB //171 in decimal
+</code>
+</pre>
+<p>แม้ตัวเลขที่ใส่เข้าไปจะไม่ไช่เลขฐานสิบแต่ว่าเมื่อนำไปใช้คำนวนต่างๆ เลขเหล่านั้นจะถูกคำนวนในฐานสิบ<br />
+สำหรับการประกาศเลขแบบ Floating-point ก็ใส่ . แล้วตำแหน่งทศนิยมเข้าไปโดยตัวเลขเหล่านี้จะถูกเก็บเป็น String จนกว่าจะมีการนำไปใช้คำนวน เช่น</p>
+<pre>
+<code>
+var fNum = 5.0
+</code>
+</pre>
+<p>และหากเลขทศนิยมมีหลักมาก สามารถใช้สัญลักษณ์ e หรือ E เพื่อบอกจำนวนทศนิยมได้ โดยเลขหลัง e คือจำนวนเท่าของสิบ เช่น</p>
+<pre>
+<code>
+var fNum = 3.125e7 //3.125x10<sup>7</sup>
+var fNum2 = 3.125e-7 //3.125x10<sup>-7</sup>
+</code>
+</pre>
+<p>*ตัวเลขทศนิยมใน ECMAScript3 จะถูกเก็บแบบ 64-bit IEEE 754 โดยสามารถเก็บเลขได้ยาว 17 หลัก หากยาวกว่านั้นจะถูกตัด ทำให้อาจเกิดข้อผิดพลาดในตัวเลขที่มีขนาดน้อยมากๆ ได้<br />
+ตัวแปรประเภท Number ยังมีค่าพิเศษต่างๆ อีกเล็กน้อย สองตัวแรกคือ Number.MAX_VALUE และ Number.MIN_VALUE ตัวเลขที่ได้จากการคำนวนต่างๆ ต้องอยู่ภายในขอบเขตของค่าสองค่านี้เท่านั้นเพื่อนำไปคำนวนต่อได้ หาก ตัวเลขที่คำนวนออกมามีค่ามากกว่า Number.MAX_VALUE ผลลัพธ์ที่ได้คือ Number.POSITIVE_INFINITY ตรงกันข้ามหากน้อยกว่า Number.MIN_VALUE ก็จะได้เป็น Number.NEGATIVE_INFINITY ออกมา โดยตัวเลขเหล่านี้จะไม่สามารถนำไปคำนวนต่อได้อีก<br />
+เนื่องจากตัวเลขใน ECMAScript มีขอบเขตจึงมีการกำหนดฟังก์ชั่นขึ้นมาอีกอย่างคือ isFinite() เพื่อตรวจดูว่าตัวเลขเกินขอบเขตหรือยังเช่น</p>
+<pre>
+<code>
+var iResult = iNum * some_really_large_number
+if (isFinite(iResult)) {
+  alert("Number is finite.")
+} else {
+  alert("Number is infinite.")
+}
+</code>
+</pre>
+<p>นอกจากนี้ยังมีค่าพิเศษอีกค่า นั่นคือ NaN โดยเป็นตัวย่อมาจากคำว่า &#8220;Not a Number&#8221; ซึ่งเกิดจากเมื่อมีการแปลงค่าจากตัวแปรอื่นมาเป็น Number แล้วล้มเหลวเช่น แปลงคำว่า &#8220;blue&#8221; มาเป็นตัวเลข และค่านี้เหมือนค่า infinity คือไม่สามารถนำมาใช้คำนวนได้ และตัวมันไม่เท่ากับตัวมันเองด้วย เช่น</p>
+<pre>
+<code>
+alert(NaN == NaN) //outputs false
+</code>
+</pre>
+<p>ดังนั้นหากจะตรวจสอบว่าเป็นค่า NaN หรือไม่ควรใช้ฟังก์ชั่น isNaN() ในการตรวจสอบเช่น</p>
+<pre>
+<code>
+alert(isNaN("blue")) // outputs true
+alert(isNaN("123")) // outputs false
+</code>
+</pre>
+<h4>String</h4>
+<p>String ถือว่าเป็น primitive type ตัวเดียวที่แปลกกว่าคนอื่นคือมีขนาดไม่แน่นอน โดยตัวอักษรในตัวแปรนี้จะเก็บแบบ 16-bit unicode และสามารถกำหนดให้ตัวแปรได้โดยใช้เครื่องหมาย &#8221; หรือ &#8216; ซึ่งในจาวาการกำหนด String จะใช้ &#8221; ส่วน &#8216; จะใช้สำหรับกำหนดประเภท Character แต่ ECMAScript ไม่มี Character ดังนั้นทั้งสองอย่างจึงใช้กำหนด String เหมือนกันเช่น</p>
+<pre>
+<code>
+var sColor1 = "blue"
+var sColor2 = 'red'
+</code>
+</pre>
+<p>และยังมีตัวอักษรพิเศษอื่นๆ อีกเหมือนในภาษา Java,C หรือ perl คือ</p>
+<ul>
+<li>\n ใช้สำหรับขึ้นบรรทัดใหม่</li>
+<li>\t ใช้สำหรับ tab</li>
+<li>\b ใช้สำหรับ backspace</li>
+<li>\r ขึ้นบรรทัดใหม่แต่ไม่เลื่อนไปต้นบรรทัด</li>
+<li>\f เลื่อนไปต้นบรรทัด(นึกถึงเครื่องพิมพ์ดีดไว้)</li>
+<li>\\ เครื่องหมาย \</li>
+<li>\&#8217; เครื่องหมาย &#8216;</li>
+<li>\&#8221; เครื่องหมาย &#8220;</li>
+<li>\0nnn ตัวอักษรรหัส nnn เป็นเลขฐานแปด</li>
+<li>\xnn ตัวอักษรรหัส nn เป็นเลขฐานสิบหก</li>
+<li>\unnnn ตัวอักษรรหัส unicode ใช้เลขฐานสิบหก</li>
+</ul>
+<h3>การแปลงค่า</h3>
+<p>ลักษณะอย่างหนึ่งที่สำคัญสำหรับภาษาโปรแกรมต่างๆ คือการแปลงค่าระหว่างตัวแปรต่างๆ โดย ECMAScript ก็มีฟังก์ชั่นต่างๆ ให้เรียกใช้เพื่อแปลงตัวแปรต่างๆ คือ</p>
+<h4>การแปลงค่าเป็น String</h4>
+<p>สิ่งที่น่าสนใจอย่างหนึ่งในตัวแปรประเภท primitive คือมันเป็นเหมือน object เทียม ดังนั้นมันจึงมี property และฟังก์ชั่นต่างๆ เหมือน object เช่น</p>
+<pre>
+<code>
+var sColor = "blue"
+alert(sColor.length) //outputs 4
+</code>
+</pre>
+<p>แม้ตัวแปร sColor จะเป็น String ซึ่งเป็น primitive type แต่ก็มี property เหมือน object คือ length โดยสามารถเอาค่าออกมาได้คือ 4 ซึ่งก็คือจำนวนตัวอักษรที่เก็บอยู่ใน String นี้นั่นเอง และนอกจากนี้ ทุก primitive type จะมีฟังก์ชั่นพื้นฐานอย่างนึงเหมือนกันหมดนั่นคือ toString() เพื่อใช้แปลงค่าเหล่านั้นเป็นประเภท String นั่นเอง<br />
+*อาจจะดูแปลกที่ String เองก็มีฟังก์ชั่น toString แต่ ECMAScript กำหนดไว้ว่า object ทุกอย่างแม้แต่ object เทียมต้องมีฟังก์ชั่น toString() เหมือนกันหมด คล้ายกับภาษาจาวา สำหรับใน Actionscript ก็มีเหมือนกัน สำหรับรายละเอียดแล้วจะเล่าอีกที แต่มีผลพอสมควรเมื่อใช้กับ Dictionary ใน Actionscript<br />
+การแปลง Boolean เป็น String จะได้ค่าออกมาสองอย่างคือ &#8220;true&#8221; หรือ &#8220;false&#8221; ตามแต่ค่าในตัวแปรขณะนั้น สำหรับ Number นั้นมีการแปลงอยู่สองแบบคือทั่วไป และ ใช้ฐานกำหนด โดยการแปลงแบบทั่วไปก็จะเปลี่ยนจาก ตัวเลขเป็น String ตามที่กำหนดใส่ตัวแปรเช่น</p>
+<pre>
+<code>
+var iNum = 10
+var fNum = 10.0
+alert(iNum.toString()) //outputs "10"
+alert(fNum.toString()) //outputs "10"
+</code>
+</pre>
+<p>ตัวเลขทั้งหมดเมื่อใช้ toString() แล้วจะถูกแปลงเป็นเลขฐานสิบทั้งหมดไม่ว่าเมื่อตอนกำหนดค่าจะกำหนดด้วยฐานไหนก็ตาม แต่หากมีการกำหนดฐานเข้าไป String ที่ได้ก็จะถูกแปลงเป็นเลขฐานนั้นแต่ไม่มีสัญลักษณ์นำหน้าเหมือนตอนใส่เข้าไป เช่น</p>
+<pre>
+<code>
+var iNum = 10
+alert(iNum.toString(2)) //outputs "1010"
+alert(iNum.toString(8)) //outputs "12"
+alert(iNum.toString(16)) //output "A"
+</code>
+</pre>
+<h4>การแปลงค่าเป็นตัวเลข</h4>
+<p>ECMAScript กำหนดฟังก์ชั่นมาสองอย่างสำหรับแปลงค่าเป็นตัวเลขคือ parseInt() และ parseFloat() โดยจะสามารถใช้ได้กับตัวแปรที่เป็น String เท่านั้นหากใช้กับตัวแปรประเภทอื่นค่าที่ได้ออกมาคือ NaN เสมอ<br />
+parseInt() ทำงานโดยจะไล่ทดสอบตัวอักษรทีละตัวใน String ว่าเป็นตัวเลขหรือไม่เมื่อเป็นก็แปลงแล้วเก็บไว้แล้วไปตัวถัดไป ทำอย่างนี้ไปเรื่อยๆ จนกว่าจะเจอตัวอักษรที่ไม่ไช่ตัวเลข ดังนั้นหาก String มีค่าเท่ากับ &#8220;1234blue&#8221; เมื่อใช้ parseInt() แปลงค่าเป็นตัวเลข สิ่งที่ได้คือเลข 1234 นอกจากนี้ยังสามารถแปลง String ที่อยู่ในรูปฐานต่างๆ ได้อีกด้วยเช่น &#8220;0xA&#8221; เมื่อใช้ parseInt() จะได้ค่าออกมาเป็น 10 แต่หากใช้กับทศนิยม parseInt จะไปหยุดอยู่ที่ . ดังนั้นหาก String มีค่าเป็น &#8220;22.5&#8243; เมื่อใช้ parseInt() แปลงออกมาจะได้แค่ 22 เช่น</p>
+<pre>
+<code>
+var iNum1 = parseInt("1234blue") //returns 1234
+var iNum2 = parseInt("0xA") //returns 10
+var iNum3 = parseInt("22.5") //returns 22
+var iNum4 = parseInt("blue") //returns NaN
+</code>
+</pre>
+<p>parseInt() ยังสามารถแปลงโดยการกำหนดฐานให้กับฟังก์ชั่นได้ เช่นหากต้องการแปลง String เป็นเลขฐานสองก็จะกำหนดไปใน parameter ตัวที่สองว่า 2</p>
+<pre>
+<code>
+var iNum1 = parseInt("AF", 16 ) //returns 175
+var iNum2 = parseInt("10", 2 ) //returns 2
+var iNum3 = parseInt("10", 8 ) //returns 8
+var iNum4 = parseInt("10", 10 ) //returns 10
+</code>
+</pre>
+<p>ถ้า String มีเลข 0 นำหน้าเมื่อแปลงค่าเลขที่ได้จะเหมือนแปลงจากเลขฐานแปด ดังนั้นควรกำหนดฐานด้วยทุกครั้งเช่น</p>
+<pre>
+<code>
+var iNum1 = parseInt("010") //returns 8
+var iNum2 = parseInt("010", 8 ) //returns 8
+var iNum3 = parseInt("010", 10 ) //returns 10
+</code>
+</pre>
+<p>สำหรับ parseFloat() ก็ทำงานคล้ายกับ parseInt() เพียงแต่เมื่อเจอ . ครั้งแรก parseFloat() จะไม่หยุดแต่จะทำงานต่อไปเรื่อยๆ จนกว่าจะเจอตัวอักษรหรือสัญลักษณ์ที่ไม่ไช่ตัวเลขครั้งที่สองเท่านั้น และ parseFloat() จะแปลงเลขฐานแปดต่างจาก parseInt() คือ parseFloat() จะไม่สนใจเลข 0 ตัวแรกเหมือน parseInt() ดังนั้นหากใช้ parseFloat() แปลงเลข 010 ค่าที่ได้ออกมาจะเท่ากับ 10 อีกอย่างคือ parseFloat() ไม่สามารถแปลงเลขฐานต่างๆ เหมือน parseInt() ได้อีกด้วยเช่น &#8220;0xA&#8221; parseFloat() จะให้ผลลัพธ์ออกมาเป็น NaN<br />
+ตัวอย่างการใช้ parseFloat()</p>
+<pre>
+<code>
+var fNum1 = parseFloat("1234blue") //returns 1234.0
+var fNum2 = parseFloat("0xA") //returns NaN
+var fNum3 = parseFloat("22.5") //returns 22.5
+var fNum4 = parseFloat("22.34.5") //returns 22.34
+var fNum5 = parseFloat("0908") //returns 908
+var fNum6 = parseFloat("blue") //returns NaN
+</code>
+</pre>
+<h4>การแปลงประเภทตัวแปร</h4>
+<p>การแปลงประเภทตัวแปรใน ECMAScript สามารถทำได้สามอย่างคือ</p>
+<ul>
+<li>Boolean(value)</li>
+<li>Number(value)</li>
+<li>String(value)</li>
+</ul>
+<p>การแปลงเป็น Boolean จะให้ค่าออกมาเป็น true เมื่อตัวแปรที่เป็น String มีตัวอักษรอย่างน้อย 1 ตัว, ตัวเลขที่ไม่ไช่ 0 หรือ วัตถุ และจะเป็น false เมื่อเป็น String ว่าง, เลข 0, undefined และ null เช่น</p>
+<pre>
+<code>
+var b1 = Boolean("") //false
+var b2 = Boolean("hi") //true
+var b3 = Boolean(100) //true
+var b4 = Boolean(null) //false
+var b5 = Boolean(0) //false
+var b6 = Boolean(new Object()) //true
+</code>
+</pre>
+<p>์การแปลงเป็นตัวเลขโดยใช้ Number() คล้ายกับ parseInt และ parseFloat เพียงแต่จะไม่ได้สนใจทีละส่วนแต่จะดูทั้งหมดดังนั้น หาก String มีค่าเป็น &#8220;4.5.6&#8243; จะไม่ได้ตัวเลขออกมาเป็น 4.5 แต่จะได้ค่าเป็น NaN แทน โดยผลลัพธ์จากการแปลงค่าตัวแปรประเภทต่างๆ ดูได้จากตาราง</p>
+<ul>
+<li>Number(false) : 0</li>
+<li>Number(true) : 1</li>
+<li>Number(undefined) : NaN</li>
+<li>Number(null) : 0</li>
+<li>Number(&#8220;5.5&#8243;) : 5.5</li>
+<li>Number(&#8220;56&#8243;) : 56</li>
+<li>Number(&#8220;5.6.7&#8243;) : NaN</li>
+<li>Number(new Object()) : NaN</li>
+<li>Number(100) : 100</li>
+</ul>
+<p>การแปลงค่าเป็น String โดยใช้ String(value) นั้นเหมือนกับเรียก object.toString() ทั่วไป</p>
+<p>เห้อยาว กว่าจะเขียนจบตาแทบปิด แต่ยังเหลืออีกหลายเรื่องนัก ไว้คราวหน้าละกัน T T&#8221; ราตรีสวัสดิ์</p>
+<div class="snap_nopreview sharing robots-nocontent"><ul><li class="sharing_label">Share this:</li><li class="share-twitter share-regular"><div class="twitter_button"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fllun.in.th%2F2008%2F06%2Fecmascript3-%25e0%25b8%2595%25e0%25b8%25ad%25e0%25b8%2599%25e0%25b8%2597%25e0%25b8%25b5%25e0%25b9%2588-3%2F&amp;counturl=http%3A%2F%2Fllun.in.th%2F2008%2F06%2Fecmascript3-%25e0%25b8%2595%25e0%25b8%25ad%25e0%25b8%2599%25e0%25b8%2597%25e0%25b8%25b5%25e0%25b9%2588-3%2F&amp;count=horizontal&amp;text=ECMAScript3%20%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%203:" style="width:97px; height:20px;"></iframe></div></li><li class="share-linkedin share-regular"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><div class="linkedin_button"><script type="in/share" data-url="http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/" data-counter="right"></script></div></li><li class="share-facebook share-regular"><div class="facebook_button"><a name="fb_share" rel="nofollow" type="button" share_url="http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fllun.in.th%2F2008%2F06%2Fecmascript3-%25e0%25b8%2595%25e0%25b8%25ad%25e0%25b8%2599%25e0%25b8%2597%25e0%25b8%25b5%25e0%25b9%2588-3%2F&amp;t=ECMAScript3%20%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%203">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div></li><li class="share-google-plus-1 share-regular"><div class="googleplus1_button"><g:plusone size="small" callback="sharing_plusone" href="index.html"></g:plusone></div></li><li class="share-end"></li></ul><div class="sharing-clear"></div></div>	</div><!-- /.entry -->
+	<div class="fix"></div>
+<div id="post-author">
+	<div class="profile-image"><img alt='' src='http://1.gravatar.com/avatar/3a1a394dd313d10d86e67b2f93959377?s=80&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D80&amp;r=G' class='avatar avatar-80 photo' height='80' width='80' /></div>
+	<div class="profile-content">
+		<h4>About llun</h4>
+		Just a programmer				<div class="profile-link">
+			<a href="../../../author/llun/index.html">
+				View all posts by llun <span class="meta-nav">&rarr;</span>			</a>
+		</div><!-- #profile-link	-->
+			</div>
+	<div class="fix"></div>
+</div>
+<div class="post-utility"><p class="tags"><a href="../../../tag/actionscript/index.html" rel="tag">Actionscript</a>, <a href="../../../tag/adobe-flex/index.html" rel="tag">Adobe Flex</a>, <a href="../../../tag/ecmascript-3/index.html" rel="tag">Ecmascript 3</a>, <a href="../../../tag/javascript/index.html" rel="tag">Javascript</a></p> </div>
+</div><!-- /.post -->
+	        <div class="post-entries">
+	            <div class="nav-prev fl"><a href="../old-snakey/index.html" rel="prev"><span class="meta-nav">&larr;</span> Old Snakey</a></div>
+	            <div class="nav-next fr"><a href="../concat-&#xe0;&#xb8;&#x81;&#xe0;&#xb8;&#xb1;&#xe0;&#xb8;&#x9a;-push/index.html" rel="next">concat กับ push <span class="meta-nav">&rarr;</span></a></div>
+	            <div class="fix"></div>
+	        </div>	
+	
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-304">
+        <div id="dsq-comment-header-304" class="dsq-comment-header">
+            <cite id="dsq-cite-304">
+http://llun.info                <span id="dsq-author-user-304">llun</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-304" class="dsq-comment-body">
+            <div id="dsq-comment-message-304" class="dsq-comment-message"><p>@ผ่านมา จริงๆ ผมลงไว้ตั้งแต่ตอนแรกแล้วหละ แต่ไม่ได้ทำเป็นลิงค์ให้เท่านั้นเอง ที่ <a href="http://llun.info/archives/317" rel="nofollow">http://llun.info/archives/317</a> ไว้ทำต่อแล้วเดี๊ยวใส่ไว้ทุกตอนละกัน</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-303">
+        <div id="dsq-comment-header-303" class="dsq-comment-header">
+            <cite id="dsq-cite-303">
+                <span id="dsq-author-user-303">ผ่านมา</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-303" class="dsq-comment-body">
+            <div id="dsq-comment-message-303" class="dsq-comment-message"><p>อืม พอดี ผ่านมาเห็นเว็บ พอดี ทำไมไม่ลง Credit ให้กับเจ้าของหนังสือหน่อยครับ แปลมา น่าจะให้เกียรติเจ้าของหนังสือด้วยนะครับ</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'index.html';
+    var disqus_identifier = '378%20http__/llun.info/indexe8d3.html?p=378';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'llun';
+    var disqus_title = "ECMAScript3 ตอนที่ 3";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            DISQUS.request.get('?cf_action=sync_comments&post_id=378');
+        });
+                    };
+    var facebookXdReceiverPath = '../../../wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/llun.in.th\/2008\/06\/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.72';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+     
+            </div><!-- /#main -->
+                
+            <div id="sidebar">
+	<div id="woo_search-4" class="widget widget_woo_search"><h3>Search</h3><div class="search_main">
+    <form method="get" class="searchform" action="http://llun.in.th/" >
+        <input type="text" class="field s" name="s" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+        <input type="image" src="../../../wp-content/themes/canvas/images/ico-search.png" alt="Search" class="submit" name="submit" />
+    </form>    
+    <div class="fix"></div>
+</div>
+</div><div id="woo_flickr-4" class="widget widget_woo_flickr"><h3>Photos on <span>flick<span>r</span></span></h3><div class="wrap">
+<div class="fix"></div><!--/.fix-->
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?layout=x&amp;count=9&amp;display=latest&amp;source=user&amp;user=50135936@N02&amp;size=s"></script>
+<div class="fix"></div><!--/.fix-->
+</div><!--/.wrap-->
+</div><div id="yarpp_widget-4" class="widget widget_yarpp_widget"><h3></h3>    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'llun';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+                        s.src = 'http' + '://' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<ol><li><a href="../../05/ecmascript2-part2/index.html" rel="bookmark">ECMAScript3 ตอนที่ 2</a></li><li><a href="../../05/ecmascript-262-edition-3-&#xe0;&#xb8;&#x95;&#xe0;&#xb8;&#xad;&#xe0;&#xb8;&#x99;&#xe0;&#xb9;&#x81;&#xe0;&#xb8;&#xa3;&#xe0;&#xb8;&#x81;/index.html" rel="bookmark">ECMAScript3 ตอนที่ 1</a></li><li><a href="../../../2007/04/openid-&#xe0;&#xb8;&#x95;&#xe0;&#xb8;&#xad;&#xe0;&#xb8;&#x99;&#xe0;&#xb8;&#x97;&#xe0;&#xb8;&#xb5;&#xe0;&#xb9;&#x88;-2/index.html" rel="bookmark">OpenID ตอนที่ 2</a></li><li><a href="../../../2007/10/openwrt-&#xe0;&#xb8;&#x95;&#xe0;&#xb8;&#xad;&#xe0;&#xb8;&#x99;&#xe0;&#xb8;&#x97;&#xe0;&#xb8;&#xb5;&#xe0;&#xb9;&#x88;-3/index.html" rel="bookmark">OpenWRT ตอนที่ 3</a></li></ol></div></div><!-- /#sidebar -->
+
+		</div><!-- /#main-sidebar-container -->         
+
+		
+    </div><!-- /#content -->
+	
+	<div id="footer" class="col-full">
+	
+		    
+	    
+		<div id="copyright" class="col-left">
+			<p>&copy; 2012 แนท (/næt/). All Rights Reserved. </p>		</div>
+		
+		<div id="credit" class="col-right">
+			<p>Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>. Designed by <a href="http://www.woothemes.com/" title="WooThemes"><img src="../../../wp-content/themes/canvas/images/woothemes.png" width="74" height="19" alt="Woo Themes" /></a></p>		</div>
+		
+	</div><!-- /#footer  -->
+	
+	    
+	
+	</div><!-- /#wrapper -->
+	
+	<div class="fix"></div><!--/.fix-->
+	
+	<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?aa&amp;ver=3.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/jetpack/modules/wpgroho3d36.js?ver=3.3.1'></script>
+	<div style="display:none">
+	<div class="grofile-hash-map-3a1a394dd313d10d86e67b2f93959377">
+	</div>
+	</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6918582-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/jetpack/modules/sharedaddy/sharingb3e8.js?ver=0.1'></script>
+	<script type="text/javascript" charset="utf-8">
+	function sharing_plusone( obj ) { 
+		jQuery.ajax( {
+			url: 'http://llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/?share=google-plus-1',
+			type: 'POST',
+			data: obj
+		} );
+	}
+	</script>
+	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+
+	<script src="http://stats.wordpress.com/e-201212.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:1.2.2',blog:'14039530',post:'378'});
+	var load_cmc = function(){linktracker_init(14039530,378,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>		</body>
+
+<!-- Mirrored from llun.in.th/2008/06/ecmascript3-%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-3/ by HTTrack Website Copier/3.x [XR&CO'2007], Fri, 23 Mar 2012 17:37:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

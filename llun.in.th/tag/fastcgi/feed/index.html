@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; fastcgi</title>
+	<atom:link href="http://llun.in.th/tag/fastcgi/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Redmine + Nginx</title>
+		<link>http://llun.in.th/2011/03/redmine-nginx/</link>
+		<comments>http://llun.in.th/2011/03/redmine-nginx/#comments</comments>
+		<pubDate>Thu, 24 Mar 2011 09:08:11 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[fastcgi]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[Redmine]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2149</guid>
+		<description><![CDATA[หลังจากใช้ Teambox มาได้ครึ่งปีและคอยตามอัพเกรดพบว่า Teambox นั้นยังไม่ Stable เท่าไหร่แถมทรัพยากรที่ใช้ก็มากพอดู เมื่อวานเลยมองหาทางเลือกอื่นอีกครั้งเพื่อเอา Teambox ออกจากระบบ เริ่มแรกคิดว่าจะย้ายไปใช้ Service นอกอย่าง Flow แต่คิดไปคิดมาทำไมต้องเสียตังด้วย เลยมาจบลงที่ Redmine นี่แหละ วิธีลง Redmine บน Nginx ถ้าค้นหาตัวไม่ส่วนใหญ่จะให้ใช้กับ Phusion Passenger™ ซึ่งถ้าเป็น Apache จะลงแล้วทำตามทันที แต่สำหรับ Nginx ความยากมันมีเพิ่มขึ้นมาเมื่อต้อง compile Nginx ใหม่เลยเปลี่ยนทางเลือกเป็น FastCGI แทน สำหรับสิ่งที่ต้องเตรียมลงก่อนล่วงหน้าคือ nginx, spawn-fcgi (ถ้าใช้ Debian 5.0 ต้องลงจาก lighttpd), redmine (จะใช้จาก apt หรือดาวโหลดมาขยายลงแฟ้มซักแฟ้มก็ได้) script สำหรับ start redmine ผ่าน spawn-fcgi ใน [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/03/redmine-nginx/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

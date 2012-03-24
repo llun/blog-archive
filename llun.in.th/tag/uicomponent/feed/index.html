@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; UIComponent</title>
+	<atom:link href="http://llun.in.th/tag/uicomponent/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>measure()</title>
+		<link>http://llun.in.th/2008/07/measure/</link>
+		<comments>http://llun.in.th/2008/07/measure/#comments</comments>
+		<pubDate>Tue, 08 Jul 2008 02:51:32 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[measure]]></category>
+		<category><![CDATA[UIComponent]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=460</guid>
+		<description><![CDATA[คราวที่แล้วเขียนไปแค่สี่ขั้นตอน แต่ถ้าใครลองโหลดไฟล์ที่ @iporsut แนบมาใน comment คงเห็นรายละเอียดที่มากกว่านั้นเยอะแยะเลย แต่ผมก็ได้แค่อ่านผ่านๆ นะ ยังไม่ได้ดูละเอียดเท่าไหร่ แหะๆ แต่วันนี้จะมาเขียนถึงขั้นลึกลับอีกขั้นนึงนั่นคือ measure() เพราะต้องใช้มันเข้าพอดี -_-&#8221; ปกติฟังก์ชั่นนี้จะไม่ค่อยต้องเขียนเองเท่าไหร่เพราะหน้าที่ของมันคือใช้บอกว่า component เรามีขนาดเท่าไหร่ แล้วให้ขั้นถัดไปคือ updateDisplayList เป็นคนวาด ซึ่งวิธีทำปกตินั้นก็ง่ายแสนง่ายคือเรียก component ลูกให้วัดค่าออกมาให้ แล้วก็จับมันบวกๆ ลบๆ กันแล้วส่งออกไป แต่มีปัญหากับผมอีกและ -_-&#8221; เพราะว่าถ้าหากเราตั้งขนาดของ component ลูกเป็น % แล้วหละก็มันก็มีบางอย่างที่คำนวนออกมาให้พลาดเหมือนกัน(จริงๆ ก็ไม่พลาดหรอกแต่ผลลัพธ์ที่ต้องการมันไม่ไช่อย่างนั้นหนะ) เช่น List ลองมาดูโจทย์ผมละกัน โจทย์ก็แสนจะง่ายดาย มี List ย่อยๆ หลายๆ List ที่แต่ละ List มีข้อมูลไม่เท่ากัน โดยต้องเอา List เหล่านั้นมารวมกันให้เป็น List ใหญ่ๆ ก้อนนึง อ๊ะ เหมือนธรรมดา ยังไม่หมดๆ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/measure/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>UIComponent</title>
+		<link>http://llun.in.th/2008/07/uicomponent/</link>
+		<comments>http://llun.in.th/2008/07/uicomponent/#comments</comments>
+		<pubDate>Tue, 01 Jul 2008 04:54:59 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[UIComponent]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=453</guid>
+		<description><![CDATA[ใน Flex เวลาจะใช้ชิ้นส่วนอะไรก็ตามชิ้นส่วนเหล่านั้นส่วนใหญ่จะมาจาก UIComponent ทั้งนั้น คราวนี้ก่อนที่มันจะวาดชิ้นส่วนขึ้นมาเป็นภาพมันดันมีขั้นตอนต่างๆ ที่คล้ายๆ Applet ซะนี่ลองดูลำดับตามด้านล่างละกัน Constructor CreateChildren CommitProperty UpdateDisplayList อาจจะมีมากกว่านี้แต่หลักๆ ที่จะเจอกันบ่อยๆ คือสี่ขั้นนี้แหละ เริ่มจาก Constructor ก่อนที่จะใช้กำหนดค่าเริ่มต้นต่างๆ ให้กับ Component อันนี้ก็ไม่ค่อยมีอะไร เพราะภาษาที่มีคลาสเกือบทุกภาษาก็คงมีเหมือนกัน ตัวถัดมาคือ CreateChildren จะถูกเรียกครั้งเดียวตอนที่เริ่มสร้าง Component โดยมีหน้าที่หลักๆ ก็คือเอาชิ้นส่วนย่อยๆ มาประกอบล่างเป็นชิ้นใหญ่ๆ เช่นฟอร์มที่ใช้ส่งข้อมูลต่างๆ ก็จะมีพวก Label, TextField, &#8230; ซึ่งจะไม่มีการเปลี่ยนแปลงรูปร่างหรือขนาดอะไรอีก เอามาใส่ในขั้นนี้ให้หมด รวมถึงตอนกำหนด Event ต่างๆ ให้กับมันด้วย CommitProperty เป็นขั้นที่เตรียมวาดขึ้นหน้าจอแล้ว จริงๆ มีขั้นก่อนหน้านี้เล็กๆ น้อยๆ พอสมควรพวก Measure&#8230; ทั้งหลายแหละ ที่เอาไว้บอกว่า Component นี้จะมีขนาดเท่าไหร่แน่เวลาเอาไปประกอบกับชิ้นส่วนอื่น ซึ่งถ้าหากอยากเพิ่มความเร็วขึ้นอีกอาจจะต้องไปเขียนเพิ่ม(แต่ผมขี้เกียจอะนะ ขอใช้พวก VBox, [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/uicomponent/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+	</channel>
+</rss>

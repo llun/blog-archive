@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; 64bit</title>
+	<atom:link href="http://llun.in.th/tag/64bit/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Node.JS on FreeBSD 64 bit</title>
+		<link>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/</link>
+		<comments>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/#comments</comments>
+		<pubDate>Fri, 13 May 2011 19:11:16 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[64bit]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[node.js]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2171</guid>
+		<description><![CDATA[เมื่อวานลงเครื่องให้น้องสำหรับลอง Node.js app ก็ดาวโหลดมาคอมไพล์ปกติดี ลองรัน node ปรากฏว่ามันค้างนิ่งๆ ก็คิดว่าปกติไม่ได้ทำอะไรต่อ จนมาวันนี้น้องทักว่ามันอาการไม่ปกติ เลยต้องมาหาวิธีลงใหม่ ขุดไปมาพบว่าเป็นเพราะ v8 ที่ทำให้ Node.js มีปัญหา วันนี้ก็เลยเอามาลองใหม่เริ่มจาก clone v8 มาก่อน ที่เลือก clone จาก git เพราะจะได้ switch branch สะดวกหลังจากได้ v8 มาก็ compile ออกมาเป็น library ก่อนที่จะ compile ได้ต้องติด scons ด้วยสำหรับ FreeBSD อยู่ใน /usr/ports/devel/scons compile เสร็จก็ copy library ไปที่ /usr/local/lib และดาวโหลด node.js และติดตั้ง compile node เสร็จก็ติดตั้ง จากนั้นก็ใช้ Node.js ได้ตามปกติ]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

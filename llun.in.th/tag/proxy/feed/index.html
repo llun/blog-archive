@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; proxy</title>
+	<atom:link href="http://llun.in.th/tag/proxy/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>SSH Tunneling via Apache</title>
+		<link>http://llun.in.th/2009/09/ssh-tunneling-via-apache/</link>
+		<comments>http://llun.in.th/2009/09/ssh-tunneling-via-apache/#comments</comments>
+		<pubDate>Fri, 25 Sep 2009 08:04:20 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[SSH]]></category>
+		<category><![CDATA[tunneling]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1282</guid>
+		<description><![CDATA[อุปกรณ์ที่มี Apache web server ที่ติด mod_proxy และ mod_proxy_connect หรือ Web proxy server อะไรก็ได้ที่รองรับคำสั่ง CONNECT Proxytunnel SSH client เริ่มจากตั้งค่าให้ Apache ก่อน โดยกำหนดให้ Apache เป็น Forward Proxy ServerName blah.com ProxyRequests On ProxyVia On AllowCONNECT 22 80 443 563 Order allow,deny Allow from all ProxyRequests เพื่อให้ Apache ทำตัวเป็น ForwardProxy เอา request เรียกไปที่เครื่องอื่นต่อได้ ProxyVia เพื่อให้ Apache แปะไปที่ request ที่เรียกต่อไปด้วยว่า [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/09/ssh-tunneling-via-apache/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>mod_proxy</title>
+		<link>http://llun.in.th/2008/08/mod_proxy/</link>
+		<comments>http://llun.in.th/2008/08/mod_proxy/#comments</comments>
+		<pubDate>Thu, 28 Aug 2008 03:05:18 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[proxy]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=577</guid>
+		<description><![CDATA[ทำไว้เมื่อสองหรือสามอาทิตย์ก่อนไม่แน่ใจแต่ไม่ได้จดไว้ เดี๊ยวลืมวันนี้ว่างๆ เลยจดไว้ซะหน่อย(ว่างจริงหรอฟะ) สำหรับปัญหาที่ทำให้ต้องติดก็คือ เวลามีคนมาโหลดไฟล์ใหญ่ๆ จากเซิร์ฟเวอร์มากๆ เนี๊ยะเว็บเซิร์ฟเวอร์ที่แสนดีอย่าง Apache มันก็จะอืดลงไปทันตาเห็น คือเข้าเว็บที่เป็น php ธรรมดากว่าจะประมวลผลแล้วส่งกลับมาต้องรอเป็นนาที ไม่รู้มันทำอะไรของมัน แต่จะทิ้งไว้ก็ใช่ที่ ฉะนั้นอย่ารอช้าเลย เอาพวกไฟล์ใหญ่ๆ เหล่านี้ย้ายไปให้ lighttpd ทำแทนดีกว่า มันตายไปตัวหลักก็ยังรอดด้วย(แต่เท่าที่เห็น มันไม่เคยตายเลยแฮะ ทนกว่า Apache อีก -_-&#8221;) อ้อสำหรับใครที่ยังไม่รู้ว่าผมทำอะไร ทำไมมันถึงมีไฟล์ขนาดใหญ่ จริงๆ แล้วเซิร์ฟเวอร์นี้มีโดเมนย่อยอยู่อันนึงไว้เป็นที่ดาวโหลดลินุกซ์(และอื่นๆ อีกมากมายสำหรับเขียนโปรแกรม) เก็บไว้อยู่ด้วย ใครอยากดูหรืออยากโหลดก็เข้าไปที่ http://mirror.nytes.net ได้หรืออยากให้เพิ่มอะไรที่ไม่เถื่อนก็บอกมาละกัน ถ้าพื้นที่ยังเพียงพอก็จะพยายามยัดเข้าไปให้ อ่าวบ่นเยอะและเขียนวิธีทำบ้างดีกว่า เริ่มจากติด lighttpd ก่อนโดยไปที่ /usr/port/www/lighttpd แล้วก็​ make install ธรรมดาอันนี้ไม่มีอะไรพิเศษ ไปที่ /usr/port/www/apache22 แล้ว make config จากนั้นเลือก mod_proxy, mod_proxy_connect และ mod_proxy_http เพิ่มแล้วก็เลือก [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/08/mod_proxy/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>วิธีติด Tor บน Ubuntu</title>
+		<link>http://llun.in.th/2007/03/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%95%e0%b8%b4%e0%b8%94-tor-%e0%b8%9a%e0%b8%99-ubuntu/</link>
+		<comments>http://llun.in.th/2007/03/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%95%e0%b8%b4%e0%b8%94-tor-%e0%b8%9a%e0%b8%99-ubuntu/#comments</comments>
+		<pubDate>Tue, 20 Mar 2007 00:00:00 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[censor]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[P2P]]></category>
+		<category><![CDATA[proxy]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=94</guid>
+		<description><![CDATA[เขียนไปยังหว่า? เปิด Terminal &#8211; -&#8221; $sudo apt-get install tor privoxy แก้ไขไฟล์ config ใน /etc/privoxy เพิ่มบรรทัดนี้ไปต้นไฟล์ forward-socks4a / localhost:9050 . (มีจุดด้วยนะ) เพิ่ม # หน้าสองบรรทัด logfile logfile และ jarfile jarfile เพิ่มบรรทัดนี้ที่ต้นไฟล์อีกบรรทัด debug 1 # show each GET/POST/CONNECT request Restart privoxy $sudo /etc/init.d/privoxy restart ติดตั้ง Tor plugin ของ Firefox (ของ IE ตั้งแค่ proxy ชี้ไปที่ localhost ก็ได้แล้วมั้ง แต่นี่ Ubuntu [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/03/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%95%e0%b8%b4%e0%b8%94-tor-%e0%b8%9a%e0%b8%99-ubuntu/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

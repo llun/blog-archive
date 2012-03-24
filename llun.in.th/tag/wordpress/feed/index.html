@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Wordpress</title>
+	<atom:link href="http://llun.in.th/tag/wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Prosody.im</title>
+		<link>http://llun.in.th/2010/12/prosody-im/</link>
+		<comments>http://llun.in.th/2010/12/prosody-im/#comments</comments>
+		<pubDate>Wed, 29 Dec 2010 12:47:12 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Jabber]]></category>
+		<category><![CDATA[Prosody]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[XMPP]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2052</guid>
+		<description><![CDATA[ช่วงหลายวันก่อนเกิดความหงุดหงิด MSN bot ที่ตัวเองเขียนขึ้นมาเพื่อ relay message ไปให้ทุกคนในกลุ่มแทน groups.im แต่ปรากฏว่า message มักหายไปแบบเงียบๆ เพราะเหตุผลอะไรบางอย่างที่ไม่ได้แกะใน Java source เลยคิดจะตั้ง Jabber Server ขึ้นมาใหม่เพื่อทำหน้าที่นี้แทนโดยเฉพาะเลย Jabber Server ที่มีให้เลือกตอนนี้ดังๆ ก็มีอยู่สองสามเจ้าคือ jabberd, ejabber, openfire,&#8230; ที่เคยใช้มาแล้วคือ openfire แล้วพบว่าตัวมันใหญ่มาก แม้จะมี feature มากที่สุด หน้าตาสวยงามที่สุดก็ตาม ตัวเลือกอื่นๆ ก็แก้ไขยาก สุดท้ายเลยได้หัด Lua เล่น Prosody สิ่งที่ต้องทำเพิ่มขึ้นมาคือ ส่วนที่ให้ Prosody ไปหา User จาก WordPress นั่งแก้ไปมาตั้งนาน จนเขียน Lua พอเป็นพบว่า Lua เป็นภาษาที่เหมือน Javascript มากไม่ยากแก่การศึกษา ทำ Module [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/12/prosody-im/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Calendar Server #3</title>
+		<link>http://llun.in.th/2010/12/calendar-server-3/</link>
+		<comments>http://llun.in.th/2010/12/calendar-server-3/#comments</comments>
+		<pubDate>Tue, 21 Dec 2010 18:45:42 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Darwin Calendar Server]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2035</guid>
+		<description><![CDATA[จากคราวที่แล้ว ทำให้ Calendar server authen กับ WordPress ผ่าน XML-RPC ปรากฏว่ากว่าจะดึงข้อมูลทีช้ามากจนแทบใช้งานไม่ได้ วันนี้ทนไม่ไหวอีกรอบเปลี่ยนจาก XML-RPC เป็นต่อไปยัง MySQL ตรงๆ ทำเสร็จทดลองรู้สึกประทับใจมาก เร็วขึ้นสุดๆ แต่ก็มีสิ่งที่ต้องแก้เยอะเหมือนกันตามด้านล่าง Wordpress ต้องติด Plugins เพิ่มชื่อ MD5 Password Hashes เพื่อแปลงให้รหัสทั้งหมดของ WordPress เก็บในรูป MD5 แทนและ User ต้อง login ใหม่ผ่าน WordPress 1 ครั้งเพื่อแปลงรหัสผ่าน ดาวโหลด wordpressmysql.py ไปวางไว้ที่ calendar_server_directory/twistedcaldav/directory (หรือจะวางไว้ที่ path อื่นของ python library directory ก็ได้) แก้ caldavd.plist เพิ่ม Directory Service ด้านล่างลงไป restart [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/12/calendar-server-3/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Facebook Like Plugin</title>
+		<link>http://llun.in.th/2010/04/facebook-like-plugin/</link>
+		<comments>http://llun.in.th/2010/04/facebook-like-plugin/#comments</comments>
+		<pubDate>Sun, 25 Apr 2010 12:36:13 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[plugins]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1584</guid>
+		<description><![CDATA[ลองทำ Plugin เล่น ๆ ใส่ WordPress มาซักตัวหลังจาก Facebook เปิด API ใหม่ให้ใส่ iframe กด Like ที่เนื้อหาของเว็บภายนอกได้ ติดตั้งเสร็จก็จะมีปุ่ม Like ให้กดที่ล่างสุดของเนื้อหา จริง ๆ อยากให้มันโผล่หลัง Category list ของ Post นะแต่ก็ไม่อยากแก้ Theme เลยทำแบบนี้ทิ้งไว้ก่อน ไว้หายขี้เกียจจะแก้ไขอีกรอบ ใครอยากลองก็ ดาวโหลด ไปติดได้เลย]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/04/facebook-like-plugin/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>mod_authn_dbd+WordPress</title>
+		<link>http://llun.in.th/2010/04/mod_authn_dbdwordpress/</link>
+		<comments>http://llun.in.th/2010/04/mod_authn_dbdwordpress/#comments</comments>
+		<pubDate>Thu, 01 Apr 2010 09:38:39 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache HTTP]]></category>
+		<category><![CDATA[mod_authn_dbd]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1532</guid>
+		<description><![CDATA[หลังจากติดตั้ง WordPress ทำ KM ให้บริษัทจนตอนนี้มีบทความต่าง ๆ ไหลมาเป็นน้ำจากหลายคน ก็เกิดอีกปัญหาขึ้นเพราะว่ามี Service ก่อนหน้าที่เอาขึ้นมาก่อนแล้วเช่น HG สำหรับทำ Project เล็ก ๆ เป็นการทดลอง Trac ที่ไว้เก็บ issue ต่าง ๆ ของ Project เหล่านั้นหรือแม้แต่ feed ที่ต้องการแต่ไม่อยากเปิดให้คนนอกเข้ามาก็ต้องทำให้มันถามรหัสเพื่อรู้ว่าเป็นคนภายในหรือป่าว วิธีที่จะทำให้บริการเหล่านี้ใช้ข้อมูลของ User ที่เดียวกันก็มีหลายวิธี ง่ายสุดก็คงเป็นการตั้ง LDAP แต่เนื่องจากเป็นคนใจร้อนขี้เกียจรอเลยให้ทุก Service มาใช้ Database WordPress เพื่อ Authenticate แบบชั่วคราวไปก่อน โดยใช้ตัวช่วยที่อยู่ใน Apache ที่เรียกว่า mod_authn_dbd mod_authn_dbd เป็น module เสริมของ Apache ที่ใช้คู่กับ mod_dbd ที่ทำให้ Apache ติดต่อกับ Database ต่าง [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/04/mod_authn_dbdwordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Tag กับ Category ใน WordPress</title>
+		<link>http://llun.in.th/2010/03/tag-%e0%b8%81%e0%b8%b1%e0%b8%9a-category-%e0%b9%83%e0%b8%99-wordpress/</link>
+		<comments>http://llun.in.th/2010/03/tag-%e0%b8%81%e0%b8%b1%e0%b8%9a-category-%e0%b9%83%e0%b8%99-wordpress/#comments</comments>
+		<pubDate>Sun, 28 Mar 2010 13:45:55 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[category]]></category>
+		<category><![CDATA[tag]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1497</guid>
+		<description><![CDATA[ช่วงที่ทำ KMS มีคำถามนึงขึ้นมาเรื่อง Tag กับ Category ว่าอะไรควรใส่อะไรบ้าง (ติด WordPress ทุกครั้งเจอคำถามนี้ทุกครั้ง) เมื่อคืนเกิดคึกไรไม่รู้ นอนไม่หลับ แถมมีไอ้เรื่องนี้เข้ามาในหัว ใจจริงอยากเขียนเมื่อคืน แต่เช้านี้ต้องไปเชงเม้ง เลยข่มตาหลับไปซะ จนได้มาเขียนตอนเย็นนี้นี่แหละ Category กับ Tag แทบไม่ต่างกันเลยจุดประสงค์คือไว้จัดประเภทของเนื้อหาหรืออะไรก็ตามให้เป็นหมวดหมู่ ยิ่งเมื่อสร้าง Category แล้วเลือกหลาย ๆ อันในหนึ่งเรื่องความแตกต่างแทบจะหายไป แต่ถ้าคิดถึงวิธีสร้างและวิธีใช้สองอย่างนี้แทบจะต่างกันอย่างสิ้นเชิง Category คือ คำ ที่กำหนดไว้อย่างถาวรอาจมีลำดับ หรือเป็นกลุ่มด้วยกันเอง เช่น อาจมีการจัดประเภทว่า OS แล้วแบ่งกลุ่มย่อยลงไปเป็น Windows, Linux, OSX คือจะเลือกแค่ Linux แต่กลุ่มหลักก็คือ OS เหมือนเลือกหนึ่งได้สอง Tag คือ คำเฉพาะ ที่มีเฉพาะบางเนื้อหา ถูกสร้างมาพร้อมกับเนื้อหาบางเรื่อง และไม่มีการจัดกลุ่มหรือลำดับชั้น ส่วนใหญ่ที่ผมใช้ก็จะเป็นพวก ยี่ห้อ หรือ ชื่อเฉพาะ ทั้งหลาย [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/03/tag-%e0%b8%81%e0%b8%b1%e0%b8%9a-category-%e0%b9%83%e0%b8%99-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>KMS</title>
+		<link>http://llun.in.th/2010/03/km/</link>
+		<comments>http://llun.in.th/2010/03/km/#comments</comments>
+		<pubDate>Fri, 26 Mar 2010 16:20:20 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[KMS]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1485</guid>
+		<description><![CDATA[อาบน้ำอยู่แล้วมันแวบเข้ามาในหัวแล้วคิดยาวมาเรื่อย ๆ เลยเขียนซะเลย แถมอาทิตย์นี้ทั้งอาทิตย์ปั้นระบบ KMS ของบริษัท แล้ววันนี้ได้อะไรมาพอสมควร เขียนเป็นข้อ ๆ เลยละกัน​ (ไม่เรียงลำดับและความต่อเนื่องนะ) KMS จริง ๆ แล้วไม่จำเป็นต้องเป็นระบบอะไรที่ยิ่งใหญ่ ราคาแพง แค่ WordPress ก็เพียงพอแล้ว แต่ต้องมีช่องทางให้ทุกคนใส่ข้อมูลไปได้ง่าย ๆ และระบบค้นหาที่ดีก็พอ จะให้ทุกคนเข้ามาถ่ายทอดความรู้ได้ กฏการใส่ข้อมูลต้องน้อยที่สุด ไม่จำเป็นต้องเป็นภาษาอังกฤษเท่านั้น และไม่จำเป็นที่จะใส่ข้อความยาว ๆ จะใส่สั้น ๆ ก็ได้ แต่อย่างน้อยต้องเลือกประเภท และใส่ Tag ที่เกี่ยวข้องเพื่อให้หาได้ง่าย ๆ Category คือหมวดหมู่ใหญ่ ๆ ที่มีลำดับชั้นไม่มาก ไม่ควรเกินสาม (จริง ๆ แค่สองก็รู้สึกเยอะแล้ว) ส่วน Tag คือส่วนที่ไว้แบ่ง Category แบบละเอียด และทำให้หมวดหมู่มันปนกันได้ Visual Editor จำเป็นมาก อย่าคิดเอามันออกเด็ดขาด ใช่ว่าทุกคนจะชอบพิมพ์ HTML [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/03/km/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>WordPress OpenID</title>
+		<link>http://llun.in.th/2008/11/wordpress-openid/</link>
+		<comments>http://llun.in.th/2008/11/wordpress-openid/#comments</comments>
+		<pubDate>Fri, 07 Nov 2008 06:49:34 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[OpenID]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=711</guid>
+		<description><![CDATA[เหมือนไม่ได้เขียนถึง OpenID นานมากๆ ครั้งล่าสุดที่เขียนถึงคือเมื่อปีที่แล้ว(Using OpenID by serverside.com) ไม่ได้เขียนเองอีกต่างหาก แค่เขียนเก็บไว้เผื่อเอาไว้อ่านยามว่างและอ้างอิง ^^! วันนี้เข้าไปบล๊อก @iake แล้วลองใช้ URL เว็บนี้ใส่เข้าไปดูปรากฏว่ามันใช้แทน OpenID ได้ด้วยโดยที่ไม่ต้องโยงไปให้ผู้ให้บริการ OpenID ที่ไหนเลย ไม่ต้องไปลงทะเบียนให้ลืมรหัสอีกต่อไป แค่มี WordPress และติด OpenID ก็สามารถใช้ได้ทันทีโดยแทบจะไม่ต้องตั้งค่า นี่สิความสะดวกของจริง จริงๆ ผมก็ติดปลั๊กอินนี้มาได้ซักพักแล้วหละ (ตั้งแต่ปีที่แล้วที่ช่วงนั้นกำลังประทับใจ OpenID อยู่) แต่ว่าไม่ได้ใช้มันจริงจัง เพราะมันใช้ยากซะเหลือเกิน -_-&#8221; โดยความยากก็มาจากแต่ละผู้ให้บริการนั่นเองโดยเฉพาะของ Verisign ที่เคยเอาไปใช้กับเว็บต่างๆ แล้วปรากฏว่าให้ยืนยันไปมาแล้วก็บอกว่าใช้กับบริการนี้ไม่ได้อยู่นั่นแหละ แล้วก็เลยเลิกใช้ไปเสียดื้อๆ ส่วนปลั๊กอินของ WordPress เมื่อปีที่แล้วก็ยังงี่เง่าอยู่ ทำได้แค่ดึงข้อมูลมาแปะว่าเป็นใครมาโพสท์ ก็เลยเริ่มปล่อยวาง จนมาช่วงหลังๆ นี้แหละที่เริ่มรู้สึกว่ามันเริ่มกลับมาน่าสนใจอีกครั้ง เพราะข่าวใน blognone และตัวปลั๊กอินเองที่มันดีขึ้นจนผิดหูผิดตา OpenID ปลั๊กอินของ WordPress มีคุณสมบัติหลายอย่างที่น่าสนใจคือ สามารถตรวจได้ว่า URL [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/11/wordpress-openid/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>WordPress app on iphone</title>
+		<link>http://llun.in.th/2008/07/wordpress-app-on-iphone/</link>
+		<comments>http://llun.in.th/2008/07/wordpress-app-on-iphone/#comments</comments>
+		<pubDate>Thu, 24 Jul 2008 12:32:26 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.info/archives/506</guid>
+		<description><![CDATA[This&#8217;s second post I write in English because iphone doesn&#8217;t have Thai keyboard and I want to test this app. I found this app in app store in Tuesday but don&#8217;t use it in that day after install because it&#8217;s very different from my mind. I think it will have comment, plugins and many things [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/wordpress-app-on-iphone/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>มาเอา WordPress widget ออกชั่วคราวกันเถอะ</title>
+		<link>http://llun.in.th/2007/05/%e0%b8%a1%e0%b8%b2%e0%b9%80%e0%b8%ad%e0%b8%b2-wordpress-widget-%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%8a%e0%b8%b1%e0%b9%88%e0%b8%a7%e0%b8%84%e0%b8%a3%e0%b8%b2%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%99%e0%b9%80/</link>
+		<comments>http://llun.in.th/2007/05/%e0%b8%a1%e0%b8%b2%e0%b9%80%e0%b8%ad%e0%b8%b2-wordpress-widget-%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%8a%e0%b8%b1%e0%b9%88%e0%b8%a7%e0%b8%84%e0%b8%a3%e0%b8%b2%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%99%e0%b9%80/#comments</comments>
+		<pubDate>Sat, 19 May 2007 04:19:24 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[problem]]></category>
+		<category><![CDATA[widget]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=151</guid>
+		<description><![CDATA[หลังจากอัพเกรดมาเป็น Version 2.2 ก็เจอปัญหาเลย เนื่องจาก API ที่ใช้เรียก widget มาแสดงต่างไปจากเดิม จะกลับไปใช้อันเก่าก็ไม่ได้ เพราะดันชนกับที่มีอยู่แล้วอีก คนทำ Theme ก็ยังแก้ตามให้ไม่ทัน ส่วนผมตอนนี้ก็ยังไม่ว่างมาไล่ code แก้ด้วยสิ จนวันนี้ gluedideas ได้บอกทางสว่างให้ ด้วย Plugin เล็กๆ อันนึง ที่ไว้ใช้ปิด Widget ของ WordPress ใครที่มีปัญหาเหมือนผมอยากแก้ไขชั่วคราวก็ดาวโหลดได้ตาม Link นี้เลย]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/05/%e0%b8%a1%e0%b8%b2%e0%b9%80%e0%b8%ad%e0%b8%b2-wordpress-widget-%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%8a%e0%b8%b1%e0%b9%88%e0%b8%a7%e0%b8%84%e0%b8%a3%e0%b8%b2%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%99%e0%b9%80/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>WordPress 2.2</title>
+		<link>http://llun.in.th/2007/05/wordpress-22/</link>
+		<comments>http://llun.in.th/2007/05/wordpress-22/#comments</comments>
+		<pubDate>Thu, 17 May 2007 14:48:03 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[upgrade]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=150</guid>
+		<description><![CDATA[Upgrade แล้ว Theme เดิมเลยไปเลย โดยเฉพาะส่วน widget เพราะ 2.2 ดันมีมาให้เลย งานนี้เลยต้องหา Theme ใหม่ ระหว่างหา ใช้ แบบ เบสิกไปก่อนละกัน]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/05/wordpress-22/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

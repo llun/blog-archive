@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Darwin Calendar Server</title>
+	<atom:link href="http://llun.in.th/tag/darwin-calendar-server/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Calendar Server #3</title>
+		<link>http://llun.in.th/2010/12/calendar-server-3/</link>
+		<comments>http://llun.in.th/2010/12/calendar-server-3/#comments</comments>
+		<pubDate>Tue, 21 Dec 2010 18:45:42 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Darwin Calendar Server]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2035</guid>
+		<description><![CDATA[จากคราวที่แล้ว ทำให้ Calendar server authen กับ WordPress ผ่าน XML-RPC ปรากฏว่ากว่าจะดึงข้อมูลทีช้ามากจนแทบใช้งานไม่ได้ วันนี้ทนไม่ไหวอีกรอบเปลี่ยนจาก XML-RPC เป็นต่อไปยัง MySQL ตรงๆ ทำเสร็จทดลองรู้สึกประทับใจมาก เร็วขึ้นสุดๆ แต่ก็มีสิ่งที่ต้องแก้เยอะเหมือนกันตามด้านล่าง Wordpress ต้องติด Plugins เพิ่มชื่อ MD5 Password Hashes เพื่อแปลงให้รหัสทั้งหมดของ WordPress เก็บในรูป MD5 แทนและ User ต้อง login ใหม่ผ่าน WordPress 1 ครั้งเพื่อแปลงรหัสผ่าน ดาวโหลด wordpressmysql.py ไปวางไว้ที่ calendar_server_directory/twistedcaldav/directory (หรือจะวางไว้ที่ path อื่นของ python library directory ก็ได้) แก้ caldavd.plist เพิ่ม Directory Service ด้านล่างลงไป restart [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/12/calendar-server-3/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Calendar server #2</title>
+		<link>http://llun.in.th/2010/12/calendar-server-2/</link>
+		<comments>http://llun.in.th/2010/12/calendar-server-2/#comments</comments>
+		<pubDate>Thu, 02 Dec 2010 20:35:55 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[CalDAV]]></category>
+		<category><![CDATA[Darwin Calendar Server]]></category>
+		<category><![CDATA[debian]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1975</guid>
+		<description><![CDATA[เนื่องจากจะเอาไปใช้ส่วนตัวเลยจะปิดไม่ให้ register เพิ่มและลบ calendar ทั้งหมดทิ้ง เพราะฉะนั้นไม่ต้องทำตามด้านล่างแล้วนะครับ แต่ยังสามารถเอา code ไปลองเล่นเองได้อยู่ คราวที่แล้วลอง Calendar server บน lenny ไปเป็นรุ่นแรก ใช้ไปซักพักก็พบว่าอยากได้ web ui แต่ลองขุดๆ ดูพบว่าไม่มีใครทำเลยสุดท้ายลองขุดใน OSX Server ดูจนได้ web ui ออกมาแต่มันใช้ Calendar server 2! ในเมื่อจะอัพเกรดแล้วเลยทำเพิ่มอีกอย่างซะเลย ให้ทุกคนลงทะเบียนใช้ได้ด้วย เพราะงั้นใครอยากลองคร่าวๆ ก็ทำตามนี้ ลงทะเบียนที่นี่ จากนั้นรอรับรหัสผ่านแล้วลองเข้าผ่านเว็บที่ Webcal ครั้งแรกอาจนานหน่อยก็รอซักพัก จากนั้นถ้าหากใครใช้ OSX + iPhone ก็เปิด iCal แล้วเพิ่มตาม Post ที่แล้ว สำหรับคนใช้ OS อื่นหรือไม่อยากใช้ iCal ก็มีทางเลือกอีกทาง นั่นคือ Thunderbird/evolution นั่นเอง สามารถทำตามได้ที่ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/12/calendar-server-2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

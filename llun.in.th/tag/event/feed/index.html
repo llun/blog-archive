@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; event</title>
+	<atom:link href="http://llun.in.th/tag/event/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>HTML5 Application Cache #2</title>
+		<link>http://llun.in.th/2011/09/html5-application-cache-2/</link>
+		<comments>http://llun.in.th/2011/09/html5-application-cache-2/#comments</comments>
+		<pubDate>Wed, 28 Sep 2011 16:41:35 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Application Cache]]></category>
+		<category><![CDATA[event]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[offline]]></category>
+		<category><![CDATA[status]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2377</guid>
+		<description><![CDATA[จากภาคแรก สิ่งที่ยังไม่ได้เขียนถึงคือ event และ status ของ Application Cache สองอย่างนี้ใช้คู่กันเมื่อ manifest file มีการเปลี่ยนแปลงโดย browser จะยิง event มาหลังจากเทียบ manifest file และโหลดไฟล์ที่กำหนดให้เก็บไว้ event ต่างๆ ก็มี checking: event แรกที่จะถูกยิงออกมา เป็นช่วงที่ browser ดาวโหลด manifest มาเทียบว่าต้องดึงไฟล์มาใหม่หรือไม่ ตรวจสอบเสร็จก็จะมี 4 event ที่ยิงถัดมาคือ noupdate, downloading, obsolete, error noupdate: หลังจากตรวจสอบแล้ว manifest ไม่มีการเปลี่ยนแปลง Application Cache ก็ยิง event นี้ออกมา downloading: หลังจากตรวจสอบแล้วว่า manifest มีการเปลี่ยนแปลง browser ก็จะดาวโหลดไฟล์ใหม่และ Application Cache [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/09/html5-application-cache-2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>[Flex] Redispatch event</title>
+		<link>http://llun.in.th/2010/12/flex-redispatch-event/</link>
+		<comments>http://llun.in.th/2010/12/flex-redispatch-event/#comments</comments>
+		<pubDate>Mon, 20 Dec 2010 09:29:02 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[event]]></category>
+		<category><![CDATA[Flex]]></category>
+		<category><![CDATA[redispatch]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2027</guid>
+		<description><![CDATA[@arzeknight มาถามเกี่ยวกับ event ว่าทำไม redispatch แล้ว object มันไม่เหมือนต้นฉบับ โค้ดก็ง่ายๆ จาก Class ด้านบนถ้ามี Controller อื่นมา handle CustomEvent.SAMPLE ต่อ event ที่ได้ไม่จำเป็นต้องเป็น Class เดียวกับที่ dispatch มาตั้งแต่ต้น เพราะสิ่งที่ Flex ทำถ้าหากมีการ redispatch คือสั่ง clone event object นั้น เพราะฉะนั้นหากใช้ redispatch บ่อยๆ + custom event อย่าลืม implements clone ก่อนที่จะงงว่าทำไมได้ Object นี้ออกมาแทน]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/12/flex-redispatch-event/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Flex Event Propagation</title>
+		<link>http://llun.in.th/2010/01/flex-event-propagation/</link>
+		<comments>http://llun.in.th/2010/01/flex-event-propagation/#comments</comments>
+		<pubDate>Mon, 25 Jan 2010 14:52:48 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[event]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1359</guid>
+		<description><![CDATA[ปล่อยเรื่องนี้ค้างคาใจมานานเหลือเกิน เพราะไม่ได้ใช้ Event ครบทุก Phase อย่างจริงจัง วันนี้ต้องทำให้ Checkbox List ทำงานเร็วขึ้นแต่ไม่อยากแก้ List ของ Adobe ตรงๆ หรือทำไรเพิ่มเติมก็ต้องเล่นกับ Event แทนนี่แหละ อ่านคร่าวๆ ขั้นตอนการส่งต่อ Event ของ Flex มีแค่สามขั้นคือ Capturing Phase, Targeting Phase, Bubbling Phase ลองดูภาพด้านล่างเผื่อเข้าใจง่ายขึ้น ภาพด้านบนแสดงการซ้อนกันของ Component ต่างๆ ที่สร้างขึ้น มี Application เป็น Component ที่อยู่นอกสุด ตามด้วย HBox และ Button ถ้าเขียนเป็น mxml ก็จะได้อย่างด้านล่าง เมื่อมีคนกดปุ่มสิ่งที่เกิดขึ้นคือ component ที่อยู่นอกสุดซึ่งก็คือ Application จะดักจับ event ได้ก่อน จากนั้นจะส่งต่อไปที่ Box [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/01/flex-event-propagation/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>[Flex] Event.target &amp; Event.currentTarget</title>
+		<link>http://llun.in.th/2009/03/flex-eventtarget-eventcurrenttarget/</link>
+		<comments>http://llun.in.th/2009/03/flex-eventtarget-eventcurrenttarget/#comments</comments>
+		<pubDate>Fri, 20 Mar 2009 04:01:24 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[event]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=1123</guid>
+		<description><![CDATA[ใช้ประจำ เพื่อนถามประจำ แล้วก็ลืมเป็นประจำ ไม่รู้เป็นอะไรกับไอ้สองตัวนี้ แล้วก็ไม่ค่อยเอามาจดด้วย พอหาได้ครั้งนึงผ่านไปซักพักก็ลืมอีก วันนี้นึกได้ จดมันเลยละกัน Event.target : คือ component ที่ dispatch event นั้นออกมาก Event.currentTarget : คือ component ที่รับ event มาแล้วจัดการกับ event เช่นๆ File: Sample.mxml File: Boxes.mxml File: SubBoxes.mxml จากโค้ดด้านบน ถ้าคลิกที่ปุ่ม &#8220;Click me&#8221; ที่ console ขณะ debug ก็จะขึ้นข้อความมาสองบรรทัด บรรทัดแรกที่บอกว่า event.target จะเป็นอะไรก็จะโชว์บอกว่าคนที่ส่ง event นี่ออกมาคือ Button ส่วนอีกบรรทัดที่บอกว่า event กำลังเรียกใช้อยู่ที่ component ไหนก็จะเป็น component บนสุดที่เป็นคน handle event [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/03/flex-eventtarget-eventcurrenttarget/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Event</title>
+		<link>http://llun.in.th/2008/07/event/</link>
+		<comments>http://llun.in.th/2008/07/event/#comments</comments>
+		<pubDate>Tue, 15 Jul 2008 03:59:35 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[event]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=467</guid>
+		<description><![CDATA[โอ่ย เป็นเรื่องที่เขียนยากพอควรเลยเรื่องนี้ เอาเป็นว่าสรุปแบบที่ผมเข้าใจเก็บไว้ก่อนละกัน ใน Flex เวลาทำงานกับ UIComponent ต่างๆ สิ่งหนึ่งที่คิดว่าต้องเจอกันอย่างแน่นอนและต้องใช้ด้วยคือ Event ซึ่งมันมีมาให้อัตโนมัติกับ UIComponent ทุกตัว โดยถ้าเทียบกับภาษาอื่นก็อย่างจาวา ก็ให้นึกถึงพวก listener ทั้งหลายได้เลย คล้ายๆ กัน Event ของ Flex อาจต่างจากภาษาอื่นตรงที่มันมีลำดับขั้นในการทำงาน แทนที่จะมีการส่งขึ้นไปแล้วเรียกฟังก์ชั่นโดยตรง คือ Capturing Targeting Bubbling ขั้นแรก Capturing เป็นขั้นที่ Flex จะไล่หาว่า Component ไหนจะเป็นตัวรับ Event เพื่อเอามาทำงานโดยไล่จาก Component ที่อยู่บนสุดลงมาถึง Component ปัจจุบัน โดยขณะที่ไล่ลงมาก็จะมีการเปลี่ยนตัวแปร currentTarget เป็น Component ปัจจุบันที่เรียกอยู่ ปกติแล้วขั้นนี้ไม่ค่อยได้ใช้ จะใช้ขั้น Bubbling กันซะมากกว่า แต่ถ้าหากต้องการจะใช้จริงๆ สามารถกำหนดตอนใส่ Listener ได้โดยให้ argument [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/event/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

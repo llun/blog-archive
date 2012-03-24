@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+llun.in.th	TRUE	/	FALSE	1999999999	PHPSESSID	tfm359f4u231pjt8f4kqlc8eq3
+.llun.in.th	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+

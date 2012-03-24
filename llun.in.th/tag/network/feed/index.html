@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; network</title>
+	<atom:link href="http://llun.in.th/tag/network/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Debian กับ WPA-EAP</title>
+		<link>http://llun.in.th/2008/01/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/</link>
+		<comments>http://llun.in.th/2008/01/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/#comments</comments>
+		<pubDate>Fri, 04 Jan 2008 17:18:49 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[debian]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[wireless]]></category>
+		<category><![CDATA[WPA]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/01/05/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/</guid>
+		<description><![CDATA[ปกติใช้ wireless โดยทั่วไปคนส่วนใหญ่เค้าก็จะใช้กันแค่ wep หรือไม่มีรหัสผ่านกัน แต่ที่บ้านกับที่ทำงานดันแปลก ไม่ยอมใช้เหมือนชาวบ้าน ใช้ wpa แทนซะ(เพื่อความปลอดภัยที่ไม่รู้กันไม่ให้ใครเล่น ) ก็เลยเจอปัญหาไม่เหมือนชาวบ้าน สำหรับ wpa ธรรมดาที่ใช้ pre shared key เคยแก้ไปแล้ว พร้อมจดบันทึกไว้ที่ หน้านี้ http://llun.info/2007/10/14/debian-install-instruction/ แต่วันนี้จะมาเขียนถึง WPA-EAP ที่พิเศษกว่าชาวบ้านหน่อย และสาเหตุที่ทำให้ต้องมาบันทึกก็เพราะ dhcp ที่ทำงานดันเจ๊ง ไม่ยอมแจก ip ให้ NetworkManager ที่ใช้ก็เลยด๋อยไปเลย สุดท้ายก็ต้องมาหาวิธีแก้ /etc/network/interfaces เอง เห้อ สิ่งที่ต้องใส่เพิ่มในไฟล์ก็ดูจาก code ด้านล่างเลย iface [name] inet static address [fix ip] netmask [netmask] gateway [gateway] wpa-conf managed wpa-ssid [ssid] [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/01/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>OpenSUSE + Bluetooth + GPRS</title>
+		<link>http://llun.in.th/2007/10/opensuse-bluetooth-gprs/</link>
+		<comments>http://llun.in.th/2007/10/opensuse-bluetooth-gprs/#comments</comments>
+		<pubDate>Tue, 09 Oct 2007 14:31:19 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[bluetooth]]></category>
+		<category><![CDATA[GPRS]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[OpenSUSE]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2007/10/09/opensuse-bluetooth-gprs/</guid>
+		<description><![CDATA[คราวที่แล้วต่อ wifi โดยไม่ใช้ nm-applet ได้โดยแก้ /etc/network/networks เอาแต่พลาดลืมเอามาจดในนี้ เสียดายมาจนถึงบัดนี้ วันนี้ต่อ GPRS ได้เลยรีบจดกันลืมซะหน่อยดีกว่า เดี๊ยวลืมแล้วทำไม่ได้จะเสียดายเหมือนคราวที่แล้วอีก (แต่ถ้าจะเอาอาจจะขุดของ OpenSUSE มาดูเพราะมันมีตัวแก้ config ให้แบบอัตโนมัติโดยที่ไม่ต้องใช้ nm-applet เหมือนกัน) สำหรับมือถือที่ผมใช้ในการต่อเล่นคราวนี้เป็นรุ่น Sony Ericsson K750i ส่วน bluetooth มากับ notebook เลย มาดูวิธีทำต่อเลยดีกว่า เริ่มจากติด package bluetooth ต่างๆ ให้ครบก่อน เช่น bluez utils, pppd, kinternet (kinternet ไม่ต้องติดก็ได้ถ้าหากจะใช้แค่ command line แต่ถ้าอยากสะดวกก็ติดเหอะ) ใช้คำสั่ง hcitool scan เพื่อดูว่ามือถือที่ใช้อยู่มี mac เบอร์อะไรจะได้เชื่อมถูก #hcitool scan xx:xx:xx:xx:xx:xx nat หลังจากเจอเครื่องก็หาว่า [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/10/opensuse-bluetooth-gprs/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>ชิ่ง NJUG ไปเดิน Fortune</title>
+		<link>http://llun.in.th/2007/09/%e0%b8%8a%e0%b8%b4%e0%b9%88%e0%b8%87-njug-%e0%b9%84%e0%b8%9b%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%99-fortune/</link>
+		<comments>http://llun.in.th/2007/09/%e0%b8%8a%e0%b8%b4%e0%b9%88%e0%b8%87-njug-%e0%b9%84%e0%b8%9b%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%99-fortune/#comments</comments>
+		<pubDate>Sun, 16 Sep 2007 13:13:07 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[book]]></category>
+		<category><![CDATA[network]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2007/09/16/%e0%b8%8a%e0%b8%b4%e0%b9%88%e0%b8%87-njug-%e0%b9%84%e0%b8%9b%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%99-fortune/</guid>
+		<description><![CDATA[โอ๊ยเซ็งวันนี้ฝนตกตั้งแต่เช้า &#8211; บ่ายเลย เลยไม่ได้ไป NJUG4 จริงๆ ออกช้าด้วยแหละ เพราะเมื่อวานไป Esplanade กว่าจะกลับแล้วทำไรต่ออีก วันนี้ก็เลยตื่นสายซ้า เห้อเลยแทนที่จะไป NJUG4 ก็เลยไปอีกนิดไปลงสถานีพระราม9 แทนเข้า fortune แล้วก็สำรวจอะไรนิดหน่อย สิ่งที่ผมสำรวจก็คือเร้าเตอร์ Asus WL-500G Premium ที่สามารถทำเป็น NAS ได้แต่เดินไปแต่ละร้าน บอกมาเหมือนกันหมดคือ ของหมด แถมมีร้านนึงเข้าไปถามบอกไม่มี เสนอกลับมาเป็น synology NAS แทนแต่ดูราคาแล้วไม่ประทับใจเอาซะเลย 8250 บาท แพงโคตรไม่รวม HDD อีกต่างหาก จบกันงานนี้ (จริงอยากได้ synology มากกว่าเพราะมี php+mysql ด้วย os มันจริงๆเป็น linux เห็นแล้วเป็นอะไรที่น่าสนใจมาก) ถัดจาก NAS ที่ไม่ประสบความสำเร็จเท่าไหร่ก็ไปเดินหาหนังสือต่อ เล่มที่จะหาคือ Head first : Design pattern [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/09/%e0%b8%8a%e0%b8%b4%e0%b9%88%e0%b8%87-njug-%e0%b9%84%e0%b8%9b%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%99-fortune/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>WebDAV Protocol</title>
+		<link>http://llun.in.th/2007/08/webdav-protocol/</link>
+		<comments>http://llun.in.th/2007/08/webdav-protocol/#comments</comments>
+		<pubDate>Sat, 25 Aug 2007 12:18:27 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[protocol]]></category>
+		<category><![CDATA[WebDAV]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=212</guid>
+		<description><![CDATA[หลังจากค้างไว้นานมัวไปเขียน HTTP ก่อนหลังจากวันศุกร์ที่คาดว่าจะได้บรรยาย WebDAV แล้วก็ถูกเลื่อนไปวันจันทร์ ไม่เป็นไรวันนี้มาเขียนไว้ก่อนละกัน เตรียมตัวสำหรับวันจันทร์ด้วย WebDAV หรือ Web Distributed Authoring and Versioning เป็นส่วนขยายของ HTTP เพื่อให้เว็บทั่วไปสามารถแก้ไขและบันทึกได้เลย โดยที่ไม่ต้องไปพึ่งพา Protocol อื่น โปรแกรมที่ใช้กันโดยที่อาจจะไม่รู้ตัวก็คือ Outlook โปรแกรมอ่านเมล์ของไมโครซอร์ฟ โดยใช้ในการดึงเมล์มาจาก hotmail (แต่ปัจจุบันด้วยสาเหตุของความปลอดภัยมั้ง ไมโครซอร์ฟ เลยปิดไป โดยจะยอมเปิดให้ใช้ได้ก็เมื่อจ่ายตัง) หรืออีกโปรแกรมที่คนพัฒนาโปรแกรมต่างๆ น่าจะรู้จักคือ Subversion (หรือไม่รู้จักหว่า) ที่ใช้ WebDAV เป็นฐานเหมือนกันและใช้บางส่วนของ Delta-V ซึ่งเป็นส่วนเสริมของ WebDAV อีกทีในการทำรุ่นเอกสาร บ่นมายาวแล้วมาดูคำสั่งที่ใช้ส่งไปยังเซิร์ฟเวอร์ดีกว่า โดยรูปแบบของคำสั่งดูได้ตาม code ด้านล่างเลย (ขอโชว์แค่คำสั่งเดียว เพราะใส่ code ใน wordpress ลำบากเหลือเกิน เห้อ) PROPFIND /collection/resource HTTP/1.1 Host: [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/08/webdav-protocol/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Hypertext transfer protocol</title>
+		<link>http://llun.in.th/2007/08/hypertext-transfer-protocol/</link>
+		<comments>http://llun.in.th/2007/08/hypertext-transfer-protocol/#comments</comments>
+		<pubDate>Wed, 22 Aug 2007 14:20:54 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[protocol]]></category>
+		<category><![CDATA[WebDAV]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=210</guid>
+		<description><![CDATA[สองอาทิตย์นี้ต้องนั่งดู WebDAV ว่ามันเป็นยังไง ใช้ยังไง แล้วถ้าจะเอาไปใช้ในจาวาต้องทำอะไรบ้าง แถมด้วยตัวเสริมอีกพอสมควรทั้ง Delta-V, ACL, DASL, Quota ซึ่งแต่ละตัวก็อยู่ต่าง rfc แต่ละ rfc ก็ไม่เล็กอีก เลยไม่ค่อยได้คุยอะไรกับใครเลยช่วงนี้ เห้อ เอาหละมาเข้าเรื่องดีกว่า จากหัวข้อที่เขียนไว้ว่าจะพูดถึงเรื่อง HTTP แต่ไหงเขียนมามีแต่ WebDAV แต่จริงๆ แล้วมันเกี่ยวข้องกัน เพราะ WebDAV เป็นส่วนขยายต่อของ HTTP และก็เป็นเหตุให้อยากเขียนเรื่องนี้เก็บไว้ก่อนเนื่องจากวันนี้ทั้งวันต้องมาปวดหัวกับ Protocol นี้พอสมควรเลย ทั้งๆ ที่เรียนผ่านมาแล้ว แถมทำ Web server แล้วอีกต่างหาก Hypertext transfer protocol เป็น Protocol ที่ใช้สำหรับส่งข้อมูลเว็บต่างๆ ในเว็บ server ทั่วไป ตอนนี้มีด้วยกัน 2 รุ่นคือ 1.0 และ 1.1 ข้อแตกต่างนั้นมีอยู่น้อยนิดคือ 1.0 server [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/08/hypertext-transfer-protocol/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Enterprise network seminar</title>
+		<link>http://llun.in.th/2007/06/enterprise-network-seminar/</link>
+		<comments>http://llun.in.th/2007/06/enterprise-network-seminar/#comments</comments>
+		<pubDate>Thu, 14 Jun 2007 13:35:11 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[seminar]]></category>
+		<category><![CDATA[work]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=171</guid>
+		<description><![CDATA[โอ้วม่าย อีกสองอาทิตย์ต้องไปยืนในงานสัมมนาแสดงอุปกรณ์เนทเวิร์กและ present product ของบริษัท ซึ่งแต่ละตัวผมก็ไม่ค่อยจะรู้จักเท่าไหร่ (จริงๆ แทบไม่เคยเห็นเลย ก็ผมอยู่แผนกพัฒนาง่ะ วันๆ เขียนแต่โค้ดส่วนใหญ่ ) ที่โรงแรม Grand Hydtt Erawan วันที่ 25 ทั้งวัน Product ที่ต้องเตรียมตัวเผื่อมีแขกมาถามก็คือ Strix เรียกว่าไม่เคยได้ยินชื่อเลย Product ตัวนี้ หุหุ วันนี้พี่ก็เลยจับไปฟังก่อนเลยว่า มี Product ไรมั่งที่มีอยู่ แล้วมันทำไรได้มั่ง เจ้า Strix ที่ต้องเตรียมตัวนี่ก็เป็น Wireless access point ยี่ห้องนึง พิเศษกว่าคนอื่นตรงที่มันสามารถทำเป็น mesh และก็เอามาต่อซ้อนกันเหมือน Lego ได้ ดูไปแล้วมันก็น่าเล่นแฮะ ต่อสายแลนจุดเดียว ที่เหลือก็แค่เอาไอ้ตัวนี้ไปวางๆๆ ให้มันคลุมทุกจุด ตอนนี้ก็รู้คร่าวๆ บ้างแล้วว่ามันทำอะไรได้บ้าง แต่ก็อย่ามาถามผมละเอียดเลยนะ]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/06/enterprise-network-seminar/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>แผ่นดินไหว กับ อินเทอร์เนทประเทศไทย</title>
+		<link>http://llun.in.th/2006/12/%e0%b9%81%e0%b8%9c%e0%b9%88%e0%b8%99%e0%b8%94%e0%b8%b4%e0%b8%99%e0%b9%84%e0%b8%ab%e0%b8%a7-%e0%b8%81%e0%b8%b1%e0%b8%9a-%e0%b8%ad%e0%b8%b4%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%ad%e0%b8%a3%e0%b9%8c%e0%b9%80/</link>
+		<comments>http://llun.in.th/2006/12/%e0%b9%81%e0%b8%9c%e0%b9%88%e0%b8%99%e0%b8%94%e0%b8%b4%e0%b8%99%e0%b9%84%e0%b8%ab%e0%b8%a7-%e0%b8%81%e0%b8%b1%e0%b8%9a-%e0%b8%ad%e0%b8%b4%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%ad%e0%b8%a3%e0%b9%8c%e0%b9%80/#comments</comments>
+		<pubDate>Tue, 26 Dec 2006 00:00:00 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[disaster]]></category>
+		<category><![CDATA[network]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=52</guid>
+		<description><![CDATA[เป็นอะไรที่อยากบ่นสุดๆ เพราะว่าทำให้เปิดเว็บทำงานอะไรไม่ได้เลย เช่น google หรือ wiki >]]></description>
+		<wfw:commentRss>http://llun.in.th/2006/12/%e0%b9%81%e0%b8%9c%e0%b9%88%e0%b8%99%e0%b8%94%e0%b8%b4%e0%b8%99%e0%b9%84%e0%b8%ab%e0%b8%a7-%e0%b8%81%e0%b8%b1%e0%b8%9a-%e0%b8%ad%e0%b8%b4%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%ad%e0%b8%a3%e0%b9%8c%e0%b9%80/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>True ห่วยจริงๆ โว้ย</title>
+		<link>http://llun.in.th/2006/12/true-%e0%b8%ab%e0%b9%88%e0%b8%a7%e0%b8%a2%e0%b8%88%e0%b8%a3%e0%b8%b4%e0%b8%87%e0%b9%86-%e0%b9%82%e0%b8%a7%e0%b9%89%e0%b8%a2/</link>
+		<comments>http://llun.in.th/2006/12/true-%e0%b8%ab%e0%b9%88%e0%b8%a7%e0%b8%a2%e0%b8%88%e0%b8%a3%e0%b8%b4%e0%b8%87%e0%b9%86-%e0%b9%82%e0%b8%a7%e0%b9%89%e0%b8%a2/#comments</comments>
+		<pubDate>Wed, 20 Dec 2006 00:00:00 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[network]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=49</guid>
+		<description><![CDATA[เมื่อวาน กับเช้านี้ ว่าจะเล่นเกมซะหน่อย เนททรูที่แสนห่วยก็ตัดซะนี่ หงุดหงิดเลย ไม่รู้มันเป็นอะไรกับ Warcraft เล่นเป็นตัด ไม่ได้โหลดบิตด้วย (แต่ก่อนโหลดบิตแล้วตัด เดี๊ยวนี้ก็ยังคงตัด แต่ช่างมัน ใช้ Linux แล้ว ไม่โหลดก็ได้) แง่งไปเล่นอย่างอื่นก็ได้ฟะ (วันไหนจะหาโอกาสเปลี่ยนสายโทรศัพท์ ทรูทิ้งทั้งบ้าน แล้วใช้ tot แทน จะได้ใช้ buddy ได้ซะที)]]></description>
+		<wfw:commentRss>http://llun.in.th/2006/12/true-%e0%b8%ab%e0%b9%88%e0%b8%a7%e0%b8%a2%e0%b8%88%e0%b8%a3%e0%b8%b4%e0%b8%87%e0%b9%86-%e0%b9%82%e0%b8%a7%e0%b9%89%e0%b8%a2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Project เล็กๆ ของแพนด้า</title>
+		<link>http://llun.in.th/2006/10/project-%e0%b9%80%e0%b8%a5%e0%b9%87%e0%b8%81%e0%b9%86-%e0%b8%82%e0%b8%ad%e0%b8%87%e0%b9%81%e0%b8%9e%e0%b8%99%e0%b8%94%e0%b9%89%e0%b8%b2/</link>
+		<comments>http://llun.in.th/2006/10/project-%e0%b9%80%e0%b8%a5%e0%b9%87%e0%b8%81%e0%b9%86-%e0%b8%82%e0%b8%ad%e0%b8%87%e0%b9%81%e0%b8%9e%e0%b8%99%e0%b8%94%e0%b9%89%e0%b8%b2/#comments</comments>
+		<pubDate>Thu, 26 Oct 2006 00:00:00 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[P2P]]></category>
+		<category><![CDATA[project]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=19</guid>
+		<description><![CDATA[หลังจากปั่น Project วิชา OO เสร็จก็เอามาโฆษณาซักหน่อย (ที่จริงโฆษณาไปแล้วในเว็บ Tech blog แต่เอามาลงที่หน่อยดีกว่า) เป็น Project เล็กๆ เกี่ยวกับ Program chat ดูแล้วมันไม่น่าจะมีอะไรเด่น หรือดีกว่าโปรแกรมแชทในปัจจุบันแต่ที่ทำขึ้นมาเพื่อแก้ ปัญหาเวลาเล่นเกมตอนปี 2 นี่ก็ผ่านมา 2 ปีแล้วพึ่งเป็นรูปเป็นร่างใช้ได้จริงก็ปีนี้แล -*- สำหรับปัญหาตอนปีสองที่ทำให้เกิดโครงการนี้ขึ้นมาก็คือ การคุยกันผ่านคอมพิวเตอร์ ตอนนั้น ยังไม่มีเนทที่ต่อตลอดเวลาเหมือน ตอนนี้ ถึงมีก็ไม่เร็วเท่า ทำให้เวลาจะเรียกนัดอะไรกันทีก็ต้องตระโกนเรียกเอา จะใช้โปรแกรมแชทแบบ Net meeting ก็มีข้อเสีย ตรงที่ต้องมีเครื่องกลางเครื่องนึง ซึ่งก็ลำบากอีก เพราะเวลาเล่น เวลาเปิดคอม มันก็ไม่ตรงกัน ก็เลยสร้างโปรแกรมที่ไม่ต้องมี ศูนย์กลางในการสื่อสารมาใช้ซะเลย ตอนนั้นเรียกชื่อมันเล่นๆ ว่า Local Messenger แต่ทำไปได้ซักพักก็มีอันต้องหยุดโครงการไป ชั่วคราวเนื่องจากติดเกม แล้วก็ได้มาทำต่อตอนปี 3 เป็น Project ของวิชา Seminar System Software [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2006/10/project-%e0%b9%80%e0%b8%a5%e0%b9%87%e0%b8%81%e0%b9%86-%e0%b8%82%e0%b8%ad%e0%b8%87%e0%b9%81%e0%b8%9e%e0%b8%99%e0%b8%94%e0%b9%89%e0%b8%b2/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>เนทล่ม เนทช้า!!!</title>
+		<link>http://llun.in.th/2006/10/%e0%b9%80%e0%b8%99%e0%b8%97%e0%b8%a5%e0%b9%88%e0%b8%a1-%e0%b9%80%e0%b8%99%e0%b8%97%e0%b8%8a%e0%b9%89%e0%b8%b2/</link>
+		<comments>http://llun.in.th/2006/10/%e0%b9%80%e0%b8%99%e0%b8%97%e0%b8%a5%e0%b9%88%e0%b8%a1-%e0%b9%80%e0%b8%99%e0%b8%97%e0%b8%8a%e0%b9%89%e0%b8%b2/#comments</comments>
+		<pubDate>Sun, 22 Oct 2006 00:00:00 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[disaster]]></category>
+		<category><![CDATA[network]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=15</guid>
+		<description><![CDATA[เมื่อคืน TOT ล่มไปกว่าจะหายก็ปามาเย็นวันนี้และ -*- เป็นการล่มที่ยาวนานที่สุดเท่าที่เคยเจอมาเลย สงสัยเพราะฝนตกน้ำท่วมสาย หรือฟ้าผ่า ทำให้อุปกรณ์รวน เหอะๆ แต่ยังไงตอนนี้เนทก็กลับมาใช้ได้เหมือนเดิมแล้ว แถมความเร็วก็ดีกว่าเดิมในช่วงก่อนหน้านี้ซะด้วย (ไม่รู้ที่ช้าเนี๊ยะ เพราะอัพโหลดหรือป่าว ทำให้เล่นอะไรไม่ได้เลย) ในเมื่อเนทกลับมาแล้วสงสัยต้องเล่นให้คุ้มกับเวลาที่เสียไปซักหน่อยแล้ว หึหึ]]></description>
+		<wfw:commentRss>http://llun.in.th/2006/10/%e0%b9%80%e0%b8%99%e0%b8%97%e0%b8%a5%e0%b9%88%e0%b8%a1-%e0%b9%80%e0%b8%99%e0%b8%97%e0%b8%8a%e0%b9%89%e0%b8%b2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

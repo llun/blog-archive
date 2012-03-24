@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Linux</title>
+	<atom:link href="http://llun.in.th/tag/linux/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Automatic ssh authenticate</title>
+		<link>http://llun.in.th/2008/10/automatic-ssh-authenticate/</link>
+		<comments>http://llun.in.th/2008/10/automatic-ssh-authenticate/#comments</comments>
+		<pubDate>Sat, 18 Oct 2008 14:35:01 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[login]]></category>
+		<category><![CDATA[SSH]]></category>
+		<category><![CDATA[Unix]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=668</guid>
+		<description><![CDATA[วันนี้ willwill ถามในห้อง #ubuntu-th ว่าทำยังไงให้เข้าไปในเซิร์ฟเวอร์ได้โดยไม่ต้องพิมพ์รหัสผ่าน ก็คุ้นๆว่าเคยทำเมื่อปีที่แล้ว แต่ลืมไปแล้วค้นๆ ในบล๊อกก็เคยทำจริงด้วยแต่ไม่ได้เขียนวิธีไว้วันนี้เลยขุดค้นใหม่ (แต่ willwill เจอวิธีไปก่อนและ แต่คนละเว็บ) เอามาเขียนเก็บกันลืมในนี้อีกที ขั้นแรกล๊อกอินเข้าไปที่เซิร์ฟเวอร์ผ่าน ssh แล้วสร้าง key มาก่อนด้วยคำสั่งssh-keygen -t rsaโดยด้านหลังสุดอาจเป็น rsa หรือ dsa ก็ได้แล้วแต่วิธีที่จะใช้เข้ารหัส จากนั้นมันจะถามคำถามมามากมายรวมทั้งให้ใส่รหัสอีกทีรวมทั้งไฟล์ที่จะไว้เก็บ key นี้ด้วย สุดท้ายแล้วจะได้ไฟล์ออกมาสองไฟล์ คือไฟล์ที่เราใส่ชื่อเข้าไปกับ อีกอันที่มี .pub (คิดว่าเป็นไฟล์ที่เก็บ public key) ออกมา คัดลอกข้อมูลในไฟล์ .pub ลงไฟล์ ~/.ssh/authorized_keyscat host.pub &#62;&#62; ~/.ssh/authorized_keys เอาไฟล์ที่ได้ออกมาอีกไฟล์ส่งกลับมาที่เครื่องส่วนตัว แล้วเก็บไว้ที่ ~/.ssh เหมือนกัน ครั้งต่อไปที่เข้าเซิร์ฟเวอร์ก็ไม่ต้องใส่รหัสผ่านอีกต่อไปและ ช่วงนี้มานั่งนึกๆ ดูรู้สึกที่ทำงานมาหนึ่งปีกว่า ส่วนที่จำได้ส่วนใหญ่แล้วเกี่ยวกับงานมันก็จะถูกเขียนอยู่ในบล๊อกนี้แหละ ก็เลยอยากให้คนอื่นเขียนๆ ไว้บ้าง เอ๊ะ หรือว่าให้พี่สร้างบล๊อกของแต่ละคนในที่ทำงานไว้ดี เวลาทำไรก็ให้ทุกคนจดไว้ในนั้น [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/10/automatic-ssh-authenticate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Taskbar</title>
+		<link>http://llun.in.th/2008/06/taskbar/</link>
+		<comments>http://llun.in.th/2008/06/taskbar/#comments</comments>
+		<pubDate>Mon, 23 Jun 2008 07:05:14 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[application]]></category>
+		<category><![CDATA[chat]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=415</guid>
+		<description><![CDATA[แปะหาคนแนะนำว่าจะทำไงให้แถบมันลดไปดี T T&#8221; เริ่มจากด้านซ้ายเห็นสีน้ำเงินเป็นแถบๆ นั่น CPU ตามมาด้วยแรมที่ตอนนี้ใช้แทบไม่พอเนื่องจาก Flex builder + Eclipse ที่ใช้ทำจาวา จากนั้นก็ กราฟเนทเวิร์ก พุ่งเพราะว่ากำลังเปิดเว็บอยู่ ;p สุดท้าย disk ไม่รู้ทำไมมันพุ่งอย่างนั้นเหมือนกัน ที่อยากให้ช่วยลดคือ ไอ้สี่ตัวถัดไปเริ่มจากรูปไดโนเสาร์ไว้เล่น twitter มันคือ twitux นั่นเอง ตามมาด้วย pidgin ไว้สำหรับเล่น Gtalk จากนั้นก็ emesene สำหรับ MSN และสุดท้าย x-chat สำหรับ IRC &#8211; -&#8221; เยอะไช่มิ จริงๆ อยากได้รวมๆ แบบ pidgin อยู่นะ แต่ด้วยเหตุที่ว่า MSN ก็ส่งไฟล์ช้าเหลือเกิน offline message ก็ดูไม่ได้ irc ก็ไม่สะดวกเท่า x-chat เลยใช้มันสี่ตัวอย่างนี้แหละ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/06/taskbar/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Fedora9 กับ Adobe flash player</title>
+		<link>http://llun.in.th/2008/06/fedora9-%e0%b8%81%e0%b8%b1%e0%b8%9a-adobe-flash-player/</link>
+		<comments>http://llun.in.th/2008/06/fedora9-%e0%b8%81%e0%b8%b1%e0%b8%9a-adobe-flash-player/#comments</comments>
+		<pubDate>Sun, 22 Jun 2008 08:55:27 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Adobe Flash]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=414</guid>
+		<description><![CDATA[เป็นปัญหาเล็กน้อยที่งี่เง่าสิ้นดี หาไม่เจอวิธีแก้ซะตั้งนาน วันนี้เลยค้นหาจริงๆ จังว่าทำยังไงให้ Flash player ในหมาไฟมีเสียงซักทีเวลาเล่นวิดีโอต่างๆ โดยปกติแล้วเวลาจะลง Flash player ใน linux นี่มันก็ดันมีสองวิธีคือจาก Package manager หรือเอาตรงๆ จากเว็บ Adobe เลยซึ่งแน่นอนเอาจาก Package manager มันธรรมดาไป(จริงๆ คือมันห่วย สู้ที่มาจาก Adobe ไม่ได้ &#8211; -&#8221; รอคนทำพัฒนาให้ไกลกว่านี้อีกซักหน่อยละกันนะ) ก็เลยต้องเอาจาก Adobe มาติด ในนั้นก็ดันมีให้เลือกเยอะแยะมากมายอีกหลายวิธี ตั้งแต่เป็น .rpm, .yum หรือ .tar.gz ซึ่งถ้าเลือก .rpm หรือ .yum ก็คงไม่เจอปัญหายาวมาถึงตอนนี้(แต่จะไปเจอปัญหาเรื่องอื่นแทน เพราะว่าผมต้องใช้ Flash player debug ที่มากับ Flex builder ด้วยนี่สิ จะไปเปลี่ยนแก้ไขทีหลังท่าจะลำบาก) ด้วยเหตุจำเป็นบางประการ(อ่านในวงเล็บซะ) ก็เลยดาวโหลด .tar.gz [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/06/fedora9-%e0%b8%81%e0%b8%b1%e0%b8%9a-adobe-flash-player/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>iphone-dev</title>
+		<link>http://llun.in.th/2008/05/iphone-dev/</link>
+		<comments>http://llun.in.th/2008/05/iphone-dev/#comments</comments>
+		<pubDate>Fri, 16 May 2008 16:09:03 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[dev]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=341</guid>
+		<description><![CDATA[หลังจากได้ iphone มาเมื่อสัปดาห์ที่แล้ว ก็เริ่มเล่นจนเครื่องผมเอ๋อไปหลายรอบเลย ใครมาเห็น iphone ผมตอนนี้คงคิดว่ามันผ่านการใช้งานมาหลายเดือนแล้วแน่ๆ ฮะๆๆ เอาเป็นว่า หลังจากใช้มาได้หนึ่งสัปดาห์ตอนนี้ก็คันไม้คันมืออยากเขียนเองบ้างแล้วหละ แต่เนื่องจากเครื่องมือสำหรับพัฒนาโปรแกรมลง iphone นั้นในเว็บ apple มีไว้แต่สำหรับใช้บน แมค ผ่าน xcode ซึ่งเครื่องประจำของผมดันเป็น dell ลง linux ซะนี่ จะให้ไปซื้อ mac book มาใช้ก็ไช่ที่ ดังนั้นก็เลยหาวิธีพัฒนาโปรแกรมบน linux ซะจะดีกว่า สำหรับตัวช่วยของผมตอนนี้ก็คือเว็บนี้ครับ iphone-dev เครื่องมือที่เรียกกันจริงๆ ก็คือ toolchain (ทำไมเรียกงี้ก็ไม่รู้เหมือนกัน) ขั้นตอนนั้นก็ไม่มีอะไรซับซ้อน แต่ไอ้ที่ซับซ้อนคือไฟล์ที่ต้องใช้มากกว่า เอาหละมาดูขั้นตอนกัน(จริงๆ ก็แปลว่าจาก วิกินั้นนั่นแหละ) ตอนแรกก็ติด bison กับ flex ก่อน(ไม่ใช่ adobe flex หรอกนะ) $sudo aptitude install bison flex &#8230; [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/05/iphone-dev/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Fedora9 released &amp; mirror</title>
+		<link>http://llun.in.th/2008/05/fedora9-released-mirror/</link>
+		<comments>http://llun.in.th/2008/05/fedora9-released-mirror/#comments</comments>
+		<pubDate>Wed, 14 May 2008 01:50:55 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=330</guid>
+		<description><![CDATA[จริงๆ ออกตั้งแต่เมื่อวานแล้วหละ แต่เมื่อวานขี้เกียจกลับมาเข้า server สั่งโหลดแล้วนอนเลย วันนี้เลยกะเข้ามาบอกซะหน่อยว่าถ้าอยากลองก็ไปหาใด้ที่ nytes mirror คราวนี้เขียนสั้นหน่อยเพราะเขียนผ่าน iphone บนเรือ เห่อซะไม่มี ห้าห้าห้า]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/05/fedora9-released-mirror/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Thai LUGs</title>
+		<link>http://llun.in.th/2008/04/thai-lugs/</link>
+		<comments>http://llun.in.th/2008/04/thai-lugs/#comments</comments>
+		<pubDate>Fri, 11 Apr 2008 16:13:34 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[thai user group]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=279</guid>
+		<description><![CDATA[เข้า irc พิงค์กี้ก็เอาลิงค์ Questions for Thai LUGs มาให้ดู อ่านจบก็ไม่รู้จะตอบยังไง เพราะถึงแม้ว่าจะใช้งานลินุกซ์ อยู่แต่ก็ไม่ได้มีส่วนร่วมในการพัฒนาแต่อย่างใด เพราะงานประจำที่ทำอยู่ก็แทบแย่แล้ว ตอนนี้ส่วนใหญ่ก็เลยได้แค่สนับสนุนกลุ่ม ubuntuclub อย่างเงียบๆ คอยไปร่วมงานกิจกรรมต่างๆ แต่ถ้าให้ออกความเห็นจริงๆ เกี่ยวกับการพัฒนาลินุกซ์ในไทย ก็คงอยากให้มีกลุ่มๆ นึงเป็นแกนหลักจริงๆ นั่นแหละ อาจจะเป็นลินุกซ์ทะเลไปเลย เพราะส่วนตัวแล้ว มองว่าลินุกซ์ทะเลเป็นเหมือนตัวแสดงว่า ตอนนี้ลินุกซ์ภาษาไทยพัฒนาไปถึงไหนแล้ว เหมือนกับ foresight ที่เป็นตัวแทนของ gnome ที่เอาไว้แสดงความสามารถว่ามีการพัฒนาในแต่ละรุ่นไปอย่างไร ส่วนการเอากลับไปใช้ในต้นน้ำ ก็ให้เอาจากลินุกซ์ทะเลไปเลย สำหรับ ubuntuclub มองยังไงๆ ก็คงเน้นกลุ่มผู้ใช้งานเป็นหลัก กลุ่มผู้พัฒนาที่เข้ามาร่วมส่วนใหญ่ก็เน้นดัดแปลงเพื่อให้ใช้งานง่ายยิ่งขึ้นมากกว่า แต่ไม่ได้ทำอะไรเพิ่มมากนัก (ยกเว้นเรื่องแปลที่อันนี้เห็นด้วยว่าให้ ไปแปลที่ต้นน้ำไปเลย) จะพัฒนาแยกเน้นเฉพาะ ubuntu ก็ไม่น่าจะเป็นอะไรเท่าไหร่ เห้อ เขียนแค่นี้ดีกว่า นึกไม่ออกและจะเขียนอะไรต่อ ไว้นึกได้ค่อยมาแก้เพิ่มละกัน]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/04/thai-lugs/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Fix flex builder linux expire</title>
+		<link>http://llun.in.th/2008/03/fix-flex-builder-linux-expire/</link>
+		<comments>http://llun.in.th/2008/03/fix-flex-builder-linux-expire/#comments</comments>
+		<pubDate>Mon, 17 Mar 2008 04:48:53 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[alpha]]></category>
+		<category><![CDATA[expire]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/03/17/fix-flex-builder-linux-expire/</guid>
+		<description><![CDATA[วันนี้ตอนเช้ากำลังนั่งอ่าน feed อย่างเมามัน เพื่อนก็ทักมาว่า เปิด flex builder ไม่ได้บอกว่าหมดอายุ ผมก็แปลกใจสิ วันศุกร์มันบอกเหลืออีก สิบกว่าวันนี่หว่า ทำไมมาหมดอายุเอาวันนี้ ลองเปิดเองบ้าง เจอเหมือนกัน นั่งแก้อยู่ประมาณสองชั่วโมง เปิดหาในเว็บ ก็ไม่เจอว่า adobe จะออกข่าวอะไร จนพี่อีกคนมาบอกเอา flex sdk ตัวใหม่ไปใส่ก็หาย แต่เครื่องพี่ที่ใช้เป็น แมค มันออกตัวเต็มแล้ว แต่ที่ผมใช้เป็นลินุกซ์นี่สิ แต่ยังไงก็ลองดูบ้าง ปรากฏว่าไม่หายแฮะ เลยมั่วเองจนได้ออกมา เขียนเป็นวิธีสำหรับ ลินุกซ์หละครับ เริ่มจากดาวโหลด flex sdk ตัวใหม่จากเว็บ adobe มาจากที่นี่ http://download.macromedia.com/pub/flex/sdk/flex_sdk_3.zip ขยาย sdk ไว้ซักที่ เปิด flex builder ขึ้นมาใหม่ แล้วไปที่ Window-&#62;Preferences-&#62;Flex-&#62;Installed Flex SDKs เลือก Add แล้วหาแฟ้มที่ขยาย sdk ไว้ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/03/fix-flex-builder-linux-expire/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Sigmatel กับ Debian</title>
+		<link>http://llun.in.th/2008/03/sigmatel-%e0%b8%81%e0%b8%b1%e0%b8%9a-debian/</link>
+		<comments>http://llun.in.th/2008/03/sigmatel-%e0%b8%81%e0%b8%b1%e0%b8%9a-debian/#comments</comments>
+		<pubDate>Sun, 02 Mar 2008 07:37:13 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[debian]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Sigmatel]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/03/02/sigmatel-%e0%b8%81%e0%b8%b1%e0%b8%9a-debian/</guid>
+		<description><![CDATA[ตั้งแต่ได้โน๊ตบุ๊กใหม่มาเล่นก็มีปัญหานึงคาใจทำให้เลิกใช้ debian อยู่พักนึง คือมันหาการ์ดเสียงไม่เจอ จะทำเองก็ขี้เกียจทำ เลยขอลองเล่นค่ายอื่นดูบ้างซักพัก แต่ก็ยังหาที่ประทับใจเท่า debian ไม่ได้ วันนี้ก็เลยเอากลับมาลงใหม่ซะเลย แต่คราวนี้ติดจากซีดีและไม่ได้ใช้ flash เหมือนก่อน เพราะได้แผ่น xfce มา หลังจากติดตั้งเสร็จทุกอย่างจะติดไดรเวอร์การ์ดเสียงเพิ่มเริ่มแรกก็ต้องดาวโหลดซอร์สโค้ด alsa มาก่อน จากเว็บนี้ http://www.gtlib.gatech.edu/pub/suse/projects/alsa/snapshot/driver/ จากนั้นก็ขยายไฟล์ออกมาด้วยคำสั่ง tar jxvf alsa-driver.tar.bz2 แล้วเข้าไปในแฟ้มที่ขยายมารัน ./configure จากนั้นตามด้วย make และ make install ติดเสร็จสั่ง alsaconf อีกที ทำตามหน้าต่างไปเรื่อยๆ รีบูตเครื่องอีกทีก็มีเสียงแล้ว]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/03/sigmatel-%e0%b8%81%e0%b8%b1%e0%b8%9a-debian/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>ลบข้อความใน vi สามบรรทัด</title>
+		<link>http://llun.in.th/2008/02/%e0%b8%a5%e0%b8%9a%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b9%83%e0%b8%99-vi-%e0%b8%aa%e0%b8%b2%e0%b8%a1%e0%b8%9a%e0%b8%a3%e0%b8%a3%e0%b8%97%e0%b8%b1%e0%b8%94/</link>
+		<comments>http://llun.in.th/2008/02/%e0%b8%a5%e0%b8%9a%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b9%83%e0%b8%99-vi-%e0%b8%aa%e0%b8%b2%e0%b8%a1%e0%b8%9a%e0%b8%a3%e0%b8%a3%e0%b8%97%e0%b8%b1%e0%b8%94/#comments</comments>
+		<pubDate>Mon, 11 Feb 2008 14:12:55 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[dd]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[vi]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/02/11/%e0%b8%a5%e0%b8%9a%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b9%83%e0%b8%99-vi-%e0%b8%aa%e0%b8%b2%e0%b8%a1%e0%b8%9a%e0%b8%a3%e0%b8%a3%e0%b8%97%e0%b8%b1%e0%b8%94/</guid>
+		<description><![CDATA[วันนี้ได้อ่านข้อสอบเด็กๆ ที่พี่เอาไปทดสอบคนที่มาสมัครงาน เจอคำถามข้อนึงอ่านคำตอบหลายคนแล้วขำดีแต่ มีคนนึงตอบแล้วต้องมาคิดเพราะ เขียนมาว่า กด d ติดกันหกครั้ง จะว่าไปมันก็ถูกนะ แต่พี่ที่ทำงานคงอยากให้ตอบว่า กด d เลขสาม แล้วกดลูกศร ลงหรือขึ้น เอา แต่ถ้าใช้งานจริงๆ สงสัยจะกด d ติดกันซะมากกว่า หรือผมคิดไปเองเนี๊ยะ เพราะอาศัยจากพฤติกรรมส่วนตัว ก็การกด d แล้วกดจำนวนบรรทัดว่าจะลบข้อมูลไปเท่าไหร่ต้องมานั่งดู ว่าเราจะลบข้อความจากไหนถึงไหน แล้ว vi ก็แสนดีเหลือเกินไม่แสดง เลขบรรทัดซะด้วย (หรือมี option ให้กด ว่าจะแสดงหรือไม่แสดงหว่า) เวลาจะลบอะไรทีผมก็เลยเหมือน interpreter ไปโดยปริยายคอยดูว่าที่ลบไป หนะถึงไหนแล้วพอถึงบรรทัดที่ต้องการแล้วค่อยหยุดกด คิดว่าคงที่ตอบคำถามแบบนี้ก็คงเป็นเหมือนกันเลยตอบมาอย่างนี้ แต่ถ้าถามไปใหม่ว่า ถ้าจะให้ลบข้อความหนึ่งร้อยบรรทัดจะกดยังไง ไม่แน่คำตอบอาจจะเปลี่ยนไปก็ได้จริงมะ (หรือว่าจะตอบว่ากด d ติดต่อกันสองร้อยทีหว่า หึหึหึ)]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/02/%e0%b8%a5%e0%b8%9a%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%84%e0%b8%a7%e0%b8%b2%e0%b8%a1%e0%b9%83%e0%b8%99-vi-%e0%b8%aa%e0%b8%b2%e0%b8%a1%e0%b8%9a%e0%b8%a3%e0%b8%a3%e0%b8%97%e0%b8%b1%e0%b8%94/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Screen</title>
+		<link>http://llun.in.th/2008/02/screen/</link>
+		<comments>http://llun.in.th/2008/02/screen/#comments</comments>
+		<pubDate>Sun, 10 Feb 2008 06:33:49 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[screen]]></category>
+		<category><![CDATA[terminal multiplexer]]></category>
+		<category><![CDATA[WL500GP]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/02/10/screen/</guid>
+		<description><![CDATA[หลายวันก่อนพี่ที่ทำงานแนะนำโปรแกรมนึงมาให้ลองเล่นกับโปรแกรมโหลดบิตในเร้าเตอร์ชื่อว่า screen พี่บอกว่าทำให้สลับโปรแกรมใน terminal ได้ถ้าใครนึกภาพไม่ออกก็นึกถึงหน้าต่างในวินโดว์นั่นแหละ แต่อันนี้มันอยู่ในหน้าจอดำๆ แบบดอส แต่พี่บอกว่าจำไม่ได้แล้วว่าใช้ยังไง เลยลองไปขุดๆ ดูว่า wl500gp มันทำได้หรือป่าว เพราะเครื่อง desktop ใช้หน้าต่างธรรมดาดีกว่า ปรากฏว่ามันมีด้วย เลยจัดการลองบนเร้าเตอร์ซะเลย ขั้นแรกดาวโหลดมาติดในเร้าเตอร์ก่อน ด้วยความง่ายของ firmware ที่ใช้อยู่(oleg) เลยใช้คำสั่งแค่ $ipkg install screen รอมันโหลดแล้วติดตั้งให้ก็ใช้ได้แล้ว สะดวกเหมือนอยู่บน debian หึหึ จากนั้นเวลาจะให้เร้าเตอร์โหลดอะไรจากปกติที่จะให้โปรแกรมรันเป็น daemon ด้วยคำสั่งนี้ $enhanced-ctorrent -d file.torrent ก็เปลี่ยนเป็น $screen enhanced-ctorrent ซะแล้วมันจะขึ้นหน้าจอเหมือน ctorrent ปกติแบบไม่ได้ให้รัน daemon ก็จะมีรายละเอียดต่างๆ ว่าไฟล์ดาวโหลดไปถึงไหนแล้ว ขณะนี้ดาวโหลดด้วยความเร็วเท่าไหร่ seed เท่าไหร่ peer เท่าไหร่ พอเบื่อไม่อยากดูต่อก็กด ctrl+a+d เพื่อ detach หน้าต่างออกไป เข้าสู่ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/02/screen/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

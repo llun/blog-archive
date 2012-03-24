@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+		>
+<channel>
+	<title>Comments on: Is singleton really bad?</title>
+	<atom:link href="http://llun.in.th/2008/11/is-singleton-really-bad/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th/2008/11/is-singleton-really-bad/</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sun, 26 Feb 2012 02:23:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+	<item>
+		<title>By: จิตร์ทัศน์</title>
+		<link>http://llun.in.th/2008/11/is-singleton-really-bad/#comment-414</link>
+		<dc:creator>จิตร์ทัศน์</dc:creator>
+		<pubDate>Fri, 05 Dec 2008 16:02:52 +0000</pubDate>
+		<guid isPermaLink="false">http://llun.info/archives/775#comment-414</guid>
+		<description>ไม่ได้หมายถึงตอนที่จะทดสอบตัวที่เป็น singleton แต่จะทดสอบตัวที่ใช้ singleton น่ะครับ
+
+สมมติผมมีคลาส A ที่เรียกเอา object จากคลาส B โดยเรียกจาก B.instance()
+ทีนี้ ผมจะทดสอบ A โดย mock object ของคลาส B ไม่ได้ เพราะว่าไม่มีทางจะส่ง instance ของคลาสที่จะ mock เข้าไปให้ได้ (เพราะว่า A ดันเรียกหาเอาเองผ่านทาง B.instance()) น่ะครับ</description>
+		<content:encoded><![CDATA[<p>ไม่ได้หมายถึงตอนที่จะทดสอบตัวที่เป็น singleton แต่จะทดสอบตัวที่ใช้ singleton น่ะครับ</p>
+<p>สมมติผมมีคลาส A ที่เรียกเอา object จากคลาส B โดยเรียกจาก B.instance()<br />
+ทีนี้ ผมจะทดสอบ A โดย mock object ของคลาส B ไม่ได้ เพราะว่าไม่มีทางจะส่ง instance ของคลาสที่จะ mock เข้าไปให้ได้ (เพราะว่า A ดันเรียกหาเอาเองผ่านทาง B.instance()) น่ะครับ</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: llun</title>
+		<link>http://llun.in.th/2008/11/is-singleton-really-bad/#comment-413</link>
+		<dc:creator>llun</dc:creator>
+		<pubDate>Fri, 05 Dec 2008 15:46:28 +0000</pubDate>
+		<guid isPermaLink="false">http://llun.info/archives/775#comment-413</guid>
+		<description>@จิตร์ทัศน์ เวลาจะทดสอบ ตัวที่เป็น singleton ก็น่าจะ mockup ตัวนั้นทั้งก้อนอยู่แล้วหนะครับ singleton เลยไม่น่าเป็นเหตุให้ทดสอบยาก</description>
+		<content:encoded><![CDATA[<p>@จิตร์ทัศน์ เวลาจะทดสอบ ตัวที่เป็น singleton ก็น่าจะ mockup ตัวนั้นทั้งก้อนอยู่แล้วหนะครับ singleton เลยไม่น่าเป็นเหตุให้ทดสอบยาก</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: จิตร์ทัศน์</title>
+		<link>http://llun.in.th/2008/11/is-singleton-really-bad/#comment-412</link>
+		<dc:creator>จิตร์ทัศน์</dc:creator>
+		<pubDate>Fri, 05 Dec 2008 15:41:26 +0000</pubDate>
+		<guid isPermaLink="false">http://llun.info/archives/775#comment-412</guid>
+		<description>เท่าที่เข้าใจนะครับ ส่วนใหญ่ ถ้าใช้ Singleton จะมีปัญหามากเวลาจะทำ unit test
+เพราะว่ามันจะ mock พวกวัตถุที่เรียกด้วย singleton ยากมาก ทำให้มีปัญหาติดเรื่อง dependency เวลา test ครับ</description>
+		<content:encoded><![CDATA[<p>เท่าที่เข้าใจนะครับ ส่วนใหญ่ ถ้าใช้ Singleton จะมีปัญหามากเวลาจะทำ unit test<br />
+เพราะว่ามันจะ mock พวกวัตถุที่เรียกด้วย singleton ยากมาก ทำให้มีปัญหาติดเรื่อง dependency เวลา test ครับ</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: SouLsKi</title>
+		<link>http://llun.in.th/2008/11/is-singleton-really-bad/#comment-411</link>
+		<dc:creator>SouLsKi</dc:creator>
+		<pubDate>Sun, 30 Nov 2008 18:05:14 +0000</pubDate>
+		<guid isPermaLink="false">http://llun.info/archives/775#comment-411</guid>
+		<description>I agree with you :D</description>
+		<content:encoded><![CDATA[<p>I agree with you <img src='http://llun.in.th/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

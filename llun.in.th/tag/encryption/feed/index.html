@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Encryption</title>
+	<atom:link href="http://llun.in.th/tag/encryption/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Crypto-JS &amp; Node.js Crypto</title>
+		<link>http://llun.in.th/2011/12/crypto-js-node-js-crypto/</link>
+		<comments>http://llun.in.th/2011/12/crypto-js-node-js-crypto/#comments</comments>
+		<pubDate>Wed, 14 Dec 2011 09:51:17 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[AES]]></category>
+		<category><![CDATA[Crypto-JS]]></category>
+		<category><![CDATA[Encryption]]></category>
+		<category><![CDATA[Javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[OpenSSL]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2484</guid>
+		<description><![CDATA[นั่งงมอยู่หลายวันเรื่อง AES encryption ใน Javascript เนื่องจากหาข้อมูลที่เขียนอธิบายตรงๆ ไม่ได้เลย ทำได้แล้วก็จดเก็บไว้หน่อยดีกว่า เริ่มจากฝั่ง Browser ที่ต้องพึ่ง Crypto-JS เป็นชุด Library สำหรับใช้ในการเข้ารหัสหรือทำ Hash ต่างๆ สิ่งที่เอามาใช้วันนี้คือ AES ที่เป็นการเข้ารหัสที่ใช้กุญแจเหมือนกันทั้งสองฝั่ง วิธีใช้ก็ง่ายๆ มีอยู่ในเว็บคนทำอยู่แล้ว แต่ถ้าทำแค่นี้แล้วใช้กับ Node.js ได้ก็คงไม่ต้องมาจดแล้ว ปัญหามันเกิดตรงที่ถ้าเราใส่ &#8220;Secret Passphase&#8221; ไปตรงๆ สิ่งที่เกิดขึ้นคือมันจะ random IV (Initialization vector) ให้อัตโนมัติแล้วเอาไปใช้คู่กับ passphase ที่ใส่เข้ามา ทำให้ passphase ไม่สามารถเอาไปใช้กับ Node.js crypto ได้ ก็เลยต้องระบุเป็น Key และ IV ไป แต่ Key ที่ว่ามันก็ไม่ได้มาง่ายๆ อีกเนื่องจากความยาวต้องเท่ากับ 16, 24, 32 [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/12/crypto-js-node-js-crypto/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

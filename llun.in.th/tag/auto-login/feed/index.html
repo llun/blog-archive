@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; auto login</title>
+	<atom:link href="http://llun.in.th/tag/auto-login/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Fedora9 auto login</title>
+		<link>http://llun.in.th/2008/08/fedora9-auto-login/</link>
+		<comments>http://llun.in.th/2008/08/fedora9-auto-login/#comments</comments>
+		<pubDate>Fri, 01 Aug 2008 02:49:35 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[auto login]]></category>
+		<category><![CDATA[Fedora]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=521</guid>
+		<description><![CDATA[เวลาเปิดคอมมาใช้ส่วนตัว ปกติก็คงอยากให้เข้าระบบเลย ไม่ต้องค้างที่หน้าจอใส่รหัสกัน แต่หลังจาก Fedora9 เปลี่ยน gdm เป็นตัวใหม่เท่านั้นแหละ ปัญหาเลยตามมาเลย -_-&#8221; เพราะมันทำให้เข้าระบบอัตโนมัติแบบเดิมไม่ได้ ต้องตั้งให้มันนับถอยหลังเอาด้วย TimeLogin ลองดูวิธีทำก่อนละกัน ผมแก้ไฟล์ /etc/gdm/custom.conf เอาโดยเพิ่มค่าด้านล่างลงไป [daemon] TimedLoginEnable=true TimedLogin= TimedLoginDelay=10 บรรทัดแรกก็คือบอกว่าเปิดให้ใช้ TimedLogin บรรทัดถัดมาบอกว่าจะ login เข้า user ไหน บรรทัดสุดท้ายให้รอเท่าไหร่ ถ้าอยากให้เปิดเครื่องปุ๊บเข้าเลยก็ให้บรรทัดสุดท้ายเป็น 0 พอเข้ามาถึงหน้า login มันก็จะเข้าระบบไปทันที แต่ๆ ปัญหาที่เจอคือ มันไม่สมบูรณ์แบบ Ubuntu คือเข้ามาแล้วต้องกรอกรหัสอีกชั้นเพื่อให้ใช้รหัสผ่านที่เคยเก็บไว้ได้ ซึ่ง Ubuntu ไม่ต้องกรอกอีกทีแล้ว(ตามที่ pFz บอก เพราะยังไม่เคยลองเองแล้วได้ผลเลย -_-&#8221;) เห้อ ช่วงนี้เขียนแต่เรื่องปวดหัวแฮะ เรื่องไร้สาระเริ่มไม่มีอีกและ สงสัยต้องหาอะไรมาเล่นหน่อยแล้ว อ้างอิง: Fedora personal guide]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/08/fedora9-auto-login/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

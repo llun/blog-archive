@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Redmine</title>
+	<atom:link href="http://llun.in.th/tag/redmine/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Redmine + Nginx</title>
+		<link>http://llun.in.th/2011/03/redmine-nginx/</link>
+		<comments>http://llun.in.th/2011/03/redmine-nginx/#comments</comments>
+		<pubDate>Thu, 24 Mar 2011 09:08:11 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[fastcgi]]></category>
+		<category><![CDATA[nginx]]></category>
+		<category><![CDATA[Redmine]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2149</guid>
+		<description><![CDATA[หลังจากใช้ Teambox มาได้ครึ่งปีและคอยตามอัพเกรดพบว่า Teambox นั้นยังไม่ Stable เท่าไหร่แถมทรัพยากรที่ใช้ก็มากพอดู เมื่อวานเลยมองหาทางเลือกอื่นอีกครั้งเพื่อเอา Teambox ออกจากระบบ เริ่มแรกคิดว่าจะย้ายไปใช้ Service นอกอย่าง Flow แต่คิดไปคิดมาทำไมต้องเสียตังด้วย เลยมาจบลงที่ Redmine นี่แหละ วิธีลง Redmine บน Nginx ถ้าค้นหาตัวไม่ส่วนใหญ่จะให้ใช้กับ Phusion Passenger™ ซึ่งถ้าเป็น Apache จะลงแล้วทำตามทันที แต่สำหรับ Nginx ความยากมันมีเพิ่มขึ้นมาเมื่อต้อง compile Nginx ใหม่เลยเปลี่ยนทางเลือกเป็น FastCGI แทน สำหรับสิ่งที่ต้องเตรียมลงก่อนล่วงหน้าคือ nginx, spawn-fcgi (ถ้าใช้ Debian 5.0 ต้องลงจาก lighttpd), redmine (จะใช้จาก apt หรือดาวโหลดมาขยายลงแฟ้มซักแฟ้มก็ได้) script สำหรับ start redmine ผ่าน spawn-fcgi ใน [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/03/redmine-nginx/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Upgrade mod_passenger</title>
+		<link>http://llun.in.th/2008/07/517/</link>
+		<comments>http://llun.in.th/2008/07/517/#comments</comments>
+		<pubDate>Tue, 29 Jul 2008 04:04:22 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Rails]]></category>
+		<category><![CDATA[Redmine]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=517</guid>
+		<description><![CDATA[เมื่อวานพี่ที่ทำงานจะเอา redmine ลงก็เลยมาถามแล้วก็เอาที่เคยเขียนไปให้ดูปรากฏว่าไม่สำเร็จ พี่อีกคนทำมั่งก็บอกว่าหา module ของ apache ไม่เจอก็เลยไปดูบ้างปรากฏว่ามันเปลี่ยนรุ่นไปไกลแล้ว จากที่เคยลงมันเป็นรุ่น 1.0.5 ตอนนี้มันกลายเป็น 2.0.2 หละพร้อมกับการตั้งค่าที่เปลี่ยนไป เลยทำให้ปวดหัวเล็กน้อย วันนี้ตอนเช้าเลยลองทำและก็ถือโอกาสอัพเกรดซะด้วยเลย ขั้นตอนๆ เริ่มจากอัพเกรด mod_passenger เป็นรุ่นใหม่ก่อน ขั้นนี้ง่ายๆ เพราะมี gem อยู่ก็สั่งอัพเกรดบรรทัดเดียวด้วยคำสั่ง #gem upgrade ที่เหลือก็ปล่อยมันดาวโหลดไป จากนั้นต้องให้มันคอมไพล์ออกมาเป็น .so สำหรับยัดเข้า apache แต่มันมี binary ให้พร้อมอยู่แล้วแค่สั่ง #passenger-install-apache2-module จากนั้นแก้ไข apache config โดยการเพิ่มสามบรรทัดนี้เข้าไป LoadModule passenger_module /usr/local/lib/ruby/gems/1.8/gems/passenger-2.0.2/ext/apache2/mod_passenger.so PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-2.0.2 PassengerRuby /usr/local/bin/ruby18 จากนั้นกำหนด vhost ตามเดิมก็ใช้ได้หละ แล้วสั่ง apache ให้เริ่มใหม่ก็เรียบร้อย ของเก่าดูได้จากที่นี่: Redmine กับ Phusion [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/517/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Redmine กับ Phusion Passenger™</title>
+		<link>http://llun.in.th/2008/07/redmine-%e0%b8%81%e0%b8%b1%e0%b8%9a-phusion-passenger%e2%84%a2/</link>
+		<comments>http://llun.in.th/2008/07/redmine-%e0%b8%81%e0%b8%b1%e0%b8%9a-phusion-passenger%e2%84%a2/#comments</comments>
+		<pubDate>Tue, 01 Jul 2008 11:51:03 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[FreeBSD]]></category>
+		<category><![CDATA[Passenger]]></category>
+		<category><![CDATA[Rails]]></category>
+		<category><![CDATA[Redmine]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=454</guid>
+		<description><![CDATA[เนื่องจากกำลังทำโฮสท์เพื่อให้คนอื่นเข้ามาใช้ ruby on rails อยู่ก็เลยต้องลองเล่น mod ต่างๆ กับหาทางให้ apache นิ่งสำหรับ mod ตัวแรกที่เจอคือ mod_ruby แต่อันนั้นเวลาจะใช้มันใช้กับไฟล์ .rb คือเอาไฟล์มาวางเสร็จแล้วทำให้เหมือนกับ .php เลยเป็น script แล้วแสดงผลพวก print ขึ้นหน้าจอทันที มันก็เหมือนจะดีนะ แต่โปรแกรมที่เขียนด้วย ruby ส่วนใหญ่จะใช้กับ rail นี่สิ ก็เลยต้องหาใหม่ แล้วก็มีคนแนะนำผ่าน twitter มาว่าใช้ mod_rails สิ ก็ลองๆ แต่ไม่ได้หาโปรแกรมมาใส่ซักทีแล้วก็ทิ้งไปเสียนาน สำหรับ Redmine นี่คือตัวเลือกก่อนที่คิดจะทำ Control panel เพราะนอกจากจะทำโฮสท์ให้ลองเล่น ruby แล้วยังคิดที่จะทำให้เพื่อใช้เป็นที่ฝากไฟล์ หรือทำงานร่วมกันอีกด้วย โดยหลักๆ แล้วก็คือให้บริการพวก svn นั่นแหละ แต่จะมี svn อย่างเดียวก็ยังไงอยู่ เพราะจะให้เข้ามาแก้ไขไฟล์เลย ท่าทางคนทำโครงการต่างๆ คงจะส่ายหน้าหนี(อย่างน้อยก็คงเป็นเพื่อนผมหละ) [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/redmine-%e0%b8%81%e0%b8%b1%e0%b8%9a-phusion-passenger%e2%84%a2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

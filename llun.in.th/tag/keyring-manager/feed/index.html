@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Keyring Manager</title>
+	<atom:link href="http://llun.in.th/tag/keyring-manager/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Stop Gnome Keyring Prompt For A Password</title>
+		<link>http://llun.in.th/2007/08/stop-gnome-keyring-prompt-for-a-password/</link>
+		<comments>http://llun.in.th/2007/08/stop-gnome-keyring-prompt-for-a-password/#comments</comments>
+		<pubDate>Wed, 08 Aug 2007 15:37:37 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Gnome]]></category>
+		<category><![CDATA[Keyring Manager]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=201</guid>
+		<description><![CDATA[ไม่รู้มีใครเป็นเหมือนผมป่าวที่ boot ubuntu มาแล้วรำคาญเหลือเกินที่ต้องใส่รหัสทุกครั้งเลย เมื่อเปิด wireless ไว้ วันนี้ก็เลยขุดหาวิธีซะหน่อยว่าแก้ได้ป่าว แล้วก็เจอ ที่นี่ และ ที่นี่ เลยขอเขียนสรุปไว้ในบล๊อกด้วยอีกที่ละกัน ติด package libpam-keyring เพิ่มก่อน sudo apt-get install libpam-keyring แก้ไฟล์ gdm เพื่อแก้ไข gksudo gedit /etc/pam.d/gdm เพิ่ม code ด้านล่างลงไป @include common-pamkeyring วิธีนี้จะใช้ได้ก็เมื่อรหัสผ่านที่ใช้ login กับรหัสที่ใช้เอาค่าจาก Key Manager เหมือนกัน ถ้าไม่เหมือนกันก็เข้าไปที่ System -&#62; Administration -&#62; Keyring Manager แล้วลบ Key ทั้งหมดออกให้หมด จากนั้นก็ Restart เครื่องเป็นอันเสร็จพิธี เพิ่มเติม 9 สค : [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/08/stop-gnome-keyring-prompt-for-a-password/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+		>
+<channel>
+	<title>Comments on: Node.JS on FreeBSD 64 bit</title>
+	<atom:link href="http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sun, 26 Feb 2012 02:23:00 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+	<item>
+		<title>By: Anonymous</title>
+		<link>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/#comment-617</link>
+		<dc:creator>Anonymous</dc:creator>
+		<pubDate>Tue, 16 Aug 2011 15:05:00 +0000</pubDate>
+		<guid isPermaLink="false">http://llun.in.th/?p=2171#comment-617</guid>
+		<description>คิดว่าคงต้องแก้ที่ method query มากกว่าครับ เพราะเป็น method ที่คอยถูก query เพื่อเอา message ใหม่ไม่ใช่ append
+
+Append ทำหน้าที่แค่ได้รับ message มาแล้วใส่ไปใน list messages ทั้งหมด</description>
+		<content:encoded><![CDATA[<p>คิดว่าคงต้องแก้ที่ method query มากกว่าครับ เพราะเป็น method ที่คอยถูก query เพื่อเอา message ใหม่ไม่ใช่ append</p>
+<p>Append ทำหน้าที่แค่ได้รับ message มาแล้วใส่ไปใน list messages ทั้งหมด</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: นิเทศ บุตรโคตร</title>
+		<link>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/#comment-616</link>
+		<dc:creator>นิเทศ บุตรโคตร</dc:creator>
+		<pubDate>Tue, 16 Aug 2011 05:22:00 +0000</pubDate>
+		<guid isPermaLink="false">http://llun.in.th/?p=2171#comment-616</guid>
+		<description>สวัสดีครับ
+ผมมีคำถามเกี่ยวกับ Node.JS ครับ
+
+
+ผมลองแกะ source code ของ node.js chat demo, http://chat.nodejs.org/, source code : https://github.com/ry/node_cha....
+ซึ่งมันเป็น public chat room.
+ผมเจอบน server.js line 26, the method appendMessage.
+
+============================================================
+ this.appendMessage = function (nick, type, text) {
+    var m = { nick: nick
+            , type: type // &quot;msg&quot;, &quot;join&quot;, &quot;part&quot;
+            , text: text
+            , timestamp: (new Date()).getTime()
+            };
+
+    switch (type) {
+      case &quot;msg&quot;:
+        sys.puts(&quot; &quot; + text);
+        break;
+      case &quot;join&quot;:
+        sys.puts(nick + &quot; join&quot;);
+        break;
+      case &quot;part&quot;:
+        sys.puts(nick + &quot; part&quot;);
+        break;
+    }
+
+    messages.push( m );
+
+    while (callbacks.length &gt; 0) {
+      callbacks.shift().callback([m]);
+    }
+
+    while (messages.length &gt; MESSAGE_BACKLOG)
+      messages.shift();
+  };
+
+============================================================
+
+It has &quot; messages.push( m );&quot;.
+step นี้น่าจะเป็น push message to all client.
+
+
+ต้องทำยังไงให้เกิดการ push message ไปยัง specific user(browser) อย่าง private chat?
+คือผมต้องการจะให้มัน user ที่เป็นผู้รับข้อความเท่านั้น จึงจะห็นข้อความ  นอกนั้นไม่เห็น  นั่นก็คือ push ข้อมูล ไปยัง specific session เท่านั้นใช่มั้ยครับ 
+แล้ว ผมจะต้องจัดการ session ยังไงครับ  พอจะ example ให้ดูเป็นตัวอย่างได้มั้ยครับ
+ขอบคุณครับ</description>
+		<content:encoded><![CDATA[<p>สวัสดีครับ<br />
+ผมมีคำถามเกี่ยวกับ Node.JS ครับ</p>
+<p>ผมลองแกะ source code ของ node.js chat demo, <a href="http://chat.nodejs.org/" rel="nofollow">http://chat.nodejs.org/</a>, source code : <a href="https://github.com/ry/node_cha..." rel="nofollow">https://github.com/ry/node_cha&#8230;</a>.<br />
+ซึ่งมันเป็น public chat room.<br />
+ผมเจอบน server.js line 26, the method appendMessage.</p>
+<p>============================================================<br />
+ this.appendMessage = function (nick, type, text) {<br />
+    var m = { nick: nick<br />
+            , type: type // &#8220;msg&#8221;, &#8220;join&#8221;, &#8220;part&#8221;<br />
+            , text: text<br />
+            , timestamp: (new Date()).getTime()<br />
+            };</p>
+<p>    switch (type) {<br />
+      case &#8220;msg&#8221;:<br />
+        sys.puts(&#8221; &#8221; + text);<br />
+        break;<br />
+      case &#8220;join&#8221;:<br />
+        sys.puts(nick + &#8221; join&#8221;);<br />
+        break;<br />
+      case &#8220;part&#8221;:<br />
+        sys.puts(nick + &#8221; part&#8221;);<br />
+        break;<br />
+    }</p>
+<p>    messages.push( m );</p>
+<p>    while (callbacks.length &gt; 0) {<br />
+      callbacks.shift().callback([m]);<br />
+    }</p>
+<p>    while (messages.length &gt; MESSAGE_BACKLOG)<br />
+      messages.shift();<br />
+  };</p>
+<p>============================================================</p>
+<p>It has &#8221; messages.push( m );&#8221;.<br />
+step นี้น่าจะเป็น push message to all client.</p>
+<p>ต้องทำยังไงให้เกิดการ push message ไปยัง specific user(browser) อย่าง private chat?<br />
+คือผมต้องการจะให้มัน user ที่เป็นผู้รับข้อความเท่านั้น จึงจะห็นข้อความ  นอกนั้นไม่เห็น  นั่นก็คือ push ข้อมูล ไปยัง specific session เท่านั้นใช่มั้ยครับ<br />
+แล้ว ผมจะต้องจัดการ session ยังไงครับ  พอจะ example ให้ดูเป็นตัวอย่างได้มั้ยครับ<br />
+ขอบคุณครับ</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Clz</title>
+		<link>http://llun.in.th/2011/05/node-js-on-freebsd-64-bit/#comment-591</link>
+		<dc:creator>Clz</dc:creator>
+		<pubDate>Mon, 30 May 2011 03:34:00 +0000</pubDate>
+		<guid isPermaLink="false">http://llun.in.th/?p=2171#comment-591</guid>
+		<description>วะวะวะว้าว</description>
+		<content:encoded><![CDATA[<p>วะวะวะว้าว</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

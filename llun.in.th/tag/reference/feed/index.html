@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; reference</title>
+	<atom:link href="http://llun.in.th/tag/reference/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>ทำไม Flex Listener ควรใช้ Weak Reference</title>
+		<link>http://llun.in.th/2009/08/%e0%b8%97%e0%b8%b3%e0%b9%84%e0%b8%a1-flex-listener-%e0%b8%84%e0%b8%a7%e0%b8%a3%e0%b9%83%e0%b8%8a%e0%b9%89-weak-reference/</link>
+		<comments>http://llun.in.th/2009/08/%e0%b8%97%e0%b8%b3%e0%b9%84%e0%b8%a1-flex-listener-%e0%b8%84%e0%b8%a7%e0%b8%a3%e0%b9%83%e0%b8%8a%e0%b9%89-weak-reference/#comments</comments>
+		<pubDate>Thu, 27 Aug 2009 10:07:14 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[listener]]></category>
+		<category><![CDATA[reference]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1236</guid>
+		<description><![CDATA[วันนี้นั่งรื้อฟื้นความจำ อธิบายให้ @pitiphong_p ฟังว่าทำไมเวลา addEventListener แล้วต้องใส่ argument ช่องสุดท้ายให้เป็น true ลองดูก่อนละกันว่าหน้าตามันเป็นยังไง public function addEventListener(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false):void useWeakReference หมายความว่าเวลาที่ GC มาเก็บกวาดแล้วนับว่ามี reference ไปที่ object นี้เท่าไหร่บ้าง มันจะไม่นับ reference นี้คำถามคือ ทำไมต้องทำให้ reference ไปที่ listener function เป็น weak ก็ลองดูจาก diagram ด้านล่างดู ที่ Observer จะมี reference ไปหามันจาก 2 Object คือตัวที่เป็นคนเพิ่มมันไปให้ Observable กับตัว Observable [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/08/%e0%b8%97%e0%b8%b3%e0%b9%84%e0%b8%a1-flex-listener-%e0%b8%84%e0%b8%a7%e0%b8%a3%e0%b9%83%e0%b8%8a%e0%b9%89-weak-reference/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Weak reference</title>
+		<link>http://llun.in.th/2008/04/weak-reference/</link>
+		<comments>http://llun.in.th/2008/04/weak-reference/#comments</comments>
+		<pubDate>Thu, 17 Apr 2008 14:49:25 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[reference]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=287</guid>
+		<description><![CDATA[จำได้ปีที่แล้วผมเคยต้องศึกษาเกี่ยวกับ reference แบบต่างๆของจาวาดู (ทำงานกับจาวา) มาปีนี้เจอคล้ายกัน แต่เป็นของ as3 แต่ตอนใช้กับจาวาไม่ค่อยเห็นความสำคัญเท่าไหร่ เพราะว่าไม่มีอะไรให้เห็นเหมือนอย่าง flash แต่ก็มีข้อแตกต่างอยู่บ้าง reference ใน flash จะไม่แบ่งละเอียดยิบย่อยเหมือนของ java ที่มีสี่แบบ(strong, soft, weak, phantom) แต่จะมีแค่สองคือ strong กับ weak ไปเลย และความหมายก็ชัดเจนมากคือ reference ที่ยอมให้ gc จัดการได้ หรือไม่ได้ ขณะอ้างอิงอยู่ ก็เลยรู้สึกว่ามันง่ายดีนะ แต่พอเอาไปใช้จริงๆ มันดันไม่ง่ายนี่สิ เพราะ weak reference ของ as3 ดันมีให้ใช้จริงๆ แค่สองจุดคือ ตอนเพิ่ม listener กับ Dictionary โดยปกติเวลาเพิ่ม listener ให้กับ object ใด as3 จะให้เป็น strong reference [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/04/weak-reference/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

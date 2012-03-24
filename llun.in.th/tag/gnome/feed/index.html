@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Gnome</title>
+	<atom:link href="http://llun.in.th/tag/gnome/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>GNOME art</title>
+		<link>http://llun.in.th/2007/08/gnome-art/</link>
+		<comments>http://llun.in.th/2007/08/gnome-art/#comments</comments>
+		<pubDate>Thu, 16 Aug 2007 14:16:17 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Gnome]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[theme]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=207</guid>
+		<description><![CDATA[วันนี้มีโปรแกรมมาแนะนำสำหรับคนใช้ GNOME ทั้งหลาย ที่ชอบเปลี่ยนหน้าตาบ่อยๆ (จริงๆ คือผมนี่แหละ ที่ชอบเปลี่ยน แถมเปลี่ยนเป็นรายชั่วโมงด้วยบางที หุหุ) โปรแกรมที่ว่าก็ตามชื่อหัวข้อ GNOME Art น่ันเอง การทำงานของโปรแกรมนี้ก็ง่ายๆ โดยการไปโหลดรายการสิ่งที่เราจะเปลี่ยนจากเว็บ http://art.gnome.org แล้วให้เราเลือก โดยสิ่งที่สามารถเปลี่ยนได้แบ่งเป็นสามหมวดใหญ่ๆ คือ Background Desktop Themes : จะเป็นธีมหลังจากที่ Login เข้ามาแล้ว เช่น ขอบหน้าต่าง ไอคอน หรือ โปรแกรมต่างๆ Other Themes : ธีมก่อนเข้าระบบเช่นหน้าจอ Login หรือ Splash ขณะที่โหลดเข้าระบบ (ไม่ไช่ uSplash ตอน boot นะ) โปรแกรมนี้จะว่าไปแล้วก็ยังไม่สมบูรณ์เท่าไหร่ เพราะเท่าที่ใช้มาก็เจอบั๊กแปลกๆ อยู่เช่น เลือกดาวโหลดพื้นหลังมาเปลี่ยนแล้ว จะไปเปลี่ยนขอบหน้าต่างบ้าง กลับไม่ยอมโหลดรายการหน้าต่างมาให้ ต้องออกจากโปรแกรมเข้าใหม่ แล้วเลือกใหม่ถึงจะโหลดให้ หรือบางอย่างกดติดตั้งไปแล้วไม่โผล่มาให้เลือกเพื่อเปลี่ยนบ้าง (ใช้มาเจอแค่ ธีมเดียว) [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/08/gnome-art/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Stop Gnome Keyring Prompt For A Password</title>
+		<link>http://llun.in.th/2007/08/stop-gnome-keyring-prompt-for-a-password/</link>
+		<comments>http://llun.in.th/2007/08/stop-gnome-keyring-prompt-for-a-password/#comments</comments>
+		<pubDate>Wed, 08 Aug 2007 15:37:37 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Gnome]]></category>
+		<category><![CDATA[Keyring Manager]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=201</guid>
+		<description><![CDATA[ไม่รู้มีใครเป็นเหมือนผมป่าวที่ boot ubuntu มาแล้วรำคาญเหลือเกินที่ต้องใส่รหัสทุกครั้งเลย เมื่อเปิด wireless ไว้ วันนี้ก็เลยขุดหาวิธีซะหน่อยว่าแก้ได้ป่าว แล้วก็เจอ ที่นี่ และ ที่นี่ เลยขอเขียนสรุปไว้ในบล๊อกด้วยอีกที่ละกัน ติด package libpam-keyring เพิ่มก่อน sudo apt-get install libpam-keyring แก้ไฟล์ gdm เพื่อแก้ไข gksudo gedit /etc/pam.d/gdm เพิ่ม code ด้านล่างลงไป @include common-pamkeyring วิธีนี้จะใช้ได้ก็เมื่อรหัสผ่านที่ใช้ login กับรหัสที่ใช้เอาค่าจาก Key Manager เหมือนกัน ถ้าไม่เหมือนกันก็เข้าไปที่ System -&#62; Administration -&#62; Keyring Manager แล้วลบ Key ทั้งหมดออกให้หมด จากนั้นก็ Restart เครื่องเป็นอันเสร็จพิธี เพิ่มเติม 9 สค : [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/08/stop-gnome-keyring-prompt-for-a-password/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>สองอาทิตย์กับ 6 OS</title>
+		<link>http://llun.in.th/2007/07/%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%ad%e0%b8%b2%e0%b8%97%e0%b8%b4%e0%b8%95%e0%b8%a2%e0%b9%8c%e0%b8%81%e0%b8%b1%e0%b8%9a-6-os/</link>
+		<comments>http://llun.in.th/2007/07/%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%ad%e0%b8%b2%e0%b8%97%e0%b8%b4%e0%b8%95%e0%b8%a2%e0%b9%8c%e0%b8%81%e0%b8%b1%e0%b8%9a-6-os/#comments</comments>
+		<pubDate>Thu, 12 Jul 2007 15:34:12 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Gnome]]></category>
+		<category><![CDATA[KDE]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[OpenSUSE]]></category>
+		<category><![CDATA[os]]></category>
+		<category><![CDATA[OSX]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Xfce]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=189</guid>
+		<description><![CDATA[ช่วงสองสามอาทิตย์นี้ นั่งลง OS เล่น หาอันที่ถูกใจ ก็เลยได้ลองเปลี่ยน Desktop Manager ไปด้วยเลย โดยตัวที่ลองจริงๆ ก็มี Ubuntu และก็พี่น้องอีกสองตัว คือ Kubuntu และ Xubuntu (ถือว่าเป็นกลุ่มเดียวกันละกัน) ถัดมาก็ Fedora7 ที่คราวนี้โหลดเป็น DVD มาเลย เพราะนึกว่าจะลงโปรแกรมอื่นๆ ง่ายขึ้น อีกตัวที่พยายามลงก็คือ OSX ตัวสุดท้ายก็ OpenSUSE 10.2 ตัวเก่าต้นปี ผลสรุปออกมาคือผมชอบ Xubuntu ที่สุดเลย แม้จะเอา Ubuntu มาลง Xfce ต่างหากก็ได้ แต่มันก็ไม่เล็กได้เท่า Xubuntu นี่แหละ แถมผมชอบ Effect ที่มากับ Xubuntu เลยอีกต่างหาก ไม่มาก เรียบง่ายดี อีกอย่าง ตัวจัดการพื้นหลังของ Xfce ก็สามารถให้จอสองจอมีพื้นหลังที่ต่างกันได้ แม้จะกำหนดเวลาเพื่อนเปลี่ยนภาพพื้นหลังไปเรื่อยๆ เหมือน [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/07/%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%ad%e0%b8%b2%e0%b8%97%e0%b8%b4%e0%b8%95%e0%b8%a2%e0%b9%8c%e0%b8%81%e0%b8%b1%e0%b8%9a-6-os/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

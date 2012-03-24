@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; tunneling</title>
+	<atom:link href="http://llun.in.th/tag/tunneling/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>SSH Tunnel</title>
+		<link>http://llun.in.th/2010/06/ssh-tunnel/</link>
+		<comments>http://llun.in.th/2010/06/ssh-tunnel/#comments</comments>
+		<pubDate>Wed, 30 Jun 2010 11:09:45 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[SSH]]></category>
+		<category><![CDATA[tunneling]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1730</guid>
+		<description><![CDATA[Server โดยปกติมักจะมีบริการมาตรฐานอยู่สองสามอย่างที่หลุดพ้น Firewall ออกมา เช่น 80, 443, 22 เมื่อต้องการเข้าไปใช้บริการอื่นที่เปิด port พิเศษก็ต้องใช้วิธีพิเศษกันหน่อย โดยการขุดอุโมงผ่าน port มาตรฐานเข้าไป เครื่องมือที่ต้องใช้ก็มีอยู่แค่อย่างเดียว ssh ให้ sshd ยอมให้ต่ออุโมงโดยกำหนดในไฟล์ sshd_config ถ้าเป็น FreeBSD, Linux หาได้ที่ /etc/ssh/sshd_config แต่ OSX ดันวางไว้ต่างจากที่อื่นหน่อย /etc/sshd_config เลย จากนั้นก็ขุดอุโมงด้วยคำสั่ง Option ต่างๆ ที่ใช้ด้านบนคือ -p [port] สำหรับบอกว่าจะต่อไปที่เครื่องเป้าหมายที่ port ไหน ไม่จำเป็นต้องใส่ default คือ 22 -g สำหรับให้เครื่องอื่นต่อผ่านเข้าไปได้ด้วย ถ้าไม่ใส่ ssh จะ bind เข้า ip 127.0.0.1 ทำให้เข้าจากเครื่องอื่นไม่ได้ -L [local_port]:[target_host]:[target_port] [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/06/ssh-tunnel/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SSH Tunneling via Apache</title>
+		<link>http://llun.in.th/2009/09/ssh-tunneling-via-apache/</link>
+		<comments>http://llun.in.th/2009/09/ssh-tunneling-via-apache/#comments</comments>
+		<pubDate>Fri, 25 Sep 2009 08:04:20 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[proxy]]></category>
+		<category><![CDATA[SSH]]></category>
+		<category><![CDATA[tunneling]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1282</guid>
+		<description><![CDATA[อุปกรณ์ที่มี Apache web server ที่ติด mod_proxy และ mod_proxy_connect หรือ Web proxy server อะไรก็ได้ที่รองรับคำสั่ง CONNECT Proxytunnel SSH client เริ่มจากตั้งค่าให้ Apache ก่อน โดยกำหนดให้ Apache เป็น Forward Proxy ServerName blah.com ProxyRequests On ProxyVia On AllowCONNECT 22 80 443 563 Order allow,deny Allow from all ProxyRequests เพื่อให้ Apache ทำตัวเป็น ForwardProxy เอา request เรียกไปที่เครื่องอื่นต่อได้ ProxyVia เพื่อให้ Apache แปะไปที่ request ที่เรียกต่อไปด้วยว่า [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/09/ssh-tunneling-via-apache/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

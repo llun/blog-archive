@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Fedora</title>
+	<atom:link href="http://llun.in.th/tag/fedora/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Fedora9 auto login</title>
+		<link>http://llun.in.th/2008/08/fedora9-auto-login/</link>
+		<comments>http://llun.in.th/2008/08/fedora9-auto-login/#comments</comments>
+		<pubDate>Fri, 01 Aug 2008 02:49:35 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[auto login]]></category>
+		<category><![CDATA[Fedora]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=521</guid>
+		<description><![CDATA[เวลาเปิดคอมมาใช้ส่วนตัว ปกติก็คงอยากให้เข้าระบบเลย ไม่ต้องค้างที่หน้าจอใส่รหัสกัน แต่หลังจาก Fedora9 เปลี่ยน gdm เป็นตัวใหม่เท่านั้นแหละ ปัญหาเลยตามมาเลย -_-&#8221; เพราะมันทำให้เข้าระบบอัตโนมัติแบบเดิมไม่ได้ ต้องตั้งให้มันนับถอยหลังเอาด้วย TimeLogin ลองดูวิธีทำก่อนละกัน ผมแก้ไฟล์ /etc/gdm/custom.conf เอาโดยเพิ่มค่าด้านล่างลงไป [daemon] TimedLoginEnable=true TimedLogin= TimedLoginDelay=10 บรรทัดแรกก็คือบอกว่าเปิดให้ใช้ TimedLogin บรรทัดถัดมาบอกว่าจะ login เข้า user ไหน บรรทัดสุดท้ายให้รอเท่าไหร่ ถ้าอยากให้เปิดเครื่องปุ๊บเข้าเลยก็ให้บรรทัดสุดท้ายเป็น 0 พอเข้ามาถึงหน้า login มันก็จะเข้าระบบไปทันที แต่ๆ ปัญหาที่เจอคือ มันไม่สมบูรณ์แบบ Ubuntu คือเข้ามาแล้วต้องกรอกรหัสอีกชั้นเพื่อให้ใช้รหัสผ่านที่เคยเก็บไว้ได้ ซึ่ง Ubuntu ไม่ต้องกรอกอีกทีแล้ว(ตามที่ pFz บอก เพราะยังไม่เคยลองเองแล้วได้ผลเลย -_-&#8221;) เห้อ ช่วงนี้เขียนแต่เรื่องปวดหัวแฮะ เรื่องไร้สาระเริ่มไม่มีอีกและ สงสัยต้องหาอะไรมาเล่นหน่อยแล้ว อ้างอิง: Fedora personal guide]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/08/fedora9-auto-login/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Fedora9 กับ Adobe flash player</title>
+		<link>http://llun.in.th/2008/06/fedora9-%e0%b8%81%e0%b8%b1%e0%b8%9a-adobe-flash-player/</link>
+		<comments>http://llun.in.th/2008/06/fedora9-%e0%b8%81%e0%b8%b1%e0%b8%9a-adobe-flash-player/#comments</comments>
+		<pubDate>Sun, 22 Jun 2008 08:55:27 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Adobe Flash]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=414</guid>
+		<description><![CDATA[เป็นปัญหาเล็กน้อยที่งี่เง่าสิ้นดี หาไม่เจอวิธีแก้ซะตั้งนาน วันนี้เลยค้นหาจริงๆ จังว่าทำยังไงให้ Flash player ในหมาไฟมีเสียงซักทีเวลาเล่นวิดีโอต่างๆ โดยปกติแล้วเวลาจะลง Flash player ใน linux นี่มันก็ดันมีสองวิธีคือจาก Package manager หรือเอาตรงๆ จากเว็บ Adobe เลยซึ่งแน่นอนเอาจาก Package manager มันธรรมดาไป(จริงๆ คือมันห่วย สู้ที่มาจาก Adobe ไม่ได้ &#8211; -&#8221; รอคนทำพัฒนาให้ไกลกว่านี้อีกซักหน่อยละกันนะ) ก็เลยต้องเอาจาก Adobe มาติด ในนั้นก็ดันมีให้เลือกเยอะแยะมากมายอีกหลายวิธี ตั้งแต่เป็น .rpm, .yum หรือ .tar.gz ซึ่งถ้าเลือก .rpm หรือ .yum ก็คงไม่เจอปัญหายาวมาถึงตอนนี้(แต่จะไปเจอปัญหาเรื่องอื่นแทน เพราะว่าผมต้องใช้ Flash player debug ที่มากับ Flex builder ด้วยนี่สิ จะไปเปลี่ยนแก้ไขทีหลังท่าจะลำบาก) ด้วยเหตุจำเป็นบางประการ(อ่านในวงเล็บซะ) ก็เลยดาวโหลด .tar.gz [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/06/fedora9-%e0%b8%81%e0%b8%b1%e0%b8%9a-adobe-flash-player/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>java บน fedora9</title>
+		<link>http://llun.in.th/2008/05/java-on-fedora9/</link>
+		<comments>http://llun.in.th/2008/05/java-on-fedora9/#comments</comments>
+		<pubDate>Mon, 19 May 2008 08:40:32 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Java]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=345</guid>
+		<description><![CDATA[ปกติอยู่บน ubuntu เวลาจะติด java ที่มาจาก sun นั้นก็ง่ายๆ แค่เปิด repository ที่ non-free จากนั้นก็ apt-get install จบแต่บน fedora ด้วยความเข้มงวดเรื่อง license ทำให้ java ที่ใช้ต้องเป็นแบบฟรีจริงๆ เท่านั้นซึ่งก็มีให้เลือกอยู่อย่างเดียวคือ java6 openjdk แต่งานผมส่วนใหญ่ยังต้องใช้ java5 นี่สิ เลยต้องลงแบบพิสดารหน่อย เริ่มจากดาวโหลด jdk มาก่อนเลย โดยผมดาวโหลด java 5 update 14 มา จากหน้านี้ http://java.sun.com/products/archive/j2se/5.0_14/index.html ที่โหลดรุ่นนี้เพราะว่า jpackage ตอนนี้ยังไม่มี update 15 ติดตั้ง rpm-build และ yum-utils sudo yum install rpm-build yum-utils เอาไฟล์ที่ดาวโหลดมาจากขั้นหนึ่งไปวางไว้ที่ /usr/src/redhat/SOURCE/ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/05/java-on-fedora9/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Fedora9 released &amp; mirror</title>
+		<link>http://llun.in.th/2008/05/fedora9-released-mirror/</link>
+		<comments>http://llun.in.th/2008/05/fedora9-released-mirror/#comments</comments>
+		<pubDate>Wed, 14 May 2008 01:50:55 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=330</guid>
+		<description><![CDATA[จริงๆ ออกตั้งแต่เมื่อวานแล้วหละ แต่เมื่อวานขี้เกียจกลับมาเข้า server สั่งโหลดแล้วนอนเลย วันนี้เลยกะเข้ามาบอกซะหน่อยว่าถ้าอยากลองก็ไปหาใด้ที่ nytes mirror คราวนี้เขียนสั้นหน่อยเพราะเขียนผ่าน iphone บนเรือ เห่อซะไม่มี ห้าห้าห้า]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/05/fedora9-released-mirror/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>ภาษาไทยใน Fedora8</title>
+		<link>http://llun.in.th/2008/01/%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2%e0%b9%83%e0%b8%99-fedora8/</link>
+		<comments>http://llun.in.th/2008/01/%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2%e0%b9%83%e0%b8%99-fedora8/#comments</comments>
+		<pubDate>Mon, 28 Jan 2008 15:27:56 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[fonts]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[thai]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/01/28/%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2%e0%b9%83%e0%b8%99-fedora8/</guid>
+		<description><![CDATA[หลังจากได้โน๊ตบุ๊กใหม่มาเมื่อวันพฤหัส (dell latitude d630) ก็หาระบบต่างๆ มาลงเริ่มจาก debian ก็ลงตามปกติไม่มีอะไรแปลกประหลาด แต่หลังจากอัพเกรดเป็น testing ก็เจอเหตุการณ์น่าหงุดหงิดเข้า นั่นคือเปิด xwindow ไม่ขึ้นเจอแต่จอดำๆ ต้องลง gnome-desktop-environment ใหม่ เสาร์-อาทิตย์ ที่ผ่านมาก็เลยหาทางเลือกใหม่ นั่นคือ fedora8 ทางเลือกนี้จะว่าไปก็ไม่ใหม่เท่าไหร่ เพราะเคยลองกับเครื่อง acer ตัวเก่ามาก่อนแล้ว แต่ติดปัญหาที่ไดรเวอร์จอกับแลนไร้สาย ก็เลยพับเก็บไปแบบลืมๆ จนได้เครื่องใหม่มานี่แหละกับการ์ดจอ intel ลงเสร็จไม่ต้องติดอะไรเพิ่มก็เล่นได้เลยแต่รอบแรกนั้นไม่รู้ว่าไดรเวอร์ iwl3945 ที่ใช้กับแลนไร้สายของ intel นั้นมันใช้ได้เพราะไฟสถานะไม่ขึ้นเลยพยายามเอา ipw3945 ไดรเวอร์เก่ามาติด แล้วก็สรุปไปว่ามันห่วยใช้ไม่ได้ไป จนวันอาทิตย์อยากลอง ของเล่นใหม่ dream linux 3 beta 2 เลยเอามาลงซะหน่อย + พิงค์กี้ (pFz) บอกว่าจริงๆ มันใช้ได้ ก็เลยเอา fedora8 กลับมาลงอีกครั้ง (หึหึหึ ลอง [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/01/%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2%e0%b9%83%e0%b8%99-fedora8/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>มนุษย์หมาป่าหลุดมาแล้ว</title>
+		<link>http://llun.in.th/2007/11/%e0%b8%a1%e0%b8%99%e0%b8%b8%e0%b8%a9%e0%b8%a2%e0%b9%8c%e0%b8%ab%e0%b8%a1%e0%b8%b2%e0%b8%9b%e0%b9%88%e0%b8%b2%e0%b8%ab%e0%b8%a5%e0%b8%b8%e0%b8%94%e0%b8%a1%e0%b8%b2%e0%b9%81%e0%b8%a5%e0%b9%89%e0%b8%a7/</link>
+		<comments>http://llun.in.th/2007/11/%e0%b8%a1%e0%b8%99%e0%b8%b8%e0%b8%a9%e0%b8%a2%e0%b9%8c%e0%b8%ab%e0%b8%a1%e0%b8%b2%e0%b8%9b%e0%b9%88%e0%b8%b2%e0%b8%ab%e0%b8%a5%e0%b8%b8%e0%b8%94%e0%b8%a1%e0%b8%b2%e0%b9%81%e0%b8%a5%e0%b9%89%e0%b8%a7/#comments</comments>
+		<pubDate>Fri, 09 Nov 2007 06:56:24 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2007/11/09/%e0%b8%a1%e0%b8%99%e0%b8%b8%e0%b8%a9%e0%b8%a2%e0%b9%8c%e0%b8%ab%e0%b8%a1%e0%b8%b2%e0%b8%9b%e0%b9%88%e0%b8%b2%e0%b8%ab%e0%b8%a5%e0%b8%b8%e0%b8%94%e0%b8%a1%e0%b8%b2%e0%b9%81%e0%b8%a5%e0%b9%89%e0%b8%a7/</guid>
+		<description><![CDATA[รู้สึกช่วงนี้ลินุกซ์ชักจะมีการพัฒนาที่คล้ายๆ กันเข้าไปทุกที ออกเร็วขึ้นเป็นรอบๆ มีแผ่น live cd ที่ติดตั้งได้ สงสัยจะเป็นผลมาจากอูบุนตู วันนี้ตอนสี่ทุ่ม(เลยมาแล้วหนินะ ) fedora8 หรือชื่อเล่นว่ามนุษย์หมาป่าก็หลุดออกมา ตาม feature ที่ผมสนใจอยู่ก็คือโครงการ IcedTea หรือ openJDK ของ redhat ที่อยู่ใน fedora8 ด้วยแต่ เอามาก็คงไม่ได้ใช้แฮะเพราะโปรแกรมที่บริษัทใช้ JDK5 อยู่ (เป็นข้อดีหรือข้อเสียหว่า) อีกอย่างที่ทำให้สนใจ fedora อีกครั้งก็คือ spin spin คือชุดของ fedora ที่แตกต่างกันแบบ ubuntu ที่มี kubuntu, xubuntu, edubuntu, &#8230; เยอะแยะไปหมด แต่ที่สนใจอยู่ตอนนี้มีอยู่อย่างเดียวคือ xfce ซึ่งถ้าเล่น ubuntu ก็คือ xubuntu นั่นเองสำหรับ fedora ก็มีเหมือนกันแต่ยังไม่ออก ก็เลยว่าจะรอต่อไป แต่ fedora ไม่ได้มีแค่ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/11/%e0%b8%a1%e0%b8%99%e0%b8%b8%e0%b8%a9%e0%b8%a2%e0%b9%8c%e0%b8%ab%e0%b8%a1%e0%b8%b2%e0%b8%9b%e0%b9%88%e0%b8%b2%e0%b8%ab%e0%b8%a5%e0%b8%b8%e0%b8%94%e0%b8%a1%e0%b8%b2%e0%b9%81%e0%b8%a5%e0%b9%89%e0%b8%a7/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>สองอาทิตย์กับ 6 OS</title>
+		<link>http://llun.in.th/2007/07/%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%ad%e0%b8%b2%e0%b8%97%e0%b8%b4%e0%b8%95%e0%b8%a2%e0%b9%8c%e0%b8%81%e0%b8%b1%e0%b8%9a-6-os/</link>
+		<comments>http://llun.in.th/2007/07/%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%ad%e0%b8%b2%e0%b8%97%e0%b8%b4%e0%b8%95%e0%b8%a2%e0%b9%8c%e0%b8%81%e0%b8%b1%e0%b8%9a-6-os/#comments</comments>
+		<pubDate>Thu, 12 Jul 2007 15:34:12 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Gnome]]></category>
+		<category><![CDATA[KDE]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[OpenSUSE]]></category>
+		<category><![CDATA[os]]></category>
+		<category><![CDATA[OSX]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Xfce]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=189</guid>
+		<description><![CDATA[ช่วงสองสามอาทิตย์นี้ นั่งลง OS เล่น หาอันที่ถูกใจ ก็เลยได้ลองเปลี่ยน Desktop Manager ไปด้วยเลย โดยตัวที่ลองจริงๆ ก็มี Ubuntu และก็พี่น้องอีกสองตัว คือ Kubuntu และ Xubuntu (ถือว่าเป็นกลุ่มเดียวกันละกัน) ถัดมาก็ Fedora7 ที่คราวนี้โหลดเป็น DVD มาเลย เพราะนึกว่าจะลงโปรแกรมอื่นๆ ง่ายขึ้น อีกตัวที่พยายามลงก็คือ OSX ตัวสุดท้ายก็ OpenSUSE 10.2 ตัวเก่าต้นปี ผลสรุปออกมาคือผมชอบ Xubuntu ที่สุดเลย แม้จะเอา Ubuntu มาลง Xfce ต่างหากก็ได้ แต่มันก็ไม่เล็กได้เท่า Xubuntu นี่แหละ แถมผมชอบ Effect ที่มากับ Xubuntu เลยอีกต่างหาก ไม่มาก เรียบง่ายดี อีกอย่าง ตัวจัดการพื้นหลังของ Xfce ก็สามารถให้จอสองจอมีพื้นหลังที่ต่างกันได้ แม้จะกำหนดเวลาเพื่อนเปลี่ยนภาพพื้นหลังไปเรื่อยๆ เหมือน [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/07/%e0%b8%aa%e0%b8%ad%e0%b8%87%e0%b8%ad%e0%b8%b2%e0%b8%97%e0%b8%b4%e0%b8%95%e0%b8%a2%e0%b9%8c%e0%b8%81%e0%b8%b1%e0%b8%9a-6-os/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>ผลการลอง Fedora7</title>
+		<link>http://llun.in.th/2007/06/%e0%b8%9c%e0%b8%a5%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a5%e0%b8%ad%e0%b8%87-fedora7/</link>
+		<comments>http://llun.in.th/2007/06/%e0%b8%9c%e0%b8%a5%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a5%e0%b8%ad%e0%b8%87-fedora7/#comments</comments>
+		<pubDate>Sat, 02 Jun 2007 09:14:55 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=164</guid>
+		<description><![CDATA[ขอสรุปสั้นเขียนเป็นข้อดี กับ ข้อสังเกตุเปรียบเทียบกันเลยละกัน ข้อดี สามารถติดจาก Live CD ได้เหมือน Ubuntu สามารถจัดการพลังงานบน Laptop ได้ดีโคตร (มีโปรแกรมให้เลือกได้เลยว่าจะปรับ CPU อย่างไร + โปรแกรมแสดงกราฟพลังงาน) Virt-manager ลองรับ KVM ถ้าใครเล่น Virtualization ก็คงชอบหละ อืม เท่าที่เล่นมาได้ไม่นานก็หาข้อดีเจอแค่นี้ก่อนมาดูข้อสังเกตุมั่งดีกว่า แม้จะติดจาก Live CD ได้เลย แต่ตัวติดตั้งมันกินเครื่องโคตรๆ เริ่ม ติดตั้ง ก็เปิดไรเล่นแทบไม่ได้เลย ติดตั้งเสร็จ ไม่ยอมเอา CD ออกให้ ต้องรอบูทแล้วออกเอง แถมหน้าจอตอนบูทไม่มีให้เลือกว่า บูทจาก hdd Restrict driver ไม่มีเลย เล่นผมลำบากกับการ์ด wireless ตั้งนาน ว่าจะอัพเดทเมื่อคืนบนห้องนอนเลยต้องมาหาสายเสียบด้านล่างเพื่อหา driver card lan ก่อน ตัวจัดการ package ทำไมมันจัดการลำบากเช่นนี้กว่าจะเช็ค [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/06/%e0%b8%9c%e0%b8%a5%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a5%e0%b8%ad%e0%b8%87-fedora7/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Fedora7 release</title>
+		<link>http://llun.in.th/2007/05/fedora7-release/</link>
+		<comments>http://llun.in.th/2007/05/fedora7-release/#comments</comments>
+		<pubDate>Thu, 31 May 2007 14:07:44 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=163</guid>
+		<description><![CDATA[ตามกำหนดการคือออกเวลา 14.00 UTC (ก็สามทุ่มบ้านเราหนะแหละ) หรือก็ก่อนหน้านี้ซักพักนึงอ่ะแหละ ใครอยากโหลดตอนนี้ก็มีแต่ Torrent ให้โหลด บ้านใครเนทช้า ก็รออีกซักพักดีกว่า เพราะไม่มี mirror ไหน มีให้โหลดเลยอ่ะ อันนี้ก็หน้าสำหรับดาวโหลด Torrent : http://torrent.fedoraproject.org/ *Update &#8211; 9:49 pm, http://gg-com.de/F-7-i386-DVD.iso ปอลอ. ตัวต่อไปที่จะนั่งรอแบบนี้ก็ openSUSE นะ ปอลอสอง. แต่มันออกมาชนกับ Gutsy เลยง่ะ]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/05/fedora7-release/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>เห้ยเมื่อไหร่จะออกฟะ Fedora7</title>
+		<link>http://llun.in.th/2007/05/%e0%b9%80%e0%b8%ab%e0%b9%89%e0%b8%a2%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b9%84%e0%b8%ab%e0%b8%a3%e0%b9%88%e0%b8%88%e0%b8%b0%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%9f%e0%b8%b0-fedora7/</link>
+		<comments>http://llun.in.th/2007/05/%e0%b9%80%e0%b8%ab%e0%b9%89%e0%b8%a2%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b9%84%e0%b8%ab%e0%b8%a3%e0%b9%88%e0%b8%88%e0%b8%b0%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%9f%e0%b8%b0-fedora7/#comments</comments>
+		<pubDate>Thu, 31 May 2007 08:31:45 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Fedora]]></category>
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://llun.org/?p=162</guid>
+		<description><![CDATA[รอตั้งแต่เช้าแล้วนะเนี๊ยะ แง่มๆ กะว่าออกปุ๊บ ดาวโหลด ลอง แล้วโชว์เลย เอ้อ หวังว่าออกมา ติดเสร็จแล้วคงจะดีเหมือน Ubuntu feisty นะเนี๊ยะ คาดหวังไว้สูงอยู่ ปอลอ. มีเว็บ fedoraclub ป่าวหว่า เอหรือจะเหมือน pclinux ออกล่าสุดปุ๊บ มีเว็บเกิดปั๊บเลย ปอลอสอง. ผมไม่ไช่ขา fedora หรอกนะ ยังชอบ Ubuntu อยู่ แต่อยากลองง่ะ]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/05/%e0%b9%80%e0%b8%ab%e0%b9%89%e0%b8%a2%e0%b9%80%e0%b8%a1%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b9%84%e0%b8%ab%e0%b8%a3%e0%b9%88%e0%b8%88%e0%b8%b0%e0%b8%ad%e0%b8%ad%e0%b8%81%e0%b8%9f%e0%b8%b0-fedora7/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

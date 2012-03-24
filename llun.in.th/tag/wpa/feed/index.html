@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; WPA</title>
+	<atom:link href="http://llun.in.th/tag/wpa/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Debian กับ WPA-EAP</title>
+		<link>http://llun.in.th/2008/01/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/</link>
+		<comments>http://llun.in.th/2008/01/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/#comments</comments>
+		<pubDate>Fri, 04 Jan 2008 17:18:49 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[debian]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[network]]></category>
+		<category><![CDATA[wireless]]></category>
+		<category><![CDATA[WPA]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/01/05/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/</guid>
+		<description><![CDATA[ปกติใช้ wireless โดยทั่วไปคนส่วนใหญ่เค้าก็จะใช้กันแค่ wep หรือไม่มีรหัสผ่านกัน แต่ที่บ้านกับที่ทำงานดันแปลก ไม่ยอมใช้เหมือนชาวบ้าน ใช้ wpa แทนซะ(เพื่อความปลอดภัยที่ไม่รู้กันไม่ให้ใครเล่น ) ก็เลยเจอปัญหาไม่เหมือนชาวบ้าน สำหรับ wpa ธรรมดาที่ใช้ pre shared key เคยแก้ไปแล้ว พร้อมจดบันทึกไว้ที่ หน้านี้ http://llun.info/2007/10/14/debian-install-instruction/ แต่วันนี้จะมาเขียนถึง WPA-EAP ที่พิเศษกว่าชาวบ้านหน่อย และสาเหตุที่ทำให้ต้องมาบันทึกก็เพราะ dhcp ที่ทำงานดันเจ๊ง ไม่ยอมแจก ip ให้ NetworkManager ที่ใช้ก็เลยด๋อยไปเลย สุดท้ายก็ต้องมาหาวิธีแก้ /etc/network/interfaces เอง เห้อ สิ่งที่ต้องใส่เพิ่มในไฟล์ก็ดูจาก code ด้านล่างเลย iface [name] inet static address [fix ip] netmask [netmask] gateway [gateway] wpa-conf managed wpa-ssid [ssid] [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/01/debian-%e0%b8%81%e0%b8%b1%e0%b8%9a-wpa-eap/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

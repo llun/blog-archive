@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; locale</title>
+	<atom:link href="http://llun.in.th/tag/locale/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Flex runtime localization</title>
+		<link>http://llun.in.th/2008/05/flex-runtime-localization/</link>
+		<comments>http://llun.in.th/2008/05/flex-runtime-localization/#comments</comments>
+		<pubDate>Thu, 29 May 2008 03:10:19 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[locale]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=359</guid>
+		<description><![CDATA[นึกชื่อไทยไม่ออกแฮะว่าจะเขียนเป็นหัวข้อภาษาไทยยังไง จริงๆแล้วก็แค่จะเปลี่ยนภาษาขณะที่รันโปรแกรมไปแล้วนั่นแหละ คิดว่าพึ่งมีใน Flex3 เพราะค้นใน google ก็เจอแต่เอกสารของ Flex3 แฮะถ้าเป็น Flex2 คนต้องใช้วิธีดิบเถื่อนนิดหน่อย ^^! อย่างแรกที่ต้องทำเพื่อให้ compile flex กับภาษาอื่นๆ ได้คือต้อง copylocale ก่อนโดย flex เตรียม locale พื้นฐานให้สองภาษาคือ อังกฤษ(อังกฤษแบบอเมริกาด้วย แต่มันจะต่างจาก อังกฤษอื่นๆ ยังไงฟะ) กับ ญี่ปุ่น ซึ่งก็ไม่รู้ copy แล้วมันจะต่างกันยังไงอีกนั่นแหละ &#8211; -&#8221; โดยจากตอนก่อนนู้นๆ จำได้ว่าเคยแนะนำโปรแกรมต่างๆ ใน /bin ของ sdk ไปบ้างแล้วโปรแกรมหนึ่งก็คือ copylocale โดยมีทั้งสำหรับ windows และ linux/unix ของ windows ก็จะมี .exe ตามท้าย จากการทำงานแล้ว จริงๆ มันก็เหมือนกับ copy [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/05/flex-runtime-localization/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>locale, charset</title>
+		<link>http://llun.in.th/2007/11/locale-charset/</link>
+		<comments>http://llun.in.th/2007/11/locale-charset/#comments</comments>
+		<pubDate>Sun, 04 Nov 2007 15:37:45 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[charset]]></category>
+		<category><![CDATA[locale]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2007/11/04/locale-charset/</guid>
+		<description><![CDATA[วันนี้มีเรื่องร้อนแรงบางอย่างในห้อง #ubuntu-th เกี่ยวกับ charset หลักของห้องว่าควรจะเป็นอะไรดี เริ่มจากตอนแรก ห้องใช้ TIS-620 เนื่องจากมีบอทแล้วจะเล่นกัน แต่พักหลังบอทที่ใช้เล่นหายไปและก็ไม่ค่อยมีคนเล่นกันแล้วพร้อมกับปัญหาที่ว่า เวลามีคนใหม่ๆ เข้ามาโดยใช้ ubuntu โปรแกรมแชทที่ใช้กันมักใช้ charset เป็น UTF-8 ทำให้ต้องอธิบายกันว่าจะเปลี่ยนยังไง ทั้งๆที่ประกาศไว้ตอนเข้าห้องแล้วถึงวิธีเปลี่ยน เดือนที่ผ่านมาเลยมีการเปลี่ยนมาใช้ UTF-8 กัน เพื่อที่จะลดเรื่องน่าปวดหัวในการเปลี่ยน charset ตรงนี้ไป แต่วันนี้ ans-tor เข้ามาแล้วก็เปิดประเด็นที่ว่า ทำไมไม่ใช้ TIS-620 อีกรอบ โดยบอกว่าน่าจะดูจาก locale ของระบบ แทนที่จะตั้งแยกแต่ละโปรแกรม และบอกว่าระบบในประเทศไทย ก็น่าจะมี locale เป็นภาษาไทย ดังนั้นเวลาใช้โปรแกรมต่างๆ ก็น่าจะเป็น TIS-620 อัตโนมัติ แต่ความจริงแล้ว ระบบต่างๆ ไม่ได้ใช้ locale แยกตามสถานที่แล้วนี่สิ โดยดูจาก ubuntu ที่ตั้ง locale เป็น UTF-8 ทั้งหมด [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2007/11/locale-charset/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

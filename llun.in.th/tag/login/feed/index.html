@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; login</title>
+	<atom:link href="http://llun.in.th/tag/login/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Automatic ssh authenticate</title>
+		<link>http://llun.in.th/2008/10/automatic-ssh-authenticate/</link>
+		<comments>http://llun.in.th/2008/10/automatic-ssh-authenticate/#comments</comments>
+		<pubDate>Sat, 18 Oct 2008 14:35:01 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[authentication]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[login]]></category>
+		<category><![CDATA[SSH]]></category>
+		<category><![CDATA[Unix]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=668</guid>
+		<description><![CDATA[วันนี้ willwill ถามในห้อง #ubuntu-th ว่าทำยังไงให้เข้าไปในเซิร์ฟเวอร์ได้โดยไม่ต้องพิมพ์รหัสผ่าน ก็คุ้นๆว่าเคยทำเมื่อปีที่แล้ว แต่ลืมไปแล้วค้นๆ ในบล๊อกก็เคยทำจริงด้วยแต่ไม่ได้เขียนวิธีไว้วันนี้เลยขุดค้นใหม่ (แต่ willwill เจอวิธีไปก่อนและ แต่คนละเว็บ) เอามาเขียนเก็บกันลืมในนี้อีกที ขั้นแรกล๊อกอินเข้าไปที่เซิร์ฟเวอร์ผ่าน ssh แล้วสร้าง key มาก่อนด้วยคำสั่งssh-keygen -t rsaโดยด้านหลังสุดอาจเป็น rsa หรือ dsa ก็ได้แล้วแต่วิธีที่จะใช้เข้ารหัส จากนั้นมันจะถามคำถามมามากมายรวมทั้งให้ใส่รหัสอีกทีรวมทั้งไฟล์ที่จะไว้เก็บ key นี้ด้วย สุดท้ายแล้วจะได้ไฟล์ออกมาสองไฟล์ คือไฟล์ที่เราใส่ชื่อเข้าไปกับ อีกอันที่มี .pub (คิดว่าเป็นไฟล์ที่เก็บ public key) ออกมา คัดลอกข้อมูลในไฟล์ .pub ลงไฟล์ ~/.ssh/authorized_keyscat host.pub &#62;&#62; ~/.ssh/authorized_keys เอาไฟล์ที่ได้ออกมาอีกไฟล์ส่งกลับมาที่เครื่องส่วนตัว แล้วเก็บไว้ที่ ~/.ssh เหมือนกัน ครั้งต่อไปที่เข้าเซิร์ฟเวอร์ก็ไม่ต้องใส่รหัสผ่านอีกต่อไปและ ช่วงนี้มานั่งนึกๆ ดูรู้สึกที่ทำงานมาหนึ่งปีกว่า ส่วนที่จำได้ส่วนใหญ่แล้วเกี่ยวกับงานมันก็จะถูกเขียนอยู่ในบล๊อกนี้แหละ ก็เลยอยากให้คนอื่นเขียนๆ ไว้บ้าง เอ๊ะ หรือว่าให้พี่สร้างบล๊อกของแต่ละคนในที่ทำงานไว้ดี เวลาทำไรก็ให้ทุกคนจดไว้ในนั้น [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/10/automatic-ssh-authenticate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

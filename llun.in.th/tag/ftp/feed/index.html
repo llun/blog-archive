@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; ftp</title>
+	<atom:link href="http://llun.in.th/tag/ftp/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>FTP Client แบบเถื่อนๆ บนจาวา</title>
+		<link>http://llun.in.th/2008/07/ftp-client-%e0%b9%81%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%96%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b8%99%e0%b9%86-%e0%b8%9a%e0%b8%99%e0%b8%88%e0%b8%b2%e0%b8%a7%e0%b8%b2/</link>
+		<comments>http://llun.in.th/2008/07/ftp-client-%e0%b9%81%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%96%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b8%99%e0%b9%86-%e0%b8%9a%e0%b8%99%e0%b8%88%e0%b8%b2%e0%b8%a7%e0%b8%b2/#comments</comments>
+		<pubDate>Wed, 23 Jul 2008 05:35:56 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[ftp]]></category>
+		<category><![CDATA[Java]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=497</guid>
+		<description><![CDATA[มีงานแบบอย่างด่วนวิ่งเข้าหาแบบไม่ทันรับมือตั้งแต่เมื่อวาน ตอนแรกนึกว่าจะเสร็จแล้ววันนี้ต้องแก้ใหม่ด้วย NFS ไม่สามารถใช้ได้อีก วันนี้เลยต้องหาทางส่งข้อมูลขนาดใหญ่ด้วยวิธีอื่นแทน แล้วก็มีมติมาว่าใช้ FTP ก็เลยต้องไปหาวิธีใช้ในจาวามาซะนี่ ลองหาในอากู๋ดูก็เจออยู่หลายเว็บแต่ว่าที่ใช้มีอยู่เว็บเดียวคือ Javaworld: Java FTP Library Review เพราะอยากได้อะไรคร่าวๆ ไม่ต้องละเอียดมาก ไม่ต้องหาอะไรมาลงเพิ่ม แล้วก็ทำให้รู้อย่างนึงว่า มันมีอยู่แล้วแต่มีข้อเสียคือ มันต้องปิดเปิดบ่อยๆ ดังนั้นส่งไฟล์เล็กๆ หลายๆ ไฟล์ท่าทางจะไม่ดีแต่ไม่เป็นไร ยังไงไฟล์ที่ส่งก็ใหญ่อยู่และ (ได้ยินมาว่ามากกว่า 5GB ต่อไฟล์ -_-&#8221;) ขี้เกียจบ่นมากและ ดูโค้ดเลยละกัน เพราะอันนี้กะว่าเขียนเก็บเท่านั้นแล String ftpTarget = String.format("ftp://%s:%s@%s/%s%s;type=i", user, pass, target, prefix, filename); URL url = new URL(ftpTarget); URLConnection connection = url.openConnection(); OutputStream out = connection.getOutputStream(); FileInputStream in [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/ftp-client-%e0%b9%81%e0%b8%9a%e0%b8%9a%e0%b9%80%e0%b8%96%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b8%99%e0%b9%86-%e0%b8%9a%e0%b8%99%e0%b8%88%e0%b8%b2%e0%b8%a7%e0%b8%b2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

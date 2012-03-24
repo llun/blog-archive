@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; cookie</title>
+	<atom:link href="http://llun.in.th/tag/cookie/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>SharedObject</title>
+		<link>http://llun.in.th/2008/08/sharedobject/</link>
+		<comments>http://llun.in.th/2008/08/sharedobject/#comments</comments>
+		<pubDate>Mon, 11 Aug 2008 08:29:36 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[cookie]]></category>
+		<category><![CDATA[SharedObject]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=545</guid>
+		<description><![CDATA[หลังจากหลีกเลี่ยงมานานไม่ยอมใช้มัน วันนี้ก็มีงานที่ต้องใช้จนได้ SharedObject ที่ฟังจากเพื่อนและพี่มามันคือสิ่งที่ไว้เก็บข้อมูลฝั่งไคลเอ็นท์ของ Flex คล้ายๆกับ คุ๊กกี้ ของเว็บบราวเซอร์ วิธีใช้นั้นมันก็ง่ายแสนง่ายเพราะมันเป็นเพียงตารางอันนึงไว้เก็บ key กับ value โดยเวลาจะยัดอะไรใส่ลงไปก็บอกว่า ไอ้นี่ใช้ชื่ออะไรสำหรับอ้างอิง เวลาจะเอามาใช้ก็ใช้ชื่อนั้นดึงออกมา สิ่งที่ผมเอามาใช้คือไว้จำว่าครั้งสุดท้ายที่เข้ามาในโปรแกรมนั้นเปิดหน้าอะไรเอาไว้ เวลาเปิดมาอีกครั้งจะได้ไม่ต้องเสียเวลาไปกดเปิดตรงนั้นอีก เปิดมาให้เลยเมื่อเข้ามา ลองดูโค้ดตามด้านล่างเลยละกัน import flash.net.SharedObject; import mx.events.ItemClickEvent; private var cookie:SharedObject = SharedObject.getLocal("views") protected override function createChildren():void { super.createChildren() if (cookie.data.value != null) { views.selectedIndex = cookie.data.value } } private function switchView(event:ItemClickEvent):void { views.selectedIndex = event.index cookie.data.value = event.index cookie.flush() [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/08/sharedobject/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

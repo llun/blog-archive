@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; SVN</title>
+	<atom:link href="http://llun.in.th/tag/svn/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Hello, GIT again.</title>
+		<link>http://llun.in.th/2011/01/hello-git-again/</link>
+		<comments>http://llun.in.th/2011/01/hello-git-again/#comments</comments>
+		<pubDate>Fri, 07 Jan 2011 16:42:32 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[GIT]]></category>
+		<category><![CDATA[migration]]></category>
+		<category><![CDATA[SVN]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2066</guid>
+		<description><![CDATA[อาทิตย์นี้เตรียมงานใหญ่ย้าย VCS Project หลักจาก SVN ไป GIT ซึ่งคาดเดาไว้แล้วว่าต้องเจอปัญหาแน่นอน ก็คิดไม่ผิดเสียจริงๆ แต่ทำคราวนี้พบว่าเดี๊ยวนี้ GIT มีตัวช่วยสำหรับ HTTP แล้วเรียกว่า Smart HTTP ขั้นตอนก็ต่างจากคราวที่แล้วนิดหน่อย แต่คราวนี้จะตัดส่วน Trac ทิ้งทั้งหมด เพราะสิ่งที่ทำให้ลำบากชีวิตมากสุดก็คือ Trac นั่นเอง (นั่งทำให้มันแสดง source ได้กับ repository ที่มีขนาดใหญ่นี่ไม่สนุกเลย) เริ่มจากแก้ไข Apache ให้รู้ว่า URL ไหนจะเป็น repository สำหรับ path ของ git-http-backend ก็ขึ้นอยู่กับตำแหน่งที่ลงหรือ OS เพราะถ้าเป็น FreeBSD git-http-backend จะอยู่ที่ /usr/local/libexec/git-core/git-http-backend แทน จากนั้นกำหนดให้ Apache ตรวจสอบคนที่จะ push/pull หรือถ้าอยากให้ใคร clone ก็ได้แต่ถ้าต้องการ push ต้อง [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/01/hello-git-again/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SVN Apache Trac</title>
+		<link>http://llun.in.th/2008/12/svn-apache-trac/</link>
+		<comments>http://llun.in.th/2008/12/svn-apache-trac/#comments</comments>
+		<pubDate>Sat, 06 Dec 2008 16:58:42 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[SVN]]></category>
+		<category><![CDATA[Trac]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=802</guid>
+		<description><![CDATA[ด้วยความลำบากของชีวิตวันนี้เพื่อนมาถาม ลองค้นๆ ในบล๊อก อ้าวไม่มีเลยจดไว้หน่อย เพราะสำหรับ FreeBSD แล้วมันไม่มีอะไรง่ายเลย ^^! ถือว่าเป็นซีรี่ย์ต่อจาก GIT ละกัน แต่คราวนี้จะละเอียดกว่านิดหน่อยเพราะเริ่มจากติด SVN/Trac จาก port เลยเพราะเพื่อนเจอปัญหาน่าปวดหัวตั้งแต่ขั้นนี้ซะนี่ เริ่มเลยละกัน เริ่มจากติด Apache เนื่องจาก SVN มันใช้บางอย่างที่พิเศษกว่าชาวบ้านด้วย นั่นคือ bdb + อยู่บน FreeBSD ชีวิตเลยไม่สวยงามนักตอนติด Apache ต้องเลือกให้มันใช้ apr จาก port ซึ่งมันก็จะมีคำเตือนว่าอันตราย แต่ช่างมันเหอะ เพื่อความเรียบง่ายในชีวิต เลือกมันออกซะ แล้วก็ไปติด apr-svn ใน /usr/ports/devels แล้วก็ปล่อยมันไปดึงเพื่อนๆ มันมาลงด้วย หลังจากจัดการกับ Apache เสร็จก็มาลง svn ต่ออยู่ใน /usr/ports/devels/subversion (ตอนแรกๆ พิมพ์ svn อยู่ตั้งนาน หามันไม่เจอซักที มารู้ทีหลังว่ามันดันใช้ชื่อเต็ม [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/12/svn-apache-trac/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Subclipse 1.4.1</title>
+		<link>http://llun.in.th/2008/07/subclipse-141/</link>
+		<comments>http://llun.in.th/2008/07/subclipse-141/#comments</comments>
+		<pubDate>Fri, 25 Jul 2008 03:49:49 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Subclipse]]></category>
+		<category><![CDATA[SVN]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=510</guid>
+		<description><![CDATA[เมื่อวานเจอปัญหาประหลาดหลังจากลองอัพเดทไฟล์จาก svn ใน Eclipse กลับเจอข้อความแจ้งเตือนประหลาดบอก client ที่ใช้เก่าเกินไป แต่เครื่องเพื่อนกลับไม่มีปัญหา ลองเข้าเว็บ Subclipse ปรากฏว่ามีรุ่นใหม่ออกมาแล้วเลยจัดแจงอัพเดทซะเลยแล้วก็เจอปัญหาตามมาอีกมากมาย ก็เลยเอามาเขียนในนี้ซะหน่อย Subclipse รุ่นใหม่มีสิ่งที่เปลี่ยนไปคือแทนที่จะใช้ svn client ใน Eclipse เลยกลับออกมาใช้ client ภายนอกของระบบ ผ่าน JNI ดังนั้นก่อนที่จะใช้ได้ก็ต้องเตรียม svn ภายนอกให้เรียบร้อยก่อน สำหรับที่จดไว้นี้เฉพาะ Fedora9 คิดว่าลินุกซ์ค่ายอื่นก็คงติดไม่ค่อยต่างกันเท่าไหร่ แต่สำหรับ Windows นี่คงต้องไปนั่งลองทำอีกที -_-&#8221; เริ่มจากติด svn client ลงไปก่อนพร้อมกับ javahl #yum install subversion subversion-javahl จากนั้นก็เข้า Eclipse ติด Subclipse ด้วยการเพิ่ม source เข้าไป http://subclipse.tigris.org/update_1.4.x/ แต่ว่า ด้วยความที่ต้นฉบับมันช้ามากๆ เลยทำ update สำรองไว้ที่ [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/07/subclipse-141/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Subversion relocate</title>
+		<link>http://llun.in.th/2008/02/subversion-relocate/</link>
+		<comments>http://llun.in.th/2008/02/subversion-relocate/#comments</comments>
+		<pubDate>Tue, 26 Feb 2008 14:48:07 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[relocate]]></category>
+		<category><![CDATA[SVN]]></category>
+		<category><![CDATA[switch]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/02/26/subversion-relocate/</guid>
+		<description><![CDATA[เมื่อวานย้ายที่ทำงานขึ้นมาอีก 20 ชั้น วันนี้ย้ายเซิร์ฟเวอร์เก็บไฟล์ที่ทำงานอยู่ (จริงๆ แค่เปลี่ยนไอพี) แต่แฟ้มที่อยู่ในเครื่องแปะไว้อยู่ที่ไอพีเดิม วันนี้ก็เลยเกือบต้องลำบาก เอาออกมาใหม่ทั้งหมด แต่ค้นอากู๋ไปมา ดันเจอคำสั่งที่ไว้ช่วยเปลี่ยนซะก่อน เลยรอดไป ปกติคำสั่งที่ผมใช้จะมีแค่ co (checkout), ci (commit), up(update) เอาไว้เอาไฟล์เข้าออกจากเซิร์ฟเวอร์ พอเปลี่ยนไอพีที ถามพี่พี่ก็บอกว่า co มาใหม่เลย คิดแล้วก็ซีดนิดๆ เพราะมันหลายไฟล์ + งานเก่าที่ทำไว้มีอะไรที่ค้างคาอยู่เยอะเหมือนกัน (แก้ไปแล้วอ่ะ  :sad: ) สำหรับคพสั่งใหม่ที่เจอวันนี้คือ sw (switch) วิธีย้ายสำหรับเปลี่ยนที่ไฟล์ก็คือ svn sw --relocate [old] [new] [dir] เช่นไฟล์เดิมเซิร์ฟเวอร์อยู่ที่ 192.168.0.1 แต่เซิร์ฟเวอร์ใหม่ย้ายไปที่ 10.10.4.1 แล้วตำแหน่งของไฟล์อยู่ที่ /home/[user]/workspace เวลาย้ายก็ใช้คำสั่งตามนี้ svn sw --relocate http://192.168.0.1/workspace http://10.10.4.1/workspace /home/[user]/workspace หลังจากนั้นก็รอซักพักให้ svn แก้ไขข้อมูล entries [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/02/subversion-relocate/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

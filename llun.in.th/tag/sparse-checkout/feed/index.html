@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; sparse checkout</title>
+	<atom:link href="http://llun.in.th/tag/sparse-checkout/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>GIT Sparse checkout</title>
+		<link>http://llun.in.th/2011/02/git-sparse-checkout/</link>
+		<comments>http://llun.in.th/2011/02/git-sparse-checkout/#comments</comments>
+		<pubDate>Mon, 07 Feb 2011 15:27:12 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[GIT]]></category>
+		<category><![CDATA[sparse checkout]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=2098</guid>
+		<description><![CDATA[หลังจากเริ่มย้ายมาใช้ git ถาวรปัญหาหนึ่งที่เจอแบบไม่คาดคิดคือไฟล์บางไฟล์ใน *nix ไม่สามารถ clone ออกมาได้เพราะข้อจำกัดของระบบไฟล์ Windows ที่ห้ามให้ชื่อไฟล์มีตัวอักษร &#8216;:&#8217; ซึ่งดันมีอยู่ในบางไฟล์ของ source FreeBSD (ยังมีเรื่องภาษาไทยอีกแต่นั่นต้องแก้อีกวิธี) จนเห็นพี่ @i_nook หา sparse checkout ก็สงสัยว่าใช้ทำอะไรจนมาอ๋อตอนที่เห็น tweet link นี้เข้า ขั้นตอนการทำก็เริ่มจาก Clone repository ด้วย เพื่อ clone ออกมาแต่ไม่ checkout ตามด้วยกำหนดให้ repository ให้ใช้ sparsecheckout กำหนดว่า path ไหนจะ checkout ออกมา สุดท้าย checkout ออกมา ข้อดีของวิธีนี้นอกจากจะประหยัดเนื้อที่แล้ว ยังสามารถเลือกไม่เอา path ที่มีปัญหาออกมาได้ด้วย พรุ่งนี้คงได้ลองกับ Tortoise ว่าจะทำได้หรือป่าว แต่ก็น่าจะมี Option ให้ตั้งเหมือนกัน ไว้ถ้าไม่ได้ค่อยมาเพิ่มอีกที]]></description>
+		<wfw:commentRss>http://llun.in.th/2011/02/git-sparse-checkout/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

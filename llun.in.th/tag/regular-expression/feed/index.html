@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; regular expression</title>
+	<atom:link href="http://llun.in.th/tag/regular-expression/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>ตัด String ด้วย Regular expression ในจาวา</title>
+		<link>http://llun.in.th/2008/08/%e0%b8%95%e0%b8%b1%e0%b8%94-string-%e0%b8%94%e0%b9%89%e0%b8%a7%e0%b8%a2-regexp-%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b2%e0%b8%a7%e0%b8%b2/</link>
+		<comments>http://llun.in.th/2008/08/%e0%b8%95%e0%b8%b1%e0%b8%94-string-%e0%b8%94%e0%b9%89%e0%b8%a7%e0%b8%a2-regexp-%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b2%e0%b8%a7%e0%b8%b2/#comments</comments>
+		<pubDate>Wed, 06 Aug 2008 11:25:18 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[regular expression]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=533</guid>
+		<description><![CDATA[เล่าเรื่องงานอีกหละ ฮะๆๆ วันนี้มีสิ่งที่ต้องทำอยู่หนึ่งอย่าง(หลังจากอัดทำไปในสองวันแรก วันหลังๆ เลยรู้สึกน้อยเลย -_-&#8221;) คือหาทางกรองข้อมูล คราวนี้ข้อมูลที่มามันเป็นอย่างนี้ xxxhello55xxxx garbage garbage xxxx xworld6xxx garbage garbage xxxx xxxxxxbaa7777xxxx garbage garbage xxxx แล้วสิ่งที่ต้องการคือคำที่อยู่ระหว่าง x ช่องแรกสุด (hello, world, baa) วิธีการง่ายๆ ถ้าไม่ใช้ expression ก็คือหาทางตัดเอา x ด้านหน้ากับ x ด้านหลังและข้อความที่เหลือทิ้งไปให้หมด แต่มันช่างเปลืองแรงยังไงไม่รู้ทั้งๆ ที่จาวามันก็มี expression ที่สามารถตัดเอาคำที่ตรงตามรูปแบบที่ต้องการมาให้เลยได้อยู่แล้ว ทำไมเราต้องไปหาทางตัดมันเองด้วย ก็เลยลองขุดๆ ดูแล้วก็พบวิธีทำตามด้านล่าง for (String data:datas) { Matcher m = Pattern.compile("[a-z]+\\d+").matcher(data); m.find(); System.out.println(m.group()); } เห้ย อะไรมันจะยุ่งยากงี้ฟะ ทำไมมันต้องทำหลายขั้นตอนงี้ด้วย [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/08/%e0%b8%95%e0%b8%b1%e0%b8%94-string-%e0%b8%94%e0%b9%89%e0%b8%a7%e0%b8%a2-regexp-%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b2%e0%b8%a7%e0%b8%b2/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Flex RegExpValidator</title>
+		<link>http://llun.in.th/2008/06/flex-regexpvalidator/</link>
+		<comments>http://llun.in.th/2008/06/flex-regexpvalidator/#comments</comments>
+		<pubDate>Mon, 23 Jun 2008 11:21:06 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Adobe Flex]]></category>
+		<category><![CDATA[regular expression]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=417</guid>
+		<description><![CDATA[ตอนแรกว่าจะทำ custom validator เองซะแล้วแต่พี่บอกว่าใช้ตัวนี้ได้ก็เลยนั่งงม regular expression ใหม่ จากของเดิมสมัยจาวาเวลาจะ validate string อะไรก็ตามจะใช้ [\p{L}\p{M}]+ เพื่อตรวจสอบว่าข้อมูลที่ใส่เข้ามานั้นเป็นตัวอักษรหรือป่าว แต่ Flex ดันไม่มีกลุ่ม unicode validator ให้ซะงั้น เลยต้องเลี่ยงด้วยวิธีอื่น แต่แล้วก็ต้องปวดหัวอีกเพราะว่าใส่แค่ [^\W]+ มันดันไม่พอ เพราะมันไม่ได้ validate ทั้งข้อความให้แต่จะแบ่งเป็นช่วงๆ ถ้ามีช่วงไหนถูกตาม pattern ก็ถือว่าถูกทั้งประโยค พี่ก็บอกว่าใน regular expression มีสัญลักษณ์อีกสองตัวที่เข้ามาช่วยคือ ^ กับ $ ใส่ไว้หน้ากับหลังรูปแบบจะเป็นการบอกว่าให้ตรวจทั้งประโยคว่าตรงตาม pattern หรือไม่ผลสุดท้ายก็เลยได้เป็น ^[^\W]+$ ดูแปลกๆ ไม่ค่อยคุ้นตาเพราะคงไม่ค่อยมีใครใช้ ^$ กันซักเท่าไหร่หรอก จากด้านบนผลที่ได้ก็เกือบเทียบเท่า [\p{L}\p{M}]+ หละคือตัดเอาเครื่องหมายประหลาดๆ ออกทั้งหมดเหลือแต่ตัวอักษร ตัวเลขและก็ &#8216;_&#8217; เหมาะสำหรับเอาไว้ตั้งชื่อต่างๆ ยิ่งนัก แล้วก็ ไม่ต้องสร้าง custom [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/06/flex-regexpvalidator/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Regular expression กับภาษาไทย</title>
+		<link>http://llun.in.th/2008/02/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/</link>
+		<comments>http://llun.in.th/2008/02/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/#comments</comments>
+		<pubDate>Sat, 16 Feb 2008 14:54:27 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[regular expression]]></category>
+		<category><![CDATA[serialize]]></category>
+
+		<guid isPermaLink="false">http://llun.info/2008/02/16/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/</guid>
+		<description><![CDATA[วันศุกร์กำลังนั่งทำงานอยู่ แล้วก็คิดไปคิดมาว่าสิ่งที่ต้องทำคือการตรวจสอบว่า ข้อความที่ส่งเข้ามานี่มีตัวอักษรประหลาดพวก *^#$&#8230; อะไรพวกนี้อยู่หรือป่าว ปกติก็ลองกับภาษาอังกฤษธรรมดา เวลาใช้ regular expression ตรวจก็จะมีรูปแบบประมาณว่า \w ซึ่งเหมือนกันทุกภาษา แต่พอใช้ภาษาไทยปรากฏว่ามันตรวจสอบโดยใช้รูปแบบด้านบนไม่ได้นี่สิ เลยต้องขุดเพิ่มเติมนิดหน่อยแล้วก็เจอตัวนี้เข้า \p{...} รูปแบบนี้เป็นตัวบอกว่าจะใช้กลุ่มรูปแบบที่เกี่ยวกับ unicode นะ คราวนี้ถ้าต้องการตรวจสอบภาษาไทยก็ใส่เป็น \p{L} แต่ปัญหามันไม่จบแค่นั้น ถ้าใส่แค่ L มันจะเอาเฉพาะที่เป็นพยัญชนะ พวก สระ และ วรรณยุกต์ ถ้าเจอมันจะบอกว่าผิดรูปแบบทันที แต่คำภาษาไทยมันรวมพวกนั้นเข้าไปด้วยหนะสิ ก็เลยต้องแก้รูปแบบอีกทีเป็น [\p{L}\p{M}] โดย M ที่ใส่มาก็เพื่อบอกว่าเอา สระ และ วรรณยุกต์ด้วยนั่นเอง สำหรับรายละเอียดเพิ่มเติมอ่านได้จากเว็บนี้ http://unicode.org/unicode/reports/tr18/ จะมีพวกตัวอักษรตัวเล็ก ตัวใหญ่ &#8230; อีกมากมายในภาษาอื่นๆ ด้วยลองไปดูเอาละกันครับ นอกเรื่อง: ส่วนนี้พูดถึง serialize ของจาวาหน่อย เพราะวันศุกร์ไปปล่อยความงี่เง่าส่วนตัวใส่เพื่อนแหะๆ ปกติเวลา serialize วัตถุอะไรในจาวาก็จะให้คลาสของ วัตถุนั้น implements [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/02/regular-expression-%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b8%a0%e0%b8%b2%e0%b8%a9%e0%b8%b2%e0%b9%84%e0%b8%97%e0%b8%a2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

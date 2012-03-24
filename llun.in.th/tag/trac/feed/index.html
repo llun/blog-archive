@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; Trac</title>
+	<atom:link href="http://llun.in.th/tag/trac/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>SVN Apache Trac</title>
+		<link>http://llun.in.th/2008/12/svn-apache-trac/</link>
+		<comments>http://llun.in.th/2008/12/svn-apache-trac/#comments</comments>
+		<pubDate>Sat, 06 Dec 2008 16:58:42 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[มั่วๆ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[SVN]]></category>
+		<category><![CDATA[Trac]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=802</guid>
+		<description><![CDATA[ด้วยความลำบากของชีวิตวันนี้เพื่อนมาถาม ลองค้นๆ ในบล๊อก อ้าวไม่มีเลยจดไว้หน่อย เพราะสำหรับ FreeBSD แล้วมันไม่มีอะไรง่ายเลย ^^! ถือว่าเป็นซีรี่ย์ต่อจาก GIT ละกัน แต่คราวนี้จะละเอียดกว่านิดหน่อยเพราะเริ่มจากติด SVN/Trac จาก port เลยเพราะเพื่อนเจอปัญหาน่าปวดหัวตั้งแต่ขั้นนี้ซะนี่ เริ่มเลยละกัน เริ่มจากติด Apache เนื่องจาก SVN มันใช้บางอย่างที่พิเศษกว่าชาวบ้านด้วย นั่นคือ bdb + อยู่บน FreeBSD ชีวิตเลยไม่สวยงามนักตอนติด Apache ต้องเลือกให้มันใช้ apr จาก port ซึ่งมันก็จะมีคำเตือนว่าอันตราย แต่ช่างมันเหอะ เพื่อความเรียบง่ายในชีวิต เลือกมันออกซะ แล้วก็ไปติด apr-svn ใน /usr/ports/devels แล้วก็ปล่อยมันไปดึงเพื่อนๆ มันมาลงด้วย หลังจากจัดการกับ Apache เสร็จก็มาลง svn ต่ออยู่ใน /usr/ports/devels/subversion (ตอนแรกๆ พิมพ์ svn อยู่ตั้งนาน หามันไม่เจอซักที มารู้ทีหลังว่ามันดันใช้ชื่อเต็ม [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/12/svn-apache-trac/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>GIT Apache Trac</title>
+		<link>http://llun.in.th/2008/11/git-apache-trac/</link>
+		<comments>http://llun.in.th/2008/11/git-apache-trac/#comments</comments>
+		<pubDate>Thu, 20 Nov 2008 04:17:40 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[GIT]]></category>
+		<category><![CDATA[Trac]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=747</guid>
+		<description><![CDATA[เมื่อคืนกะว่าจะเอาโค้ดขึ้นเซอร์ฟเวอร์อีกรอบหลังจากมันหายไปเพราะลงเครื่องใหม่ นั่งลงไปลงมา เลยอยากลองของซะหน่อย svn มันไม่สะใจใช้ git ละกันปรากฏว่าทำมันทั้งคืนเจอปัญหานู่นนี่จนกว่าจะเสร็จเช้านี้ -_-&#8221; ทำเสร็จขอเขียนวิธีเก็บไว้เป็นที่ระทึกหน่อยว่ามันสาหัสต่างจาก svn ขนาดไหน เริ่มจากเตรียม Apache ก่อนแต่จริงๆ ที่ลงไปก็ลงไปพร้อมอยู่แล้วอ่ะนะจาก svn แต่ถ้าใครยังไม่ได้เตรียมก็ลงตามด้านล่างก่อนละกัน เริ่มจากลง mod_dav และ mod_dav_fs ก่อน(เอ๊ะ หรือมันมาพร้อมกันไม่แน่ใจ) ถ้าจำไม่ผิดมันจะมีให้เลือกตอนติดจาก port เลยแต่ถ้าเป็น Ubuntu คิดว่าง่ายกว่านั้น apt-get install mod_dav หรือป่าวหว่าแป๊บเดียวก็เสร็จ ส่วนแมคอื่มช่างมันละกัน(จริงๆ คือไปจิ๊ก FreeBSD เอามาใส่เลยก็ได้ ^^!) จากนั้นกำหนดล๊อกไฟล์ของ DAV ว่าจะให้เป็นไฟล์ในใน httpd.conf ด้านล่างนี่ใช้ของดั้งเดิมที่แถมมาให้หลังจากติดจาก port ขี้เกียจแก้ DavLockDB "/usr/local/var/DavLock" เตรียมไฟล์ที่เก็บรายชื่อคนที่เข้ามาใช้ได้ และก็รหัสผ่าน เอาแบบง่ายๆ นะ พอถามรหัสก็ใส่รหัสของ user นั้นไป htpasswd -c [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2008/11/git-apache-trac/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

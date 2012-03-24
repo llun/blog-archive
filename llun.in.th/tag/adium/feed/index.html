@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>แนท (/næt/) &#187; adium</title>
+	<atom:link href="http://llun.in.th/tag/adium/feed/" rel="self" type="application/rss+xml" />
+	<link>http://llun.in.th</link>
+	<description>/īm/ /ə/ /prōgræmər/</description>
+	<lastBuildDate>Sat, 25 Feb 2012 09:50:32 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.3.1</generator>
+		<item>
+		<title>Adium libpurple</title>
+		<link>http://llun.in.th/2010/05/adium-libpurple/</link>
+		<comments>http://llun.in.th/2010/05/adium-libpurple/#comments</comments>
+		<pubDate>Thu, 27 May 2010 18:12:30 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ระบบ]]></category>
+		<category><![CDATA[adium]]></category>
+		<category><![CDATA[Groups.im]]></category>
+		<category><![CDATA[P4-Context]]></category>
+		<category><![CDATA[patch]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1682</guid>
+		<description><![CDATA[ตั้งแต่ปลายปีที่แล้วที่ เพื่อให้เห็นชื่อใน groups.im Adium ก็ได้ออก beta ต่อมาเรื่อย ๆ แก้ปัญหาเกี่ยวกับ Yahoo บ้าง Facebook บ้างจนตอนนี้ Adium 1.4 ก็เตรียมออกเต็มที ก็เลย build libpurple ใหม่เพื่อมาใช้ซะหน่อย ขั้นตอนการทำจริง ๆ ก็เหมือนเดิมทั้งหมด (ถ้าใครเห็นแฟ้ม Dependencies อย่าเข้าไปเชียว มันยังใช้ไม่ได้) ต่างกันแค่ต้องเอา ppc และ protocol zephyr ออก เพราะ build ไม่ได้ ถ้าใครต้องใช้เพื่อคุยเป็นกลุ่มใน groups.im ก็ ดาวโหลด ไปวางใน Adium ที่ดาวโหลดจาก beta site ก็เสร็จไม่ต้องทำไรเพิ่มเติม​ แต่ถ้าคนอยากรู้ว่าเอาออกแล้ว build ยังไงก็ดูต่อด้านล่าง ด้านล่างนี้คือส่วนที่ต้องแก้เพิ่มเติมก่อน build แต่แก้เท่านี้ไม่พอ ต้องดาวโหลดไฟล์ทั้งหมดใน urls.txt มาและขยายให้หมด [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2010/05/adium-libpurple/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Adium กับ groups.im(P4-Context)</title>
+		<link>http://llun.in.th/2009/12/adium-and-groups-imp4-context/</link>
+		<comments>http://llun.in.th/2009/12/adium-and-groups-imp4-context/#comments</comments>
+		<pubDate>Mon, 28 Dec 2009 17:48:09 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[adium]]></category>
+		<category><![CDATA[Groups.im]]></category>
+		<category><![CDATA[P4-Context]]></category>
+		<category><![CDATA[patch]]></category>
+
+		<guid isPermaLink="false">http://llun.in.th/?p=1315</guid>
+		<description><![CDATA[หลังจากทนใช้ groups.im แบบไม่เห็นชื่อว่าใครพิมพ์มาอยู่นาน (เคยพยายามแก้ครั้งนึง แล้วงานเข้า เลยขี้เกียจขุดต่อ) วันนี้ @teerapapc หาทางแก้อีกครั้ง แล้วก็ได้ถึง stack trace ของ libpurple มา สุดท้ายเลยเอามาทำต่อเอง  แต่กว่าจะขุด Libpurple ออกมาได้เล่นซะเหนื่อย ตอนนี้ build binary ยัดไว้ที่ mirror เรียบร้อย ด้านล่างเป็นขั้นตอนการ build libpurple สำหรับ Adium ไม่สนใจก็ข้ามไปได้เลย เพราะจดเก็บไว้เผื่อต้อง build ใหม่ในอนาคต เริ่มจากเอา Pidgin ออกมาตอนแรกคิดว่าง่ายเพราะหน้าดาวโหลดของ Pidgin มีให้ดาวโหลด source อยู่แล้ว ปรากฏว่าดาวโหลดมาเสร็จขาด autogen.sh ไป สุดท้ายต้อง checkout มาเอง(คือขี้เกียจหาวิธีเอา autogen.sh ออกมา) ติด monotone ก่อนเพื่อเอา source ของ Pidgin [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/12/adium-and-groups-imp4-context/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>New Adium</title>
+		<link>http://llun.in.th/2009/03/new-adium/</link>
+		<comments>http://llun.in.th/2009/03/new-adium/#comments</comments>
+		<pubDate>Sun, 15 Mar 2009 09:52:05 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[adium]]></category>
+		<category><![CDATA[Twitter]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=1119</guid>
+		<description><![CDATA[เมื่อวานเหมือนว่างฮะๆๆ เรียนอังกฤษเสร็จตอนบ่ายกลับมาบ้าน อารมณ์ฟุ้งซ่านขี้เกียจรอ Adium ออกรุ่นใหม่เพื่อให้ tweet ได้เลยเอาโค้ดมาคอมไพล์เองซะเลยแล้วก็เลยเจอดีเข้าเพราะมันดันไม่ได้แต่เริ่มต้นเลยแต่ไม่ได้จับภาพไว้เอา error ไปดูละกัน อันนี้ได้มาหลังจากเปิดกับ Xcode แล้วลองคอมไพล์แล้วรันดู 2009-03-14 21:46:32.893 Adium[25274:10b] Failed to obtain principal class from plugin "WebKit Message View.AdiumPlugin" ("/Users/llun/Documents/adium/build/Debug/Adium.app/Contents/PlugIns/WebKit Message View.AdiumPlugin")! infoDictionary: { CFBundleDevelopmentRegion = English; CFBundleExecutable = "WebKit Message View"; CFBundleIdentifier = "com.adiumX.WebKit-Message-View"; CFBundleInfoDictionaryVersion = "6.0"; CFBundleInfoPlistURL = Contents/Info.plist -- file://localhost/Users/llun/Documents/adium/build/Debug/Adium.app/Contents/PlugIns/WebKit%20Message%20View.AdiumPlugin/; CFBundleNumericVersion = 16785409; CFBundlePackageType = BNDL; [...]]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/03/new-adium/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Retweet via Adium</title>
+		<link>http://llun.in.th/2009/03/retweet-via-adium/</link>
+		<comments>http://llun.in.th/2009/03/retweet-via-adium/#comments</comments>
+		<pubDate>Sat, 14 Mar 2009 17:28:47 +0000</pubDate>
+		<dc:creator>llun</dc:creator>
+				<category><![CDATA[ของเล่น]]></category>
+		<category><![CDATA[ภาษา]]></category>
+		<category><![CDATA[adium]]></category>
+		<category><![CDATA[IM]]></category>
+		<category><![CDATA[OSX]]></category>
+		<category><![CDATA[Twitter]]></category>
+
+		<guid isPermaLink="false">http://llun.info/?p=1115</guid>
+		<description><![CDATA[More detail today evening &#8230; I must rest now.]]></description>
+		<wfw:commentRss>http://llun.in.th/2009/03/retweet-via-adium/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

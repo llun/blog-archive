@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<!-- Mirrored from llun.in.th/2011/09/web-as-native-application/ by HTTrack Website Copier/3.x [XR&CO'2007], Fri, 23 Mar 2012 17:28:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8" />
+<title>Web as native application  |  แนท (/næt/)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="application,html5,web,มั่วๆ" />
+<link rel="stylesheet" type="text/css" href="../../../wp-content/themes/canvas/style.css" media="all" />
+<link rel="pingback" href="../../../xmlrpc.php" />
+<meta property="og:description" content="Web as native application" /><link rel="alternate" type="application/rss+xml" title="แนท (/næt/) &raquo; Feed" href="../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="แนท (/næt/) &raquo; Comments Feed" href="../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="แนท (/næt/) &raquo; Web as native application Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='sharedaddy-css'  href='../../../wp-content/plugins/jetpack/modules/sharedaddy/sharing3d36.css?ver=3.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://llun.in.th/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://llun.in.th/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/canvas/includes/js/slides.min.jquery3d36.js?ver=3.3.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/canvas/includes/js/feedback3d36.js?ver=3.3.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/canvas/includes/js/general3d36.js?ver=3.3.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../xmlrpc0db0.xml?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://llun.in.th/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Zujipuli' href='../zujipuli/index.html' />
+<link rel='next' title='IAAS &amp; PAAS' href='../iaas-paas/index.html' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='http://wp.me/pWUk2-Bw' />
+
+<!-- ItsAbhik.com Facebook OpenGraph and Schema Microdata Generator Start -->
+<meta property="og:title" content="Web as native application" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://llun.in.th/2011/09/web-as-native-application/" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content="แนท (/næt/)" />
+<meta property="og:description" content="ขอเขียนเป็นข้อๆ ไว้ก่อนไม่รู้จะเรียบเรียงให้ดียังไง แต่ก็กลัวจะคิดออกมาไม่ได้อย่างนี้อีก 
+
+
+
+พยายามเขียนเรื่องนี้มาซักพักแล้ว จนช่วงนี้ลองเขียนโปรแกรมเล่นเองก็ยิ่งทำให้เชื่อว่า Web ยุคถัดไปจะมาแนวนี้ไปใหญ่ ถ้าให้เห็นโปรแกรมแนวนี้ก็คงตั้งแต่ห้าปีก่อนแล้วมั้ง โปรแกรมวาด Diagram สามารถมาอยู่บนเว็บได้ ซึ่งต้องขอบคุณ Adobe (หรือ Macromedia ในสมัยนั้นไม่แน่ใจ) ที่ทำ Flash จนกลายมาเป็น VM ที่รันบนเว็บได้อย่างมีประสิทธิภาพที่สุด จนแทบจะไม่มีคู่แข่ง
+
+
+แนวทางการสร้าง Application ด้วยเว็บตอนนี้คนที่ผลักดันในยุคถัดมาก็คงหนีไม่พ้น..." />
+<meta property="og:locale" content="en_US" />
+<meta property="fb:admins" content="" />
+<meta itemprop="name" content="Web as native application">
+<meta itemprop="description" content="ขอเขียนเป็นข้อๆ ไว้ก่อนไม่รู้จะเรียบเรียงให้ดียังไง แต่ก็กลัวจะคิดออกมาไม่ได้อย่างนี้อีก 
+
+
+
+พยายามเขียนเรื่องนี้มาซักพักแล้ว จนช่วงนี้ลองเขียนโปรแกรมเล่นเองก็ยิ่งทำให้เชื่อว่า Web ยุคถัดไปจะมาแนวนี้ไปใหญ่ ถ้าให้เห็นโปรแกรมแนวนี้ก็คงตั้งแต่ห้าปีก่อนแล้วมั้ง โปรแกรมวาด Diagram สามารถมาอยู่บนเว็บได้ ซึ่งต้องขอบคุณ Adobe (หรือ Macromedia ในสมัยนั้นไม่แน่ใจ) ที่ทำ Flash จนกลายมาเป็น VM ที่รันบนเว็บได้อย่างมีประสิทธิภาพที่สุด จนแทบจะไม่มีคู่แข่ง
+
+
+แนวทางการสร้าง Application ด้วยเว็บตอนนี้คนที่ผลักดันในยุคถัดมาก็คงหนีไม่พ้น...">
+<meta itemprop="url" content="http://llun.in.th/2011/09/web-as-native-application/">
+<!-- ItsAbhik.com Facebook OpenGraph and Schema Microdata Generator End -->
+
+<!-- Twitter @Anywhere Plus v2.0 by GeekRMX - http://www.ngeeks.com -->
+<script src="http://platform.twitter.com/anywhere.js?id=vWyrhNHf0VacEGLOdK13w&amp;v=1" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.anywhere(function (T) {
+// configure the @anywhere environment
+T.linkifyUsers();
+T.hovercards();
+});
+</script>
+<!-- /Twitter @Anywhere Plus -->
+
+<!-- Theme version -->
+<meta name="generator" content="Canvas 4.7.4" />
+<meta name="generator" content="WooFramework 5.0.3" />
+
+<!-- Woo Custom Styling -->
+<style type="text/css">
+#logo .site-title, #logo .site-description { display:block; }
+body {background-color:#ccf3ff;background-repeat:no-repeat;background-position:top center;border-top:2px solid #000000;}
+#header {background-repeat:no-repeat;background-position:top center;margin-top:0px;margin-bottom:0px;border:0px solid ;}
+#logo .site-title a {font:normal 40px/1em Georgia, serif;color:#222222;}
+#logo .site-description {font:italic 14px/1em Georgia, serif;color:#999999;}
+#wrapper {padding-left:20px; padding-right:20px;background-color:#ffffff;border-top:2px solid #dbdbdb;border-bottom:2px solid #dbdbdb;border-left:2px solid #dbdbdb;border-right:2px solid #dbdbdb;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;box-shadow: 0px 1px 5px rgba(0,0,0,.3);-moz-box-shadow: 0px 1px 5px rgba(0,0,0,.3);-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.3);}
+body, p { font:normal 14px/1.5em Arial, sans-serif;color:#555555; }
+h1 { font:normal 28px/1.5em Georgia, serif;color:#222222; }h2 { font:normal 24px/1.5em Georgia, serif;color:#222222; }h3 { font:normal 20px/1.5em Georgia, serif;color:#222222; }h4 { font:normal 16px/1.5em Georgia, serif;color:#222222; }h5 { font:normal 14px/1.5em Georgia, serif;color:#222222; }h6 { font:normal 12px/1.5em Georgia, serif;color:#222222; }
+.post .title, .page .title, .post .title a:link, .post .title a:visited, .page .title a:link, .page .title a:visited {font:bold 24px/1.2em Arial, sans-serif;color:#222222;}
+.post-meta { font:normal 11px/1.5em 'PT Serif', arial, sans-serif;color:#868686; }
+.entry, .entry p{ font:normal 16px/1.5em 'PT Serif', arial, sans-serif;color:#555555; }
+.post-more {font:normal 12px/1.5em Arial, sans-serif;color:#868686;border-top:4px solid #e6e6e6;border-bottom:1px solid #e6e6e6;}
+#post-author, #connect {border-top:1px solid #e6e6e6;border-bottom:4px solid #e6e6e6;background-color:#fafafa}
+.nav-entries, .wp-pagenavi, .woo-pagination {border-top:1px solid #e6e6e6;border-bottom:4px solid #e6e6e6; padding: 12px 0px; }
+.nav-entries a, .wp-pagenavi a:link, .wp-pagenavi a:visited, .wp-pagenavi .current, .wp-pagenavi .on, .wp-pagenavi a:hover, .wp-pagenavi span.extend, .wp-pagenavi span.pages, .woo-pagination { font:italic 12px/1em 'PT Serif', arial, sans-serif;color:#777777; }
+.wp-pagenavi a:link, .wp-pagenavi a:visited, .woo-pagination a, .woo-pagination a:hover, .wp-pagenavi span.extend, .wp-pagenavi span.pages, .wp-pagenavi span.current {color:#777777!important}
+.widget h3 {font:bold 14px/1.5em PT Serif;color:#555555;border-bottom:3px solid #e6e6e6;}
+.widget_recent_comments li, #twitter li { border-color: #e6e6e6;}
+.widget p, .widget .textwidget { font:normal 12px/1.5em Arial, sans-serif;color:#555555; }
+.widget {font:normal 12px/1.5em Arial, sans-serif;color:#555555;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
+#tabs .inside li a { font:bold 12px/1.5em 'PT Serif', arial, sans-serif;color:#555555; }
+#tabs .inside li span.meta, #tabs ul.wooTabs li a { font:normal 11px/1.5em "Trebuchet MS", Tahoma, sans-serif;color:#777777; }
+.nav a, #navigation ul.rss a { font:normal 14px/1em Arial, sans-serif;color:#555555; }
+#navigation {border-top:1px solid #dbdbdb;border-bottom:4px solid #dbdbdb;border-left:0px solid #dbdbdb;border-right:0px solid #dbdbdb;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+#top .nav a { font:normal 14px/1em Arial, sans-serif;color:#ddd; }
+#footer, #footer p { font:italic 14px/1em 'PT Serif', arial, sans-serif;color:#777777; }
+#footer {border-top:4px solid #dbdbdb;border-bottom:0px solid ;border-left:0px solid ;border-right:0px solid ;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+.magazine #loopedSlider .content h2.title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.magazine #loopedSlider .content .excerpt p { font:normal 12px/1.5em Arial, sans-serif;color:#cccccc; }
+.business #loopedSlider .content h2.title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.business #loopedSlider .content p { font:normal 12px/1.5em Arial, sans-serif;color:#cccccc; }
+.archive_header { font:normal 18px/1em Arial, sans-serif;color:#555555;border-bottom:5px solid #e6e6e6;}
+</style>
+<!-- /Woo Custom Styling -->
+
+
+<!-- Google Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:r,b,i,bi" rel="stylesheet" type="text/css" />
+
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" />
+<!-- Woo Shortcodes CSS -->
+<link href="../../../wp-content/themes/canvas/functions/css/shortcodes.css" rel="stylesheet" type="text/css" />
+
+<!-- Custom Stylesheet -->
+<link href="../../../wp-content/themes/canvas/custom.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="single single-post postid-2326 single-format-standard unknown two-col-left width-940 two-col-left-940">
+<div id="wrapper">        
+	    
+	<div id="header" class="col-full">
+ 		
+		       
+		<div id="logo">
+		<span class="site-title"><a href="../../../index.html">แนท (/næt/)</a></span>
+<span class="site-description">/īm/ /ə/ /prōgræmər/</span>
+		</div><!-- /#logo -->
+	       
+		       
+	</div><!-- /#header -->
+		<div id="navigation" class="col-full">
+				<ul id="main-nav" class="nav fl"><li id="menu-item-2593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2593"><a href="../../../index.html">/hoʊm/</a></li>
+<li id="menu-item-2592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2592"><a href="http://en.llun.in.th/">/ˈɪŋ(ɡ)lɪʃ/</a></li>
+<li id="menu-item-2144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2144"><a href="../../../gallery/index.html">/gæləri:/</a></li>
+<li id="menu-item-2145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2145"><a href="http://game.llun.in.th/">/geim/</a></li>
+<li id="menu-item-2142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2142"><a href="../../../library/index.html">/ˈlʌɪbrəri/</a></li>
+<li id="menu-item-2143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2143"><a href="../../../want/index.html">/wɔnt/</a></li>
+</ul>	
+	</div><!-- /#navigation -->
+
+       
+    <!-- #content Starts -->
+	    <div id="content" class="col-full">
+    
+    	<div id="main-sidebar-container">    
+
+            <!-- #main Starts -->
+                        <div id="main">                       
+<div class="post-2326 post type-post status-publish format-standard hentry category-uncategorized tag-application tag-html5 tag-web">
+<h1 class="title">Web as native application</h1><div class="post-meta"><span class="small">By</span> <span class="author vcard"><span class="fn"><a href="../../../author/llun/index.html" title="Posts by llun" rel="author">llun</a></span></span> <span class="small">on</span> <abbr class="date time published" title="2011-09-12T22:09:08+0000">September 12, 2011</abbr>  <span class="small">in</span> <span class="categories"><a href="../../../category/uncategorized/index.html" title="View all posts in มั่วๆ">มั่วๆ</a></span>   </div>
+	<div class="entry">
+	    <p>ขอเขียนเป็นข้อๆ ไว้ก่อนไม่รู้จะเรียบเรียงให้ดียังไง แต่ก็กลัวจะคิดออกมาไม่ได้อย่างนี้อีก </p>
+<ul>
+<li>
+พยายามเขียนเรื่องนี้มาซักพักแล้ว จนช่วงนี้ลองเขียนโปรแกรมเล่นเองก็ยิ่งทำให้เชื่อว่า Web ยุคถัดไปจะมาแนวนี้ไปใหญ่ ถ้าให้เห็นโปรแกรมแนวนี้ก็คงตั้งแต่ห้าปีก่อนแล้วมั้ง โปรแกรมวาด Diagram สามารถมาอยู่บนเว็บได้ ซึ่งต้องขอบคุณ Adobe (หรือ Macromedia ในสมัยนั้นไม่แน่ใจ) ที่ทำ Flash จนกลายมาเป็น VM ที่รันบนเว็บได้อย่างมีประสิทธิภาพที่สุด จนแทบจะไม่มีคู่แข่ง
+</li>
+<li>
+แนวทางการสร้าง Application ด้วยเว็บตอนนี้คนที่ผลักดันในยุคถัดมาก็คงหนีไม่พ้น Google ที่ขนาดสร้าง Google Gear ทำให้เว็บต่างๆ สามารถทำงานได้โดยไม่ต้องเชื่อมอินเทอร์เนท แต่สิ่งหนึ่งที่ยังขาดไปในยุคนี้คือการเก็บ Resource ต่างๆ ไว้โดยไม่ต้องโหลดใหม่อย่างถาวร มีเพียงข้อมูลเท่านั้นที่เก็บไว้ แต่ก็เป็นจุดเริ่มต้นที่ API/VM ต่างๆ ที่เคยอยู่ใน Flash เริ่มถูกเอามารวมกับ Browser แล้วผ่าน Extension
+</li>
+<li>
+หลังจากที่ Google ทดลองกับ Gear เพื่อให้เว็บมีโหมด Offline สิ่งที่ Google ทำต่อมาคือลงมาทำ Browser เองซึ่งก็หวือหวาพอสมควร แต่มันก็ไม่แตกต่างจาก Browser อื่นซักเท่าไหร่คือเป็นเพียงสิ่งที่ทำงานอยู่บน OS และไว้เข้าถึงเนื้อหาต่างๆ แต่สิ่งที่คิดว่า Google และ Apple มองไว้แต่แรกแล้วคงเป็นการเอา Web มาทำงานเป็น Application นึงแบบ Native เลยต่างหาก จากการสร้าง Chrome OS ของ Google และความสามารถในการ Pin web ของ iOS
+</li>
+<li>
+ตอนนี้ Application แนวนี้ถ้าจะให้หยิบแล้วบอกว่าเห็นชัดที่สุดเพื่อเป็นตัวแทน คงจะบอกได้ตัวเดียวคือ Kindle Reader ของ Amazone ไม่มีโปรแกรมไหนที่ทำให้รู้สึก Native ได้เท่านี้อีกแล้วโดยเฉพาะเมื่อเอาไปใช้บน iPad ที่เมื่อเลือก Bookmark หน้านั้นและกลายเป็น icon หนึ่งให้เลือกเหมือนโปรแกรมใน iOS เราสามารถเปิดแล้วอ่านหนังสือได้เลย แม้จะไม่ได้เชื่อมต่อ Internet หรือเปิด Airplane mode
+</li>
+<li>
+ที่ Kindle สามารถทำได้อย่างนั้นก็ด้วย API ต่างๆ ที่มีมาใน Browser ยุคปัจจุบันบน iOS และ Desktop ทำให้ Web สามารถทำงานได้อย่าง Application ทั่วไปได้เช่นนี้ API พวกนั้นก็ได้แก่</p>
+<ol>
+<li>
+Web Storage &#8211; แม้ชื่อจะบอกว่าเป็น Web แต่ที่จริงมันคือฐานข้อมูลหรือไฟล์ที่อยู่ภายในเครื่องให้โปรแกรมสามารถเข้าถึงได้แบบ Key-Value pair โดยไม่ต้องไปถามที่ Server อีก
+</li>
+<li>
+Cache Manifest &#8211; สำหรับบอกว่า Resource ไหนให้เก็บไว้ถาวรบ้าง ไม่ต้องไปโหลดจาก Server ใหม่
+</li>
+</ol>
+<p>สองอย่างนี้แหละที่จะทำให้ Web กลายเป็น Native Application ได้
+</li>
+<li>
+จริงๆ ยังมี Feature อื่นๆ อีกที่หลายๆ ค่ายก็ช่วยผลักดันทั้ง Mozilla และ Google เช่น WebGL, Hardware Accelerator แต่นั้นก็เป็น Feature สำหรับใช้ในการ Render แล้วคงเทียบไม่ได้กับสองอย่างด้านบน
+</li>
+</ul>
+<div class="snap_nopreview sharing robots-nocontent"><ul><li class="sharing_label">Share this:</li><li class="share-twitter share-regular"><div class="twitter_button"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fllun.in.th%2F2011%2F09%2Fweb-as-native-application%2F&amp;counturl=http%3A%2F%2Fllun.in.th%2F2011%2F09%2Fweb-as-native-application%2F&amp;count=horizontal&amp;text=Web%20as%20native%20application:" style="width:97px; height:20px;"></iframe></div></li><li class="share-linkedin share-regular"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><div class="linkedin_button"><script type="in/share" data-url="http://llun.in.th/2011/09/web-as-native-application/" data-counter="right"></script></div></li><li class="share-facebook share-regular"><div class="facebook_button"><a name="fb_share" rel="nofollow" type="button" share_url="http://llun.in.th/2011/09/web-as-native-application/" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fllun.in.th%2F2011%2F09%2Fweb-as-native-application%2F&amp;t=Web%20as%20native%20application">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div></li><li class="share-google-plus-1 share-regular"><div class="googleplus1_button"><g:plusone size="small" callback="sharing_plusone" href="index.html"></g:plusone></div></li><li class="share-end"></li></ul><div class="sharing-clear"></div></div>	</div><!-- /.entry -->
+	<div class="fix"></div>
+<div id="post-author">
+	<div class="profile-image"><img alt='' src='http://1.gravatar.com/avatar/3a1a394dd313d10d86e67b2f93959377?s=80&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D80&amp;r=G' class='avatar avatar-80 photo' height='80' width='80' /></div>
+	<div class="profile-content">
+		<h4>About llun</h4>
+		Just a programmer				<div class="profile-link">
+			<a href="../../../author/llun/index.html">
+				View all posts by llun <span class="meta-nav">&rarr;</span>			</a>
+		</div><!-- #profile-link	-->
+			</div>
+	<div class="fix"></div>
+</div>
+<div class="post-utility"><p class="tags"><a href="../../../tag/application/index.html" rel="tag">application</a>, <a href="../../../tag/html5/index.html" rel="tag">HTML5</a>, <a href="../../../tag/web/index.html" rel="tag">web</a></p> </div>
+</div><!-- /.post -->
+	        <div class="post-entries">
+	            <div class="nav-prev fl"><a href="../zujipuli/index.html" rel="prev"><span class="meta-nav">&larr;</span> Zujipuli</a></div>
+	            <div class="nav-next fr"><a href="../iaas-paas/index.html" rel="next">IAAS &#038; PAAS <span class="meta-nav">&rarr;</span></a></div>
+	            <div class="fix"></div>
+	        </div>	
+	
+		
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'index.html';
+    var disqus_identifier = '2326%20http__/llun.in.th/index8d43.html?p=2326';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'llun';
+    var disqus_title = "Web as native application";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            DISQUS.request.get('?cf_action=sync_comments&post_id=2326');
+        });
+                    };
+    var facebookXdReceiverPath = '../../../wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/llun.in.th\/2011\/09\/web-as-native-application\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.72';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+     
+            </div><!-- /#main -->
+                
+            <div id="sidebar">
+	<div id="woo_search-4" class="widget widget_woo_search"><h3>Search</h3><div class="search_main">
+    <form method="get" class="searchform" action="http://llun.in.th/" >
+        <input type="text" class="field s" name="s" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" />
+        <input type="image" src="../../../wp-content/themes/canvas/images/ico-search.png" alt="Search" class="submit" name="submit" />
+    </form>    
+    <div class="fix"></div>
+</div>
+</div><div id="woo_flickr-4" class="widget widget_woo_flickr"><h3>Photos on <span>flick<span>r</span></span></h3><div class="wrap">
+<div class="fix"></div><!--/.fix-->
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?layout=x&amp;count=9&amp;display=latest&amp;source=user&amp;user=50135936@N02&amp;size=s"></script>
+<div class="fix"></div><!--/.fix-->
+</div><!--/.wrap-->
+</div><div id="yarpp_widget-4" class="widget widget_yarpp_widget"><h3></h3>    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'llun';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+                        s.src = 'http' + '://' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<ol><li><a href="../../../2008/09/why-i-like-chrome/index.html" rel="bookmark">Why I like chrome.</a></li><li><a href="../../../2007/04/web20-application-service-&#xe0;&#xb8;&#x97;&#xe0;&#xb8;&#xb5;&#xe0;&#xb9;&#x88;&#xe0;&#xb8;&#x9c;&#xe0;&#xb8;&#xa1;&#xe0;&#xb9;&#x83;&#xe0;&#xb8;&#x8a;&#xe0;&#xb9;&#x89;/index.html" rel="bookmark">Web(2.0) Application + Service ที่ผมใช้</a></li><li><a href="../../../2008/05/flex-runtime-localization/index.html" rel="bookmark">Flex runtime localization</a></li><li><a href="../../../2006/11/spring-framework-mvc-application-step-by-step-part1/index.html" rel="bookmark">Spring Framework MVC application step-by-step part1</a></li><li><a href="../../../2010/04/question-list-about-adobe-flex-platform/index.html" rel="bookmark">Question list about Adobe Flex Platform</a></li></ol></div></div><!-- /#sidebar -->
+
+		</div><!-- /#main-sidebar-container -->         
+
+		
+    </div><!-- /#content -->
+	
+	<div id="footer" class="col-full">
+	
+		    
+	    
+		<div id="copyright" class="col-left">
+			<p>&copy; 2012 แนท (/næt/). All Rights Reserved. </p>		</div>
+		
+		<div id="credit" class="col-right">
+			<p>Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>. Designed by <a href="http://www.woothemes.com/" title="WooThemes"><img src="../../../wp-content/themes/canvas/images/woothemes.png" width="74" height="19" alt="Woo Themes" /></a></p>		</div>
+		
+	</div><!-- /#footer  -->
+	
+	    
+	
+	</div><!-- /#wrapper -->
+	
+	<div class="fix"></div><!--/.fix-->
+	
+	<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?aa&amp;ver=3.3.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/jetpack/modules/wpgroho3d36.js?ver=3.3.1'></script>
+	<div style="display:none">
+	<div class="grofile-hash-map-3a1a394dd313d10d86e67b2f93959377">
+	</div>
+	</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6918582-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/jetpack/modules/sharedaddy/sharingb3e8.js?ver=0.1'></script>
+	<script type="text/javascript" charset="utf-8">
+	function sharing_plusone( obj ) { 
+		jQuery.ajax( {
+			url: 'http://llun.in.th/2011/09/web-as-native-application/?share=google-plus-1',
+			type: 'POST',
+			data: obj
+		} );
+	}
+	</script>
+	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+
+	<script src="http://stats.wordpress.com/e-201212.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:1.2.2',blog:'14039530',post:'2326'});
+	var load_cmc = function(){linktracker_init(14039530,2326,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>		</body>
+
+<!-- Mirrored from llun.in.th/2011/09/web-as-native-application/ by HTTrack Website Copier/3.x [XR&CO'2007], Fri, 23 Mar 2012 17:28:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>
